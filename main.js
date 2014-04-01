@@ -4,12 +4,12 @@
         'durandal': '../Scripts/durandal',
         'plugins': '../Scripts/durandal/plugins',
         'transitions': '../Scripts/durandal/transitions',
+        'underscore' : '../Scripts/lodash'
     }
 });
 
 define('jquery', function () { return jQuery; });
 define('knockout', ko);
-define('underscore', function() {return _;});
 
 define(function (require) {
     var system = require('durandal/system');
