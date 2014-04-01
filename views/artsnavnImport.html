@@ -1,0 +1,326 @@
+﻿<div>
+    <div class="page-header">
+        <h1>Import og oppdateringer<small> til Artsnavnebasen</small></h1>
+    </div>
+
+    <form role="form">
+        <div class="form-group">
+            <label for="from">Input</label>
+            <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-default" data-bind="click: getSeleniumScript">Generate script for Selenium IDE</button>
+        </div>
+        <div class="form-group">
+            <label for="seleniumscripttext">Resulting script for Selenium IDE</label>
+            <textarea class="form-control" id="seleniumscripttext"></textarea>
+        </div>
+    </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr data-bind="foreach: headers">
+                <th data-bind="text: $data"></th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: result">
+            <tr data-bind="foreach: Cols">
+                <td data-bind="text: $data"></td>
+            </tr>
+
+            <!-- ko if: Operasjon == 'Nytt navn' -->
+            <tr>
+                <td colspan="13">
+                    Oppretter nytt navn <span data-bind="text: VitenskapeligNavn"></span> (<span data-bind="text: Kategori"></span>) under <span data-bind="text: OverordnaNavn"></span>
+                    <table class="seleniumscript" style="display:none;">
+                        <tbody>
+                            <tr>
+                                <td>open</td>
+                                <td>https://database.artsdatabanken.no/Artsnavnebase/ContentPages/Startside.aspx</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_btnFinnNavn</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNavn</td>
+                                <td data-bind="text: OverordnaNavn">OverordnaNavn</td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnSøk</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtValgtNavn</td>
+                                <td data-bind="text: OverordnaNavn">OverordnaNavn</td>
+                            </tr>
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnOpprettNyUnderKategori</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>select</td>
+                                <td>id=ctl00_cphInnholdscontainer_ddlKategori</td>
+                                <td data-bind="text: Kategori">Kategori</td>
+                            </tr>
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNyttNavn</td>
+                                <td data-bind="text: Navn">Navn</td>
+                            </tr>
+                            <tr data-bind="if: Autorstreng">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtAutor</td>
+                                <td data-bind="text: Autorstreng">Autorstreng</td>
+                            </tr>
+                            <tr data-bind="if: Forfatter">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtForfatter</td>
+                                <td data-bind="text: Forfatter">Forfatter</td>
+                            </tr>
+                            <tr data-bind="if: Aar">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtÅr</td>
+                                <td data-bind="text: Aar">Aar</td>
+                            </tr>
+                            <tr data-bind="if: Referanse">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtReferanse</td>
+                                <td data-bind="text: Referanse">Referanse</td>
+                            </tr>
+                            <tr data-bind="if: Kommentar">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtKommentar</td>
+                                <td data-bind="text: Kommentar">Kommentar</td>
+                            </tr>
+                            <tr data-bind="if: NavnKunTilSamling == '1'">
+                                <td>click</td>
+                                <td>id=ctl00_cphInnholdscontainer_chkNavn</td>
+                                <td></td>
+                            </tr>
+                            <tr data-bind="if: FinnesINorge == '1'">
+                                <td>click</td>
+                                <td>id=ctl00_cphInnholdscontainer_chkFinnesINorge</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>runScript</td>
+                                <td>document.getElementById('ctl00_cphInnholdscontainer_ctlNavn_btnLagre').setAttribute('onclick', undefined);</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForVisible</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td>Navnet er godkjent og lagret.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- /ko -->
+            <!-- ko if: Operasjon == 'Endret data' -->
+            <tr>
+                <td colspan="13">
+                    Endrer <span data-bind="text: VitenskapeligNavn"></span>
+                    <table class="seleniumscript" style="display:none;">
+                        <tbody>
+                            <tr>
+                                <td>open</td>
+                                <td>https://database.artsdatabanken.no/Artsnavnebase/ContentPages/Startside.aspx</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_btnFinnNavn</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNavn</td>
+                                <td data-bind="text: VitenskapeligNavn">VitenskapeligNavn</td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnSøk</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtValgtNavn</td>
+                                <td data-bind="text: VitenskapeligNavn">VitenskapeligNavn</td>
+                            </tr>
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnRedigerOpplysninger</td>
+                                <td></td>
+                            </tr>
+
+                            <tr data-bind="if: Autorstreng">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtAutor</td>
+                                <td data-bind="text: Autorstreng != '-' ? Autorstreng : ''">Autorstreng</td>
+                            </tr>
+                            <tr data-bind="if: Forfatter">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtForfatter</td>
+                                <td data-bind="text: Forfatter != '-' ? Forfatter : ''">Forfatter</td>
+                            </tr>
+                            <tr data-bind="if: Aar">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtÅr</td>
+                                <td data-bind="text: Aar != '-' ? Aar : ''">Aar</td>
+                            </tr>
+                            <tr data-bind="if: Referanse">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtReferanse</td>
+                                <td data-bind="text: Referanse != '-' ? Referanse : ''">Referanse</td>
+                            </tr>
+                            <tr data-bind="if: Kommentar">
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtKommentar</td>
+                                <td data-bind="text: Kommentar != '-' ? Kommentar : ''">Kommentar</td>
+                            </tr>
+                            <tr data-bind="if: NavnKunTilSamling">
+                                <td data-bind="text: NavnKunTilSamling == '1' ? 'check' : 'uncheck'"></td>
+                                <td>id=ctl00_cphInnholdscontainer_chkNavn</td>
+                                <td></td>
+                            </tr>
+                            <tr data-bind="if: FinnesINorge">
+                                <td data-bind="text: FinnesINorge == '1' ? 'check' : 'uncheck'"></td>
+                                <td>id=ctl00_cphInnholdscontainer_chkFinnesINorge</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>runScript</td>
+                                <td>document.getElementById('ctl00_cphInnholdscontainer_ctlNavn_btnLagre').setAttribute('onclick', undefined);</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForVisible</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td>Lagring er fullført.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- /ko -->
+            <!-- ko if: Operasjon == 'Nytt synonym' -->
+            <tr>
+                <td colspan>
+                    Synonymiserer <span data-bind="text: VitenskapeligNavn"></span> med <span data-bind="text: AkseptertNavn"></span>
+                    <table class="seleniumscript" style="display:none;">
+                        <tbody>
+                            <tr>
+                                <td>open</td>
+                                <td>https://database.artsdatabanken.no/Artsnavnebase/ContentPages/Startside.aspx</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_btnSynonymiser</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNavn</td>
+                                <td data-bind="text: VitenskapeligNavn"></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnSøk</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForXpathCount</td>
+                                <td>//select[&#64;id='ctl00_cphInnholdscontainer_lstValgteNavn']/option</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNavn</td>
+                                <td data-bind="text: AkseptertNavn"></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnSøk</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForEditable</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtForfatter</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtForfatter</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtPublisertÅr</td>
+                                <td>0000</td>
+                            </tr>
+                            <tr>
+                                <td>waitForVisible</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td>Synonymisering er utført.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- /ko -->
+
+        </tbody>
+    </table>
+</div>

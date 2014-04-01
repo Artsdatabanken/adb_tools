@@ -1,0 +1,48 @@
+﻿<div class="table-responsive">
+    <table class="table table-striped table-condensed" cellspacing="0 ">
+        <thead>
+            <tr data-bind="foreach: columns">
+                <!-- ko if: typeof isSortable !== 'undefined' -->
+                <th>
+                    <a href="#" data-bind="text: headerText, click: $parent.sortBy"></a>
+                </th>
+                <!-- /ko -->
+                <!-- ko if: typeof isSortable === 'undefined' -->
+                <th data-bind="text: headerText"></th>
+                <!-- /ko -->
+            </tr>
+        </thead>
+        <tbody class="table table-hover" data-bind="foreach: itemsOnCurrentPage">
+            <tr data-bind="foreach: $parent.columns">
+                <!-- ko if: typeof href !== 'undefined' -->
+                <td>
+                    <a data-bind="attr: { href: typeof href == 'function' ? href($parent) : $parent[href]}, text: $parent[rowText]"></a>
+                </td>
+                <!-- /ko -->
+                <!-- ko if: typeof href === 'undefined' -->
+                <td data-bind="text: typeof rowText == 'function' ? rowText($parent) : $parent[rowText]"></td>
+                <!-- /ko -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <button class="btn btn-default" data-bind='click: downloadCsv, visible: showDownload()'>
+            Last ned CSV
+        </button>
+    </div>
+
+    <ul class="pagination pagination-sm">
+        <li>
+            <a href="#" data-bind="click: function () { currentPageIndex(0); }">&laquo;</a>
+        </li>
+        <!-- ko foreach: ko.utils.range(0, maxPageIndex) -->
+        <li data-bind="css: { active: $data == $parent.currentPageIndex(), hidden: $data > $parent.currentPageIndex()+5 || $data < $parent.currentPageIndex()-5  }">
+            <a href="#" data-bind="text: $data + 1, click: function () { $parent.currentPageIndex($data); }"></a>
+        </li>
+        <!-- /ko -->
+        <li>
+            <a href="#" data-bind="click: function () { currentPageIndex(maxPageIndex()); }">&raquo;</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+﻿define(function (require) {
+    var router = require('plugins/router');
+    var app = require('durandal/app');
+
+    return {
+        router: router,
+        search: function () {
+            //It's really easy to show a message box.
+            //You can add custom options too. Also, it returns a promise for the user's response.
+            app.showMessage('Search not yet implemented...');
+        },
+        activate: function () {
+            router.map([
+                { route: '', title: 'Welcome', moduleId: 'viewmodels/welcome', nav: true },
+                { route: 'Ansvarsarter', title: 'Ansvarsarter', moduleId: 'viewmodels/ansvarsarter', nav: true },
+                { route: 'ArtsnavnImport', title: 'ArtsnavnImport', moduleId: 'viewmodels/artsnavnImport', nav: true },
+                { route: 'Flervalg', title: 'Flervalg', moduleId: 'viewmodels/flervalg', nav: true },
+            ]).buildNavigationModel();
+
+            return router.activate();
+        },
+        compositionComplete: function(view, parnt) {
+            parent.postMessage(document.body.scrollHeight, '*');
+        }
+    };
+});
