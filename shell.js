@@ -20,6 +20,7 @@
             return router.activate();
         },
         compositionComplete: function(view, parnt) {
+            //parent er document sin parent, for å sende meldinger. parnt er input til compositonComplete, og urelatert
             parent.postMessage(document.body.scrollHeight, '*');
         }
     };
