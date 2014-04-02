@@ -31,16 +31,10 @@
         sortBy: function (column) {
             if (!column.sortAsc) {
                 column.sortAsc = true;
-
-                items.sort(function (a, b) {
-                    return a[column.rowText] < b[column.rowText] ? -1 : 1;
-                });
+                items(_.sortBy(items(), column.rowText));
             } else {
                 column.sortAsc = false;
-
-                items.sort(function (a, b) {
-                    return a[column.rowText] > b[column.rowText] ? -1 : 1;
-                });
+                items(_(items()).sortBy(column.rowText).reverse().value());
             }
         }
     };
@@ -82,14 +76,16 @@
             return http.get("/App/viewmodels/ansvarsarter-data.json").then(function (response) {
                 items(response);
                 currentItems(response);
-                var unsortedKategorier = _.unique(response.map(function (d) {return d.kategori.substring(0,2);}))//EN0 skal bli EN
-                that.kategorier(_.sortBy(unsortedKategorier, function(item){return kategoriRekkefølge.indexOf(item)}, that));
 
-                that.artsgrupper(_.unique(response.map(function (d) {return d.ekspertgruppe;}).sort()));
+                var unsortedKategorier = _(response).map(function (d) {return d.kategori.substring(0,2);}).unique();//EN0 skal bli EN
+                var sortedKategorier = unsortedKategorier.sortBy(function(item){return kategoriRekkefølge.indexOf(item);}).value();
+                that.kategorier(sortedKategorier);
 
-                var habitatlister = response.map(function(d) {return d.hovedhabitat});
-                var flattened = habitatlister.reduce(function(acc, list){return acc.concat(list)}, []);
-                that.hovedhabitater(_.unique(flattened).sort());
+                var grupper = _(response).map("ekspertgruppe").unique().sort().value();
+                that.artsgrupper(grupper);
+
+                var habitater = _(response).flatten("hovedhabitat").unique().sort().value();
+                that.hovedhabitater(habitater);
             });
         },
     };
