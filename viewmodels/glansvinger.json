@@ -3,296 +3,296 @@
     "taxon": [
       {
         "id": "Cupido_minimus",
-        "text": "Dvergbl&aring;vinge - Cupido minimus",
+        "text": "Dvergblåvinge - Cupido minimus",
         "image": "images_lyc\\099_Cupido_minimus_m.png"
       },
       {
         "id": "Cupido_minimus_M",
         "parent": "Cupido_minimus",
-        "text": "Dvergbl&aring;vinge - Cupido minimus<br>(Hann)",
+        "text": "Dvergblåvinge - Cupido minimus<br>(Hann)",
         "image": "images_lyc\\099_Cupido_minimus_m.png"
       },
       {
         "id": "Cupido_minimus_F",
         "parent": "Cupido_minimus",
-        "text": "Dvergbl&aring;vinge - Cupido minimus<br>(Hunn)",
+        "text": "Dvergblåvinge - Cupido minimus<br>(Hunn)",
         "image": "images_lyc\\099_Cupido_minimus_f.png"
       },
       {
         "id": "Celastrina_argiolus",
-        "text": "V&aring;rbl&aring;vinge - Celastrina argiolus",
+        "text": "Vårblåvinge - Celastrina argiolus",
         "image": "images_lyc\\100_Celastrina_argiolus_m.png"
       },
       {
         "id": "Celastrina_argiolus_M",
         "parent": "Celastrina_argiolus",
-        "text": "V&aring;rbl&aring;vinge - Celastrina argiolus<br>(Hann)",
+        "text": "Vårblåvinge - Celastrina argiolus<br>(Hann)",
         "image": "images_lyc\\100_Celastrina_argiolus_m.png"
       },
       {
         "id": "Celastrina_argiolus_F",
         "parent": "Celastrina_argiolus",
-        "text": "V&aring;rbl&aring;vinge - Celastrina argiolus<br>(Hunn)",
+        "text": "Vårblåvinge - Celastrina argiolus<br>(Hunn)",
         "image": "images_lyc\\100_Celastrina_argiolus_f.png"
       },
       {
         "id": "Scolitantides_orion",
-        "text": "Klippebl&aring;vinge - Scolitantides orion",
+        "text": "Klippeblåvinge - Scolitantides orion",
         "image": "images_lyc\\101_Scolitantides_orion_m.png"
       },
       {
         "id": "Scolitantides_orion_M",
         "parent": "Scolitantides_orion",
-        "text": "Klippebl&aring;vinge - Scolitantides orion<br>(Hann)",
+        "text": "Klippeblåvinge - Scolitantides orion<br>(Hann)",
         "image": "images_lyc\\101_Scolitantides_orion_m.png"
       },
       {
         "id": "Scolitantides_orion_F",
         "parent": "Scolitantides_orion",
-        "text": "Klippebl&aring;vinge - Scolitantides orion<br>(Hunn)",
+        "text": "Klippeblåvinge - Scolitantides orion<br>(Hunn)",
         "image": "images_lyc\\101_Scolitantides_orion_f.png"
       },
       {
         "id": "Glaucopsyche_alexis",
-        "text": "Kl&oslash;verbl&aring;vinge - Glaucopsyche alexis",
+        "text": "Kløverblåvinge - Glaucopsyche alexis",
         "image": "images_lyc\\102_Glaucopsyche_alexis_m.png"
       },
       {
         "id": "Glaucopsyche_alexis_M",
         "parent": "Glaucopsyche_alexis",
-        "text": "Kl&oslash;verbl&aring;vinge - Glaucopsyche alexis<br>(Hann)",
+        "text": "Kløverblåvinge - Glaucopsyche alexis<br>(Hann)",
         "image": "images_lyc\\102_Glaucopsyche_alexis_m.png"
       },
       {
         "id": "Glaucopsyche_alexis_F",
         "parent": "Glaucopsyche_alexis",
-        "text": "Kl&oslash;verbl&aring;vinge - Glaucopsyche alexis<br>(Hunn)",
+        "text": "Kløverblåvinge - Glaucopsyche alexis<br>(Hunn)",
         "image": "images_lyc\\102_Glaucopsyche_alexis_f.png"
       },
       {
         "id": "Phengaris_arion_N",
-        "text": "Timianbl&aring;vinge - Phengaris arion",
+        "text": "Timianblåvinge - Phengaris arion",
         "image": "images_lyc\\103_Phengaris_arion_n.png"
       },
       {
         "id": "Phengaris_alcon",
-        "text": "S&oslash;tebl&aring;vinge - Phengaris alcon",
+        "text": "Søteblåvinge - Phengaris alcon",
         "image": "images_lyc\\104_Phengaris_alcon_m.png"
       },
       {
         "id": "Phengaris_alcon_M",
         "parent": "Phengaris_alcon",
-        "text": "S&oslash;tebl&aring;vinge - Phengaris alcon<br>(Hann)",
+        "text": "Søteblåvinge - Phengaris alcon<br>(Hann)",
         "image": "images_lyc\\104_Phengaris_alcon_m.png"
       },
       {
         "id": "Phengaris_alcon_F",
         "parent": "Phengaris_alcon",
-        "text": "S&oslash;tebl&aring;vinge - Phengaris alcon<br>(Hunn)",
+        "text": "Søteblåvinge - Phengaris alcon<br>(Hunn)",
         "image": "images_lyc\\104_Phengaris_alcon_f.png"
       },
       {
         "id": "Eumedonia_eumedon",
-        "text": "Brun bl&aring;vinge - Aricia eumedon",
+        "text": "Brun blåvinge - Aricia eumedon",
         "image": "images_lyc\\105_Aricia_eumedon_m.png"
       },
       {
         "id": "Eumedonia_eumedon_M",
         "parent": "Eumedonia_eumedon",
-        "text": "Brun bl&aring;vinge - Aricia eumedon<br>(Hann)",
+        "text": "Brun blåvinge - Aricia eumedon<br>(Hann)",
         "image": "images_lyc\\105_Aricia_eumedon_m.png"
       },
       {
         "id": "Eumedonia_eumedon_F",
         "parent": "Eumedonia_eumedon",
-        "text": "Brun bl&aring;vinge - Aricia eumedon<br>(Hunn)",
+        "text": "Brun blåvinge - Aricia eumedon<br>(Hunn)",
         "image": "images_lyc\\105_Aricia_eumedon_f.png"
       },
       {
         "id": "Aricia_artaxerxes",
-        "text": "Sankthansbl&aring;vinge - Aricia artaxerxes",
+        "text": "Sankthansblåvinge - Aricia artaxerxes",
         "image": "images_lyc\\106_Aricia_artaxerxes_m.png"
       },
       {
         "id": "Aricia_artaxerxes_M",
         "parent": "Aricia_artaxerxes",
-        "text": "Sankthansbl&aring;vinge - Aricia artaxerxes<br>(Hann)",
+        "text": "Sankthansblåvinge - Aricia artaxerxes<br>(Hann)",
         "image": "images_lyc\\106_Aricia_artaxerxes_m.png"
       },
       {
         "id": "Aricia_artaxerxes_F",
         "parent": "Aricia_artaxerxes",
-        "text": "Sankthansbl&aring;vinge - Aricia artaxerxes<br>(Hunn)",
+        "text": "Sankthansblåvinge - Aricia artaxerxes<br>(Hunn)",
         "image": "images_lyc\\106_Aricia_artaxerxes_f.png"
       },
       {
         "id": "Aricia_nicias",
-        "text": "Kilebl&aring;vinge - Aricia nicias",
+        "text": "Kileblåvinge - Aricia nicias",
         "image": "images_lyc\\107_Aricia_nicias_m.png"
       },
       {
         "id": "Aricia_nicias_M",
         "parent": "Aricia_nicias",
-        "text": "Kilebl&aring;vinge - Aricia nicias<br>(Hann)",
+        "text": "Kileblåvinge - Aricia nicias<br>(Hann)",
         "image": "images_lyc\\107_Aricia_nicias_m.png"
       },
       {
         "id": "Aricia_nicias_F",
         "parent": "Aricia_nicias",
-        "text": "Kilebl&aring;vinge - Aricia nicias<br>(Hunn)",
+        "text": "Kileblåvinge - Aricia nicias<br>(Hunn)",
         "image": "images_lyc\\107_Aricia_nicias_f.png"
       },
       {
         "id": "Cyaniris_semiargus",
-        "text": "Engbl&aring;vinge - Cyaniris semiargus",
+        "text": "Engblåvinge - Cyaniris semiargus",
         "image": "images_lyc\\114_Polyommatus_semiargus_m.png"
       },
       {
         "id": "Cyaniris_semiargus_M",
         "parent": "Cyaniris_semiargus",
-        "text": "Engbl&aring;vinge - Cyaniris semiargus<br>(Hann)",
+        "text": "Engblåvinge - Cyaniris semiargus<br>(Hann)",
         "image": "images_lyc\\114_Polyommatus_semiargus_m.png"
       },
       {
         "id": "Cyaniris_semiargus_F",
         "parent": "Cyaniris_semiargus",
-        "text": "Engbl&aring;vinge - Cyaniris semiargus<br>(Hunn)",
+        "text": "Engblåvinge - Cyaniris semiargus<br>(Hunn)",
         "image": "images_lyc\\114_Polyommatus_semiargus_f.png"
       },
       {
         "id": "Polyommatus_icarus",
-        "text": "Tiriltungebl&aring;vinge - Polyommatus icarus",
+        "text": "Tiriltungeblåvinge - Polyommatus icarus",
         "image": "images_lyc\\116_Polyommatus_icarus_m.png"
       },
       {
         "id": "Polyommatus_icarus_M",
         "parent": "Polyommatus_icarus",
-        "text": "Tiriltungebl&aring;vinge - Polyommatus icarus<br>(Hann)",
+        "text": "Tiriltungeblåvinge - Polyommatus icarus<br>(Hann)",
         "image": "images_lyc\\116_Polyommatus_icarus_m.png"
       },
       {
         "id": "Polyommatus_icarus_F",
         "parent": "Polyommatus_icarus",
-        "text": "Tiriltungebl&aring;vinge - Polyommatus icarus<br>(Hunn)",
+        "text": "Tiriltungeblåvinge - Polyommatus icarus<br>(Hunn)",
         "image": "images_lyc\\116_Polyommatus_icarus_f.png"
       },
       {
         "id": "Polyommatus_amandus",
-        "text": "S&oslash;lvbl&aring;vinge - Polyommatus amandus",
+        "text": "Sølvblåvinge - Polyommatus amandus",
         "image": "images_lyc\\115_Polyommatus_amandus_m.png"
       },
       {
         "id": "Polyommatus_amandus_M",
         "parent": "Polyommatus_amandus",
-        "text": "S&oslash;lvbl&aring;vinge - Polyommatus amandus<br>(Hann)",
+        "text": "Sølvblåvinge - Polyommatus amandus<br>(Hann)",
         "image": "images_lyc\\115_Polyommatus_amandus_m.png"
       },
       {
         "id": "Polyommatus_amandus_F",
         "parent": "Polyommatus_amandus",
-        "text": "S&oslash;lvbl&aring;vinge - Polyommatus amandus<br>(Hunn)",
+        "text": "Sølvblåvinge - Polyommatus amandus<br>(Hunn)",
         "image": "images_lyc\\115_Polyommatus_amandus_f.png"
       },
       {
         "id": "Agriades_orbitulus",
-        "text": "Fjellbl&aring;vinge - Plebejus orbitulus",
+        "text": "Fjellblåvinge - Plebejus orbitulus",
         "image": "images_lyc\\113_Albulina_orbitulus_m.png"
       },
       {
         "id": "Agriades_orbitulus_M",
         "parent": "Agriades_orbitulus",
-        "text": "Fjellbl&aring;vinge - Plebejus orbitulus<br>(Hann)",
+        "text": "Fjellblåvinge - Plebejus orbitulus<br>(Hann)",
         "image": "images_lyc\\113_Albulina_orbitulus_m.png"
       },
       {
         "id": "Agriades_orbitulus_F",
         "parent": "Agriades_orbitulus",
-        "text": "Fjellbl&aring;vinge - Plebejus orbitulus<br>(Hunn)",
+        "text": "Fjellblåvinge - Plebejus orbitulus<br>(Hunn)",
         "image": "images_lyc\\113_Albulina_orbitulus_f.png"
       },
       {
         "id": "Agriades_optilete",
-        "text": "Myrbl&aring;vinge - Plebejus optilete",
+        "text": "Myrblåvinge - Plebejus optilete",
         "image": "images_lyc\\112_Albulina_optilete_m.png"
       },
       {
         "id": "Agriades_optilete_M",
         "parent": "Agriades_optilete",
-        "text": "Myrbl&aring;vinge - Plebejus optilete<br>(Hann)",
+        "text": "Myrblåvinge - Plebejus optilete<br>(Hann)",
         "image": "images_lyc\\112_Albulina_optilete_m.png"
       },
       {
         "id": "Agriades_optilete_F",
         "parent": "Agriades_optilete",
-        "text": "Myrbl&aring;vinge - Plebejus optilete<br>(Hunn)",
+        "text": "Myrblåvinge - Plebejus optilete<br>(Hunn)",
         "image": "images_lyc\\112_Albulina_optilete_f.png"
       },
       {
         "id": "Agriades_aquilo",
-        "text": "Polarbl&aring;vinge - Plebejus aquilo",
+        "text": "Polarblåvinge - Plebejus aquilo",
         "image": "images_lyc\\111_Agriades_aquilo_m.png"
       },
       {
         "id": "Agriades_aquilo_M",
         "parent": "Agriades_aquilo",
-        "text": "Polarbl&aring;vinge - Plebejus aquilo<br>(Hann)",
+        "text": "Polarblåvinge - Plebejus aquilo<br>(Hann)",
         "image": "images_lyc\\111_Agriades_aquilo_m.png"
       },
       {
         "id": "Agriades_aquilo_F",
         "parent": "Agriades_aquilo",
-        "text": "Polarbl&aring;vinge - Plebejus aquilo<br>(Hunn)",
+        "text": "Polarblåvinge - Plebejus aquilo<br>(Hunn)",
         "image": "images_lyc\\111_Agriades_aquilo_f.png"
       },
       {
         "id": "Plebejus_argyrognomon",
-        "text": "Lakrismjeltbl&aring;vinge - Plebejus argyrognomon",
+        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon",
         "image": "images_lyc\\110_Plebejus_argyrognomon_m.png"
       },
       {
         "id": "Plebejus_argyrognomon_M",
         "parent": "Plebejus_argyrognomon",
-        "text": "Lakrismjeltbl&aring;vinge - Plebejus argyrognomon<br>(Hann)",
+        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon<br>(Hann)",
         "image": "images_lyc\\110_Plebejus_argyrognomon_m.png"
       },
       {
         "id": "Plebejus_argyrognomon_F",
         "parent": "Plebejus_argyrognomon",
-        "text": "Lakrismjeltbl&aring;vinge - Plebejus argyrognomon<br>(Hunn)",
+        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon<br>(Hunn)",
         "image": "images_lyc\\110_Plebejus_argyrognomon_f.png"
       },
       {
         "id": "Plebejus_argus",
-        "text": "Argusbl&aring;vinge - Plebejus argus",
+        "text": "Argusblåvinge - Plebejus argus",
         "image": "images_lyc\\108_Plebejus_argus_m.png"
       },
       {
         "id": "Plebejus_argus_M",
         "parent": "Plebejus_argus",
-        "text": "Argusbl&aring;vinge - Plebejus argus<br>(Hann)",
+        "text": "Argusblåvinge - Plebejus argus<br>(Hann)",
         "image": "images_lyc\\108_Plebejus_argus_m.png"
       },
       {
         "id": "Plebejus_argus_F",
         "parent": "Plebejus_argus",
-        "text": "Argusbl&aring;vinge - Plebejus argus<br>(Hunn)",
+        "text": "Argusblåvinge - Plebejus argus<br>(Hunn)",
         "image": "images_lyc\\108_Plebejus_argus_f.png"
       },
       {
         "id": "Plebejus_idas",
-        "text": "Idasbl&aring;vinge - Plebejus idas",
+        "text": "Idasblåvinge - Plebejus idas",
         "image": "images_lyc\\109_Plebejus_idas_m.png"
       },
       {
         "id": "Plebejus_idas_M",
         "parent": "Plebejus_idas",
-        "text": "Idasbl&aring;vinge - Plebejus idas<br>(Hann)",
+        "text": "Idasblåvinge - Plebejus idas<br>(Hann)",
         "image": "images_lyc\\109_Plebejus_idas_m.png"
       },
       {
         "id": "Plebejus_idas_F",
         "parent": "Plebejus_idas",
-        "text": "Idasbl&aring;vinge - Plebejus idas<br>(Hunn)",
+        "text": "Idasblåvinge - Plebejus idas<br>(Hunn)",
         "image": "images_lyc\\109_Plebejus_idas_f.png"
       },
       {
@@ -365,7 +365,7 @@
       },
       {
         "id": "Callophrys_rubi_N",
-        "text": "Gr&oslash;nnstjertvinge - Callophrys rubi",
+        "text": "Grønnstjertvinge - Callophrys rubi",
         "image": "images_lyc\\121_Callophrys_rubi_n.png"
       },
       {
@@ -392,19 +392,19 @@
       },
       {
         "id": "Thecla_betulae",
-        "text": "Sl&aring;petornstjertvinge - Thecla betulae",
+        "text": "Slåpetornstjertvinge - Thecla betulae",
         "image": "images_lyc\\123_Thecla_betulae_m.png"
       },
       {
         "id": "Thecla_betulae_M",
         "parent": "Thecla_betulae",
-        "text": "Sl&aring;petornstjertvinge - Thecla betulae<br>(Hann)",
+        "text": "Slåpetornstjertvinge - Thecla betulae<br>(Hann)",
         "image": "images_lyc\\123_Thecla_betulae_m.png"
       },
       {
         "id": "Thecla_betulae_F",
         "parent": "Thecla_betulae",
-        "text": "Sl&aring;petornstjertvinge - Thecla betulae<br>(Hunn)",
+        "text": "Slåpetornstjertvinge - Thecla betulae<br>(Hunn)",
         "image": "images_lyc\\123_Thecla_betulae_f.png"
       }
     ]
@@ -413,11 +413,11 @@
     "character": [
       {
         "id": "o1",
-        "text": "Vingeoversiden m/u bl&aring;farge"
+        "text": "Vingeoversiden m/u blåfarge"
       },
       {
         "id": "o2",
-        "text": "Vingeoversidens bl&aring;farge"
+        "text": "Vingeoversidens blåfarge"
       },
       {
         "id": "o3",
@@ -433,7 +433,7 @@
       },
       {
         "id": "o6",
-        "text": "Framvingeoversiden m/u m&oslash;rke pletter"
+        "text": "Framvingeoversiden m/u mørke pletter"
       },
       {
         "id": "o12",
@@ -445,7 +445,7 @@
       },
       {
         "id": "o8",
-        "text": "Vingeoversidens bl&aring;farge"
+        "text": "Vingeoversidens blåfarge"
       },
       {
         "id": "o9",
@@ -453,7 +453,7 @@
       },
       {
         "id": "o15",
-        "text": "Framvingeoversidens plettm&oslash;nster"
+        "text": "Framvingeoversidens plettmønster"
       },
       {
         "id": "o10",
@@ -465,15 +465,15 @@
       },
       {
         "id": "o13",
-        "text": "Framvingeoversiden m/u bl&aring;farge"
+        "text": "Framvingeoversiden m/u blåfarge"
       },
       {
         "id": "o14",
-        "text": "Framvingeoversidens plettm&oslash;nster"
+        "text": "Framvingeoversidens plettmønster"
       },
       {
         "id": "o16",
-        "text": "Framvingeoversidens ribbem&oslash;nster"
+        "text": "Framvingeoversidens ribbemønster"
       },
       {
         "id": "f1",
@@ -489,7 +489,7 @@
       },
       {
         "id": "u2",
-        "text": "Bakvingeundersiden m/u m&oslash;rke pletter"
+        "text": "Bakvingeundersiden m/u mørke pletter"
       },
       {
         "id": "u3",
@@ -497,7 +497,7 @@
       },
       {
         "id": "u4",
-        "text": "Bakvingeundersiden m/u hvite tverrb&aring;nd"
+        "text": "Bakvingeundersiden m/u hvite tverrbånd"
       },
       {
         "id": "u6",
@@ -529,7 +529,7 @@
       },
       {
         "id": "u13",
-        "text": "Framvingeundersidens plettm&oslash;nster"
+        "text": "Framvingeundersidens plettmønster"
       },
       {
         "id": "u14",
@@ -553,7 +553,7 @@
       },
       {
         "id": "u19",
-        "text": "Vingeundersidens pletter sm&aring;/store"
+        "text": "Vingeundersidens pletter små/store"
       },
       {
         "id": "u20",
@@ -565,7 +565,7 @@
       },
       {
         "id": "u22",
-        "text": "Bakvingeundersiden m/u &oslash;yeflekk"
+        "text": "Bakvingeundersiden m/u øyeflekk"
       },
       {
         "id": "u23",
@@ -573,7 +573,7 @@
       },
       {
         "id": "u24",
-        "text": "Vingeundersiden gr&oslash;nn/gr&aring;"
+        "text": "Vingeundersiden grønn/grå"
       },
       {
         "id": "u25",
@@ -609,7 +609,7 @@
       },
       {
         "id": "u33",
-        "text": "Vingeundersidens plettm&oslash;nster"
+        "text": "Vingeundersidens plettmønster"
       },
       {
         "id": "u34",
@@ -621,7 +621,7 @@
       },
       {
         "id": "u36",
-        "text": "Bakvingeundersidens m&oslash;rke kantpletter"
+        "text": "Bakvingeundersidens mørke kantpletter"
       }
     ]
   },
@@ -630,25 +630,25 @@
       {
         "id": "o1_state_a",
         "character": "o1",
-        "text": "Vingeoversiden med bl&aring; tegninger eller bl&aring; glans",
+        "text": "Vingeoversiden med blå tegninger eller blå glans",
         "image": "images_lyc\\o1a.png"
       },
       {
         "id": "o1_state_b",
         "character": "o1",
-        "text": "Vingeoversiden uten bl&aring; tegninger, i h&oslash;yden med litt bl&aring; pudring n&aelig;r roten",
+        "text": "Vingeoversiden uten blå tegninger, i høyden med litt blå pudring nær roten",
         "image": "images_lyc\\o1b.png"
       },
       {
         "id": "o2_state_a",
         "character": "o2",
-        "text": "Mer enn 50% av vingeoversiden bl&aring;",
+        "text": "Mer enn 50% av vingeoversiden blå",
         "image": "images_lyc\\o2a.png"
       },
       {
         "id": "o2_state_b",
         "character": "o2",
-        "text": "Mindre enn 50% av vingeoversiden bl&aring;",
+        "text": "Mindre enn 50% av vingeoversiden blå",
         "image": "images_lyc\\o2b.png"
       },
       {
@@ -684,13 +684,13 @@
       {
         "id": "o5_state_b",
         "character": "o5",
-        "text": "Framvingeoversiden ensfarvet m&oslash;rkebrun",
+        "text": "Framvingeoversiden ensfarvet mørkebrun",
         "image": "images_lyc\\o5b.png"
       },
       {
         "id": "o6_state_a",
         "character": "o6",
-        "text": "Framvingens overside med flere m&oslash;rke pletter",
+        "text": "Framvingens overside med flere mørke pletter",
         "image": "images_lyc\\o6a.png"
       },
       {
@@ -702,13 +702,13 @@
       {
         "id": "o12_state_a",
         "character": "o12",
-        "text": "Bakvingens overside brun eller fiolett med oransje kantb&aring;nd",
+        "text": "Bakvingens overside brun eller fiolett med oransje kantbånd",
         "image": "images_lyc\\o12a.png"
       },
       {
         "id": "o12_state_b",
         "character": "o12",
-        "text": "Bakvingens overside oransje p&aring; &oslash;vre del, fiolettglinsende p&aring; nedre del",
+        "text": "Bakvingens overside oransje på øvre del, fiolettglinsende på nedre del",
         "image": "images_lyc\\o12b.png"
       },
       {
@@ -726,19 +726,19 @@
       {
         "id": "o8_state_a",
         "character": "o8",
-        "text": "Oversidens bl&aring;farve dyp fiolett",
+        "text": "Oversidens blåfarve dyp fiolett",
         "image": "images_lyc\\o8a.png"
       },
       {
         "id": "o8_state_b",
         "character": "o8",
-        "text": "Oversidens bl&aring;farve himmelbl&aring;, turkis eller gr&aring;bl&aring;",
+        "text": "Oversidens blåfarve himmelblå, turkis eller gråblå",
         "image": "images_lyc\\o8b.png"
       },
       {
         "id": "o9_state_a",
         "character": "o9",
-        "text": "Oversiden lys gr&aring;bl&aring; eller brungr&aring;. Framvingen tilspisset, med svart midtplett og vanligvis flere lyse flekker. Nordlig art",
+        "text": "Oversiden lys gråblå eller brungrå. Framvingen tilspisset, med svart midtplett og vanligvis flere lyse flekker. Nordlig art",
         "image": "images_lyc\\o9a.png"
       },
       {
@@ -750,19 +750,19 @@
       {
         "id": "o15_state_a",
         "character": "o15",
-        "text": "Framvingens overside med flere m&oslash;rke pletter midt p&aring; vingen",
+        "text": "Framvingens overside med flere mørke pletter midt på vingen",
         "image": "images_lyc\\o15a.png"
       },
       {
         "id": "o15_state_b",
         "character": "o15",
-        "text": "Framvingens overside med m&oslash;rke pletter kun langs vingekanten",
+        "text": "Framvingens overside med mørke pletter kun langs vingekanten",
         "image": "images_lyc\\o15b.png"
       },
       {
         "id": "o10_state_a",
         "character": "o10",
-        "text": "Oversiden brunsvart med utbredt s&oslash;lvbl&aring; pudring. Sv&aelig;rt liten art",
+        "text": "Oversiden brunsvart med utbredt sølvblå pudring. Svært liten art",
         "image": "images_lyc\\o10a.png"
       },
       {
@@ -774,7 +774,7 @@
       {
         "id": "o11_state_a",
         "character": "o11",
-        "text": "Oversiden turkis med bred, m&oslash;rkebrun vingekant som er jamnbred p&aring; fram- og bakvingen",
+        "text": "Oversiden turkis med bred, mørkebrun vingekant som er jamnbred på fram- og bakvingen",
         "image": "images_lyc\\o11a.png"
       },
       {
@@ -786,25 +786,25 @@
       {
         "id": "o13_state_a",
         "character": "o13",
-        "text": "Framvingens overside uten bl&aring; tegninger",
+        "text": "Framvingens overside uten blå tegninger",
         "image": "images_lyc\\o13a.png"
       },
       {
         "id": "o13_state_b",
         "character": "o13",
-        "text": "Framvingens overside med bl&aring; flekker eller bl&aring; glans",
+        "text": "Framvingens overside med blå flekker eller blå glans",
         "image": "images_lyc\\o13b.png"
       },
       {
         "id": "o14_state_a",
         "character": "o14",
-        "text": "Framvingen med &eacute;n rad med m&oslash;rke pletter innenfor ytterkanten",
+        "text": "Framvingen med &eacute;n rad med mørke pletter innenfor ytterkanten",
         "image": "images_lyc\\o14a.png"
       },
       {
         "id": "o14_state_b",
         "character": "o14",
-        "text": "Framvingen med to rader med m&oslash;rke pletter innenfor ytterkanten",
+        "text": "Framvingen med to rader med mørke pletter innenfor ytterkanten",
         "image": "images_lyc\\o14b.png"
       },
       {
@@ -822,19 +822,19 @@
       {
         "id": "f1_state_a",
         "character": "f1",
-        "text": "Bakhj&oslash;rnet av bakvingen dratt ut i en liten tapp",
+        "text": "Bakhjørnet av bakvingen dratt ut i en liten tapp",
         "image": "images_lyc\\f1a.png"
       },
       {
         "id": "f1_state_b",
         "character": "f1",
-        "text": "Bakhj&oslash;rnet av bakvingen avrundet eller svakt vinklet",
+        "text": "Bakhjørnet av bakvingen avrundet eller svakt vinklet",
         "image": "images_lyc\\f1b.png"
       },
       {
         "id": "f2_state_a",
         "character": "f2",
-        "text": "Bakvingen med en tydelig stjert n&aelig;r bakhj&oslash;rnet",
+        "text": "Bakvingen med en tydelig stjert nær bakhjørnet",
         "image": "images_lyc\\f2a.png"
       },
       {
@@ -864,37 +864,37 @@
       {
         "id": "u2_state_b",
         "character": "u2",
-        "text": "Bakvingens underside uten eller kun med f&aring; svarte pletter",
+        "text": "Bakvingens underside uten eller kun med få svarte pletter",
         "image": "images_lyc\\u2b.png"
       },
       {
         "id": "u3_state_a",
         "character": "u3",
-        "text": "Bakvingeundersidens oransje flekker avgrenset innad og utad av m&oslash;rke pletter eller streker",
+        "text": "Bakvingeundersidens oransje flekker avgrenset innad og utad av mørke pletter eller streker",
         "image": "images_lyc\\u3a.png"
       },
       {
         "id": "u3_state_b",
         "character": "u3",
-        "text": "Bakvingeundersidens oransje flekker ikke avgrenset av m&oslash;rke tegninger",
+        "text": "Bakvingeundersidens oransje flekker ikke avgrenset av mørke tegninger",
         "image": "images_lyc\\u3b.png"
       },
       {
         "id": "u4_state_a",
         "character": "u4",
-        "text": "Bakvingeundersiden med ett eller to hvite tverrb&aring;nd",
+        "text": "Bakvingeundersiden med ett eller to hvite tverrbånd",
         "image": "images_lyc\\u4a.png"
       },
       {
         "id": "u4_state_b",
         "character": "u4",
-        "text": "Bakvingeundersiden uten hvite tverrb&aring;nd",
+        "text": "Bakvingeundersiden uten hvite tverrbånd",
         "image": "images_lyc\\u4b.png"
       },
       {
         "id": "u6_state_a",
         "character": "u6",
-        "text": "Bakvingens underside med sm&aring; hvite prikker i ytre del",
+        "text": "Bakvingens underside med små hvite prikker i ytre del",
         "image": "images_lyc\\u6a.png"
       },
       {
@@ -906,19 +906,19 @@
       {
         "id": "u7_state_a",
         "character": "u7",
-        "text": "Bakvingens underside gr&aring;brun med  svartkantet oransje kantb&aring;nd",
+        "text": "Bakvingens underside gråbrun med  svartkantet oransje kantbånd",
         "image": "images_lyc\\u7a.png"
       },
       {
         "id": "u7_state_b",
         "character": "u7",
-        "text": "Bakvingens underside gr&aring; eller okergul uten svartkantet kantb&aring;nd",
+        "text": "Bakvingens underside grå eller okergul uten svartkantet kantbånd",
         "image": "images_lyc\\u7b.png"
       },
       {
         "id": "u8_state_a",
         "character": "u8",
-        "text": "Bakvingens underside gr&aring; med en liten oransje &oslash;yeflekk",
+        "text": "Bakvingens underside grå med en liten oransje øyeflekk",
         "image": "images_lyc\\u8a.png"
       },
       {
@@ -930,7 +930,7 @@
       {
         "id": "u9_state_a",
         "character": "u9",
-        "text": "Bakvingeundersidens oransje flekker danner et b&aring;nd langs hele ytterkanten av vingen",
+        "text": "Bakvingeundersidens oransje flekker danner et bånd langs hele ytterkanten av vingen",
         "image": "images_lyc\\u9a.png"
       },
       {
@@ -942,13 +942,13 @@
       {
         "id": "u10_state_a",
         "character": "u10",
-        "text": "Bakvingeundersiden s&oslash;lvhvit med store svarte flekker. Vingefrynsene alternerende svarte og hvite",
+        "text": "Bakvingeundersiden sølvhvit med store svarte flekker. Vingefrynsene alternerende svarte og hvite",
         "image": "images_lyc\\u10a.png"
       },
       {
         "id": "u10_state_b",
         "character": "u10",
-        "text": "Bakvingeundersidens flekker mindre. Vingefrynsene overveiende hvite/gr&aring;",
+        "text": "Bakvingeundersidens flekker mindre. Vingefrynsene overveiende hvite/grå",
         "image": "images_lyc\\u10b.png"
       },
       {
@@ -966,7 +966,7 @@
       {
         "id": "u12_state_a",
         "character": "u12",
-        "text": "Bakvingens hvite kile starter mellom tredje og fjerde oransje kantflekk og ender midt p&aring; midtpletten",
+        "text": "Bakvingens hvite kile starter mellom tredje og fjerde oransje kantflekk og ender midt på midtpletten",
         "image": "images_lyc\\u12a.png"
       },
       {
@@ -990,67 +990,67 @@
       {
         "id": "u14_state_a",
         "character": "u14",
-        "text": "Framvingens underside oransje eller oransjegr&aring;. Bakvingens underside gr&aring;brun",
+        "text": "Framvingens underside oransje eller oransjegrå. Bakvingens underside gråbrun",
         "image": "images_lyc\\u14a.png"
       },
       {
         "id": "u14_state_b",
         "character": "u14",
-        "text": "Fram- og bakvingeundersiden i samme gr&aring; til gr&aring;brune fargenyanse",
+        "text": "Fram- og bakvingeundersiden i samme grå til gråbrune fargenyanse",
         "image": "images_lyc\\u14b.png"
       },
       {
         "id": "u15_state_a",
         "character": "u15",
-        "text": "Bakvingeundersidens oransje kantb&aring;nd avgrenset innad av store, svarte, tydelig hvitkantede trekanter",
+        "text": "Bakvingeundersidens oransje kantbånd avgrenset innad av store, svarte, tydelig hvitkantede trekanter",
         "image": "images_lyc\\u15a.png"
       },
       {
         "id": "u15_state_b",
         "character": "u15",
-        "text": "Bakvingeundersidens oransje kantb&aring;nd avgrenset innad av sm&aring; svarte prikker uten eller med ubetydelige hvite tegninger",
+        "text": "Bakvingeundersidens oransje kantbånd avgrenset innad av små svarte prikker uten eller med ubetydelige hvite tegninger",
         "image": "images_lyc\\u15b.png"
       },
       {
         "id": "u16_state_a",
         "character": "u16",
-        "text": "Bakvingeundersidens oransje kantb&aring;nd kraftig. Utad avgrenset av store svarte flekker med s&oslash;lvbl&aring; kjerne",
+        "text": "Bakvingeundersidens oransje kantbånd kraftig. Utad avgrenset av store svarte flekker med sølvblå kjerne",
         "image": "images_lyc\\u16a.png"
       },
       {
         "id": "u16_state_b",
         "character": "u16",
-        "text": "Bakvingeundersidens oransje kantb&aring;nd svakt utviklet eller manglende. Utad avgrenset av sm&aring;, ofte diffuse m&oslash;rke flekker uten bl&aring;tt",
+        "text": "Bakvingeundersidens oransje kantbånd svakt utviklet eller manglende. Utad avgrenset av små, ofte diffuse mørke flekker uten blått",
         "image": "images_lyc\\u16b.png"
       },
       {
         "id": "u17_state_a",
         "character": "u17",
-        "text": "Undersiden bl&aring;lig s&oslash;lvgr&aring;",
+        "text": "Undersiden blålig sølvgrå",
         "image": "images_lyc\\u17a.png"
       },
       {
         "id": "u17_state_b",
         "character": "u17",
-        "text": "Undersiden lys til m&oslash;rk beigegr&aring;",
+        "text": "Undersiden lys til mørk beigegrå",
         "image": "images_lyc\\u17b.png"
       },
       {
         "id": "u18_state_a",
         "character": "u18",
-        "text": "Undersiden lys beigegr&aring;",
+        "text": "Undersiden lys beigegrå",
         "image": "images_lyc\\u18a.png"
       },
       {
         "id": "u18_state_b",
         "character": "u18",
-        "text": "Undersiden m&oslash;rk beigegr&aring;",
+        "text": "Undersiden mørk beigegrå",
         "image": "images_lyc\\u18b.png"
       },
       {
         "id": "u19_state_a",
         "character": "u19",
-        "text": "Undersidens svarte flekker sm&aring;",
+        "text": "Undersidens svarte flekker små",
         "image": "images_lyc\\u19a.png"
       },
       {
@@ -1074,31 +1074,31 @@
       {
         "id": "u21_state_a",
         "character": "u21",
-        "text": "Frambeinet med en liten brun krok ytterst p&aring; skinneleggen (lupe)",
+        "text": "Frambeinet med en liten brun krok ytterst på skinneleggen (lupe)",
         "image": "images_lyc\\u21a.png"
       },
       {
         "id": "u21_state_b",
         "character": "u21",
-        "text": "Frambeinet uten krok p&aring; skinnebeinet (lupe)",
+        "text": "Frambeinet uten krok på skinnebeinet (lupe)",
         "image": "images_lyc\\u21b.png"
       },
       {
         "id": "u22_state_a",
         "character": "u22",
-        "text": "Bakvingens underside med en &quot;&oslash;yeflekk&quot; best&aring;ende av en ekstra stor svart kantplett med s&oslash;lvbl&aring; kjerne, og innenfor denne en stor oransje flekk",
+        "text": "Bakvingens underside med en &quot;øyeflekk&quot; bestående av en ekstra stor svart kantplett med sølvblå kjerne, og innenfor denne en stor oransje flekk",
         "image": "images_lyc\\u22a.png"
       },
       {
         "id": "u22_state_b",
         "character": "u22",
-        "text": "Bakvingens underside uten &quot;&oslash;yeflekk&quot;",
+        "text": "Bakvingens underside uten &quot;øyeflekk&quot;",
         "image": "images_lyc\\u22b.png"
       },
       {
         "id": "u23_state_a",
         "character": "u23",
-        "text": "Bakvingens underside gr&aring;brun med store, til dels sammenflytende hvite felter",
+        "text": "Bakvingens underside gråbrun med store, til dels sammenflytende hvite felter",
         "image": "images_lyc\\u23a.png"
       },
       {
@@ -1110,13 +1110,13 @@
       {
         "id": "u24_state_a",
         "character": "u24",
-        "text": "Undersidens grunnfarge gr&oslash;nn",
+        "text": "Undersidens grunnfarge grønn",
         "image": "images_lyc\\u24a.png"
       },
       {
         "id": "u24_state_b",
         "character": "u24",
-        "text": "Undersidens grunnfarge gr&aring;",
+        "text": "Undersidens grunnfarge grå",
         "image": "images_lyc\\u24b.png"
       },
       {
@@ -1128,7 +1128,7 @@
       {
         "id": "u25_state_b",
         "character": "u25",
-        "text": "Bakvingeundersiden uten hvitt eller kun med sm&aring; hvite prikker eller ringer",
+        "text": "Bakvingeundersiden uten hvitt eller kun med små hvite prikker eller ringer",
         "image": "images_lyc\\u25b.png"
       },
       {
@@ -1152,19 +1152,19 @@
       {
         "id": "u27_state_b",
         "character": "u27",
-        "text": "Bakvingens underside med hvite, gr&aring; og/eller oransje tegninger langs ytterkanten. Nordlig art",
+        "text": "Bakvingens underside med hvite, grå og/eller oransje tegninger langs ytterkanten. Nordlig art",
         "image": "images_lyc\\u27b.png"
       },
       {
         "id": "u28_state_a",
         "character": "u28",
-        "text": "Undersiden s&oslash;lvhvit med store svarte pletter uten hvit ring. Framvingens pletter er strukket ut diagonalt",
+        "text": "Undersiden sølvhvit med store svarte pletter uten hvit ring. Framvingens pletter er strukket ut diagonalt",
         "image": "images_lyc\\u28a.png"
       },
       {
         "id": "u28_state_b",
         "character": "u28",
-        "text": "Undersiden overveiende gr&aring;. De svarte plettene har vanligvis hvit ring",
+        "text": "Undersiden overveiende grå. De svarte plettene har vanligvis hvit ring",
         "image": "images_lyc\\u28b.png"
       },
       {
@@ -1176,19 +1176,19 @@
       {
         "id": "u29_state_b",
         "character": "u29",
-        "text": "Bakvingeundersiden med m&oslash;rke og/eller lyse flekker langs ytterkanten",
+        "text": "Bakvingeundersiden med mørke og/eller lyse flekker langs ytterkanten",
         "image": "images_lyc\\u29b.png"
       },
       {
         "id": "u30_state_a",
         "character": "u30",
-        "text": "Bakvingeundersiden med et stort, turkis rotfelt. Framvingen med en rad runde svarte pletter som tiltar i st&oslash;rrelse mot bakkanten",
+        "text": "Bakvingeundersiden med et stort, turkis rotfelt. Framvingen med en rad runde svarte pletter som tiltar i størrelse mot bakkanten",
         "image": "images_lyc\\u30a.png"
       },
       {
         "id": "u30_state_b",
         "character": "u30",
-        "text": "Bakvingeundersidens rotfelt med mindre turkis best&oslash;vning. Framvingens pletter sm&aring; og jevnstore, eller manglende",
+        "text": "Bakvingeundersidens rotfelt med mindre turkis bestøvning. Framvingens pletter små og jevnstore, eller manglende",
         "image": "images_lyc\\u30b.png"
       },
       {
@@ -1206,7 +1206,7 @@
       {
         "id": "u32_state_a",
         "character": "u32",
-        "text": "Sv&aelig;rt liten art: 18-25 mm",
+        "text": "Svært liten art: 18-25 mm",
         "image": "images_lyc\\u32a.png"
       },
       {
@@ -1218,13 +1218,13 @@
       {
         "id": "u33_state_a",
         "character": "u33",
-        "text": "Undersiden med tallrike store svarte pletter. Framvingen med en svart plett i rotfeltet. Bakvingen med en dobbel rad tydelige svarte pletter langs ytterkanten. Sv&aelig;rt stor art: 33-42 mm",
+        "text": "Undersiden med tallrike store svarte pletter. Framvingen med en svart plett i rotfeltet. Bakvingen med en dobbel rad tydelige svarte pletter langs ytterkanten. Svært stor art: 33-42 mm",
         "image": "images_lyc\\u33a.png"
       },
       {
         "id": "u33_state_b",
         "character": "u33",
-        "text": "Undersidens svarte pletter mindre og f&aelig;rre",
+        "text": "Undersidens svarte pletter mindre og færre",
         "image": "images_lyc\\u33b.png"
       },
       {
@@ -1242,7 +1242,7 @@
       {
         "id": "u35_state_a",
         "character": "u35",
-        "text": "Bakvingeundersidens svarte pletter omgitt av sv&aelig;rt brede, til dels sammenflytende hvite ringer. Nordlig art",
+        "text": "Bakvingeundersidens svarte pletter omgitt av svært brede, til dels sammenflytende hvite ringer. Nordlig art",
         "image": "images_lyc\\u35a.png"
       },
       {
@@ -1254,13 +1254,13 @@
       {
         "id": "u36_state_a",
         "character": "u36",
-        "text": "Bakvingeundersiden med en dobbel rad m&oslash;rke flekker langs kanten, hvorav de indre er tydelig vinkelformede",
+        "text": "Bakvingeundersiden med en dobbel rad mørke flekker langs kanten, hvorav de indre er tydelig vinkelformede",
         "image": "images_lyc\\u36a.png"
       },
       {
         "id": "u36_state_b",
         "character": "u36",
-        "text": "Bakvingeundersiden med en dobbel rad m&oslash;rke flekker langs kanten, hvorav de indre er runde eller avlange, ikke vinklet",
+        "text": "Bakvingeundersiden med en dobbel rad mørke flekker langs kanten, hvorav de indre er runde eller avlange, ikke vinklet",
         "image": "images_lyc\\u36b.png"
       }
     ]
