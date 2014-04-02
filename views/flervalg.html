@@ -1,8 +1,14 @@
 <section>
-	<div data-bind="foreach: characters">
-		<p data-bind="text: text"></p>
+	<div style="display: inline-block; width: 50%;" data-bind="foreach: characters">
+		<div style="margin-bottom:10px;  overflow:hidden;">
+			<h5 data-bind="text: text"></h6>
+			<div data-bind="foreach: states">
+				<div style="height:50px; width: 50px; background:red; overflow:hidden; display: inline-block;" data-bind="text: text"></div>
+			</div>
+		</div>
+		<hr/>
 	</div>
-	<div data-bind="foreach: items">
+	<div style="display: inline-block; width: 45%; vertical-align: top;" data-bind="foreach: items">
 		<!-- <img width="16px" height="16px" data-bind="attr:{src: Image}" /> -->
 		<p data-bind="text: text"></p>
 	</div>
