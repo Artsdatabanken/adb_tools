@@ -628,637 +628,637 @@
   "states": {
     "state": [
       {
-        "id": "o1_state_a",
+        "id": "o1_a",
         "character": "o1",
         "text": "Vingeoversiden med blå tegninger eller blå glans",
         "image": "images_lyc\\o1a.png"
       },
       {
-        "id": "o1_state_b",
+        "id": "o1_b",
         "character": "o1",
         "text": "Vingeoversiden uten blå tegninger, i høyden med litt blå pudring nær roten",
         "image": "images_lyc\\o1b.png"
       },
       {
-        "id": "o2_state_a",
+        "id": "o2_a",
         "character": "o2",
         "text": "Mer enn 50% av vingeoversiden blå",
         "image": "images_lyc\\o2a.png"
       },
       {
-        "id": "o2_state_b",
+        "id": "o2_b",
         "character": "o2",
         "text": "Mindre enn 50% av vingeoversiden blå",
         "image": "images_lyc\\o2b.png"
       },
       {
-        "id": "o3_state_a",
+        "id": "o3_a",
         "character": "o3",
         "text": "Vingeoversiden med oransje tegninger",
         "image": "images_lyc\\o3a.png"
       },
       {
-        "id": "o3_state_b",
+        "id": "o3_b",
         "character": "o3",
         "text": "Vingeoversiden uten oransje tegninger",
         "image": "images_lyc\\o3b.png"
       },
       {
-        "id": "o4_state_a",
+        "id": "o4_a",
         "character": "o4",
         "text": "Vingeoversidens oransje tegninger begrenset til &eacute;n eller flere flekker langs vingekanten",
         "image": "images_lyc\\o4a.png"
       },
       {
-        "id": "o4_state_b",
+        "id": "o4_b",
         "character": "o4",
         "text": "Vingeoversidens oransje tegninger mer utbredt.",
         "image": "images_lyc\\o4b.png"
       },
       {
-        "id": "o5_state_a",
+        "id": "o5_a",
         "character": "o5",
         "text": "Framvingeoversiden med et lysere midtfelt",
         "image": "images_lyc\\o5a.png"
       },
       {
-        "id": "o5_state_b",
+        "id": "o5_b",
         "character": "o5",
         "text": "Framvingeoversiden ensfarvet mørkebrun",
         "image": "images_lyc\\o5b.png"
       },
       {
-        "id": "o6_state_a",
+        "id": "o6_a",
         "character": "o6",
         "text": "Framvingens overside med flere mørke pletter",
         "image": "images_lyc\\o6a.png"
       },
       {
-        "id": "o6_state_b",
+        "id": "o6_b",
         "character": "o6",
         "text": "Framvingens overside uten pletter, eller kun med midtplett",
         "image": "images_lyc\\o6b.png"
       },
       {
-        "id": "o12_state_a",
+        "id": "o12_a",
         "character": "o12",
         "text": "Bakvingens overside brun eller fiolett med oransje kantbånd",
         "image": "images_lyc\\o12a.png"
       },
       {
-        "id": "o12_state_b",
+        "id": "o12_b",
         "character": "o12",
         "text": "Bakvingens overside oransje på øvre del, fiolettglinsende på nedre del",
         "image": "images_lyc\\o12b.png"
       },
       {
-        "id": "o7_state_a",
+        "id": "o7_a",
         "character": "o7",
         "text": "Framvingens vingefrynser med alternerende svarte og hvite flekker",
         "image": "images_lyc\\o7a.png"
       },
       {
-        "id": "o7_state_b",
+        "id": "o7_b",
         "character": "o7",
         "text": "Begge vingepar med ensfarvede vingefrynser",
         "image": "images_lyc\\o7b.png"
       },
       {
-        "id": "o8_state_a",
+        "id": "o8_a",
         "character": "o8",
         "text": "Oversidens blåfarve dyp fiolett",
         "image": "images_lyc\\o8a.png"
       },
       {
-        "id": "o8_state_b",
+        "id": "o8_b",
         "character": "o8",
         "text": "Oversidens blåfarve himmelblå, turkis eller gråblå",
         "image": "images_lyc\\o8b.png"
       },
       {
-        "id": "o9_state_a",
+        "id": "o9_a",
         "character": "o9",
         "text": "Oversiden lys gråblå eller brungrå. Framvingen tilspisset, med svart midtplett og vanligvis flere lyse flekker. Nordlig art",
         "image": "images_lyc\\o9a.png"
       },
       {
-        "id": "o9_state_b",
+        "id": "o9_b",
         "character": "o9",
         "text": "Oversiden annerledes",
         "image": "images_lyc\\o9b.png"
       },
       {
-        "id": "o15_state_a",
+        "id": "o15_a",
         "character": "o15",
         "text": "Framvingens overside med flere mørke pletter midt på vingen",
         "image": "images_lyc\\o15a.png"
       },
       {
-        "id": "o15_state_b",
+        "id": "o15_b",
         "character": "o15",
         "text": "Framvingens overside med mørke pletter kun langs vingekanten",
         "image": "images_lyc\\o15b.png"
       },
       {
-        "id": "o10_state_a",
+        "id": "o10_a",
         "character": "o10",
         "text": "Oversiden brunsvart med utbredt sølvblå pudring. Svært liten art",
         "image": "images_lyc\\o10a.png"
       },
       {
-        "id": "o10_state_b",
+        "id": "o10_b",
         "character": "o10",
         "text": "Oversiden annerledes",
         "image": "images_lyc\\o10b.png"
       },
       {
-        "id": "o11_state_a",
+        "id": "o11_a",
         "character": "o11",
         "text": "Oversiden turkis med bred, mørkebrun vingekant som er jamnbred på fram- og bakvingen",
         "image": "images_lyc\\o11a.png"
       },
       {
-        "id": "o11_state_b",
+        "id": "o11_b",
         "character": "o11",
         "text": "Oversiden ikke turkis, eller vingekanten smalere",
         "image": "images_lyc\\o11b.png"
       },
       {
-        "id": "o13_state_a",
+        "id": "o13_a",
         "character": "o13",
         "text": "Framvingens overside uten blå tegninger",
         "image": "images_lyc\\o13a.png"
       },
       {
-        "id": "o13_state_b",
+        "id": "o13_b",
         "character": "o13",
         "text": "Framvingens overside med blå flekker eller blå glans",
         "image": "images_lyc\\o13b.png"
       },
       {
-        "id": "o14_state_a",
+        "id": "o14_a",
         "character": "o14",
         "text": "Framvingen med &eacute;n rad med mørke pletter innenfor ytterkanten",
         "image": "images_lyc\\o14a.png"
       },
       {
-        "id": "o14_state_b",
+        "id": "o14_b",
         "character": "o14",
         "text": "Framvingen med to rader med mørke pletter innenfor ytterkanten",
         "image": "images_lyc\\o14b.png"
       },
       {
-        "id": "o16_state_a",
+        "id": "o16_a",
         "character": "o16",
         "text": "Framvingens overside med skarpt avtegnede svarte eller brune ribber, eller oversiden overveiende brun",
         "image": "images_lyc\\o16a.png"
       },
       {
-        "id": "o16_state_b",
+        "id": "o16_b",
         "character": "o16",
         "text": "Framvingeoversidens ribber overveiende oransje, unntatt ved vingekanten",
         "image": "images_lyc\\o16b.png"
       },
       {
-        "id": "f1_state_a",
+        "id": "f1_a",
         "character": "f1",
         "text": "Bakhjørnet av bakvingen dratt ut i en liten tapp",
         "image": "images_lyc\\f1a.png"
       },
       {
-        "id": "f1_state_b",
+        "id": "f1_b",
         "character": "f1",
         "text": "Bakhjørnet av bakvingen avrundet eller svakt vinklet",
         "image": "images_lyc\\f1b.png"
       },
       {
-        "id": "f2_state_a",
+        "id": "f2_a",
         "character": "f2",
         "text": "Bakvingen med en tydelig stjert nær bakhjørnet",
         "image": "images_lyc\\f2a.png"
       },
       {
-        "id": "f2_state_b",
+        "id": "f2_b",
         "character": "f2",
         "text": "Bakvingen uten stjert",
         "image": "images_lyc\\f2b.png"
       },
       {
-        "id": "u1_state_a",
+        "id": "u1_a",
         "character": "u1",
         "text": "Undersiden med oransje tegninger",
         "image": "images_lyc\\u1a.png"
       },
       {
-        "id": "u1_state_b",
+        "id": "u1_b",
         "character": "u1",
         "text": "Undersiden uten oransje tegninger",
         "image": "images_lyc\\u1b.png"
       },
       {
-        "id": "u2_state_a",
+        "id": "u2_a",
         "character": "u2",
         "text": "Bakvingens underside med tallrike svarte pletter",
         "image": "images_lyc\\u2a.png"
       },
       {
-        "id": "u2_state_b",
+        "id": "u2_b",
         "character": "u2",
         "text": "Bakvingens underside uten eller kun med få svarte pletter",
         "image": "images_lyc\\u2b.png"
       },
       {
-        "id": "u3_state_a",
+        "id": "u3_a",
         "character": "u3",
         "text": "Bakvingeundersidens oransje flekker avgrenset innad og utad av mørke pletter eller streker",
         "image": "images_lyc\\u3a.png"
       },
       {
-        "id": "u3_state_b",
+        "id": "u3_b",
         "character": "u3",
         "text": "Bakvingeundersidens oransje flekker ikke avgrenset av mørke tegninger",
         "image": "images_lyc\\u3b.png"
       },
       {
-        "id": "u4_state_a",
+        "id": "u4_a",
         "character": "u4",
         "text": "Bakvingeundersiden med ett eller to hvite tverrbånd",
         "image": "images_lyc\\u4a.png"
       },
       {
-        "id": "u4_state_b",
+        "id": "u4_b",
         "character": "u4",
         "text": "Bakvingeundersiden uten hvite tverrbånd",
         "image": "images_lyc\\u4b.png"
       },
       {
-        "id": "u6_state_a",
+        "id": "u6_a",
         "character": "u6",
         "text": "Bakvingens underside med små hvite prikker i ytre del",
         "image": "images_lyc\\u6a.png"
       },
       {
-        "id": "u6_state_b",
+        "id": "u6_b",
         "character": "u6",
         "text": "Bakvingens underside uten hvite prikker",
         "image": "images_lyc\\u6b.png"
       },
       {
-        "id": "u7_state_a",
+        "id": "u7_a",
         "character": "u7",
         "text": "Bakvingens underside gråbrun med  svartkantet oransje kantbånd",
         "image": "images_lyc\\u7a.png"
       },
       {
-        "id": "u7_state_b",
+        "id": "u7_b",
         "character": "u7",
         "text": "Bakvingens underside grå eller okergul uten svartkantet kantbånd",
         "image": "images_lyc\\u7b.png"
       },
       {
-        "id": "u8_state_a",
+        "id": "u8_a",
         "character": "u8",
         "text": "Bakvingens underside grå med en liten oransje øyeflekk",
         "image": "images_lyc\\u8a.png"
       },
       {
-        "id": "u8_state_b",
+        "id": "u8_b",
         "character": "u8",
         "text": "Bakvingens underside okergul",
         "image": "images_lyc\\u8b.png"
       },
       {
-        "id": "u9_state_a",
+        "id": "u9_a",
         "character": "u9",
         "text": "Bakvingeundersidens oransje flekker danner et bånd langs hele ytterkanten av vingen",
         "image": "images_lyc\\u9a.png"
       },
       {
-        "id": "u9_state_b",
+        "id": "u9_b",
         "character": "u9",
         "text": "Bakvingeundersidens oransje flekker begrenset til nedre del av vingen",
         "image": "images_lyc\\u9b.png"
       },
       {
-        "id": "u10_state_a",
+        "id": "u10_a",
         "character": "u10",
         "text": "Bakvingeundersiden sølvhvit med store svarte flekker. Vingefrynsene alternerende svarte og hvite",
         "image": "images_lyc\\u10a.png"
       },
       {
-        "id": "u10_state_b",
+        "id": "u10_b",
         "character": "u10",
         "text": "Bakvingeundersidens flekker mindre. Vingefrynsene overveiende hvite/grå",
         "image": "images_lyc\\u10b.png"
       },
       {
-        "id": "u11_state_a",
+        "id": "u11_a",
         "character": "u11",
         "text": "Bakvingeundersiden med en hvit kile fra ytterkanten inn mot midten",
         "image": "images_lyc\\u11a.png"
       },
       {
-        "id": "u11_state_b",
+        "id": "u11_b",
         "character": "u11",
         "text": "Bakvingeundersiden uten hvit kiletegning",
         "image": "images_lyc\\u11b.png"
       },
       {
-        "id": "u12_state_a",
+        "id": "u12_a",
         "character": "u12",
         "text": "Bakvingens hvite kile starter mellom tredje og fjerde oransje kantflekk og ender midt på midtpletten",
         "image": "images_lyc\\u12a.png"
       },
       {
-        "id": "u12_state_b",
+        "id": "u12_b",
         "character": "u12",
         "text": "Bakvingens hvite kile starter mellom fjerde og femte oransje kantflekk og ender ved midtplettens nedre kant",
         "image": "images_lyc\\u12b.png"
       },
       {
-        "id": "u13_state_a",
+        "id": "u13_a",
         "character": "u13",
         "text": "Framvingens underside med minst &eacute;n svart plett i rotfeltet",
         "image": "images_lyc\\u13a.png"
       },
       {
-        "id": "u13_state_b",
+        "id": "u13_b",
         "character": "u13",
         "text": "Framvingens underside uten svarte pletter i rotfeltet",
         "image": "images_lyc\\u13b.png"
       },
       {
-        "id": "u14_state_a",
+        "id": "u14_a",
         "character": "u14",
         "text": "Framvingens underside oransje eller oransjegrå. Bakvingens underside gråbrun",
         "image": "images_lyc\\u14a.png"
       },
       {
-        "id": "u14_state_b",
+        "id": "u14_b",
         "character": "u14",
         "text": "Fram- og bakvingeundersiden i samme grå til gråbrune fargenyanse",
         "image": "images_lyc\\u14b.png"
       },
       {
-        "id": "u15_state_a",
+        "id": "u15_a",
         "character": "u15",
         "text": "Bakvingeundersidens oransje kantbånd avgrenset innad av store, svarte, tydelig hvitkantede trekanter",
         "image": "images_lyc\\u15a.png"
       },
       {
-        "id": "u15_state_b",
+        "id": "u15_b",
         "character": "u15",
         "text": "Bakvingeundersidens oransje kantbånd avgrenset innad av små svarte prikker uten eller med ubetydelige hvite tegninger",
         "image": "images_lyc\\u15b.png"
       },
       {
-        "id": "u16_state_a",
+        "id": "u16_a",
         "character": "u16",
         "text": "Bakvingeundersidens oransje kantbånd kraftig. Utad avgrenset av store svarte flekker med sølvblå kjerne",
         "image": "images_lyc\\u16a.png"
       },
       {
-        "id": "u16_state_b",
+        "id": "u16_b",
         "character": "u16",
         "text": "Bakvingeundersidens oransje kantbånd svakt utviklet eller manglende. Utad avgrenset av små, ofte diffuse mørke flekker uten blått",
         "image": "images_lyc\\u16b.png"
       },
       {
-        "id": "u17_state_a",
+        "id": "u17_a",
         "character": "u17",
         "text": "Undersiden blålig sølvgrå",
         "image": "images_lyc\\u17a.png"
       },
       {
-        "id": "u17_state_b",
+        "id": "u17_b",
         "character": "u17",
         "text": "Undersiden lys til mørk beigegrå",
         "image": "images_lyc\\u17b.png"
       },
       {
-        "id": "u18_state_a",
+        "id": "u18_a",
         "character": "u18",
         "text": "Undersiden lys beigegrå",
         "image": "images_lyc\\u18a.png"
       },
       {
-        "id": "u18_state_b",
+        "id": "u18_b",
         "character": "u18",
         "text": "Undersiden mørk beigegrå",
         "image": "images_lyc\\u18b.png"
       },
       {
-        "id": "u19_state_a",
+        "id": "u19_a",
         "character": "u19",
         "text": "Undersidens svarte flekker små",
         "image": "images_lyc\\u19a.png"
       },
       {
-        "id": "u19_state_b",
+        "id": "u19_b",
         "character": "u19",
         "text": "Undersidens svarte flekker store",
         "image": "images_lyc\\u19b.png"
       },
       {
-        "id": "u20_state_a",
+        "id": "u20_a",
         "character": "u20",
         "text": "Middels stor art: 28-34 mm",
         "image": "images_lyc\\u20a.png"
       },
       {
-        "id": "u20_state_b",
+        "id": "u20_b",
         "character": "u20",
         "text": "Liten art: 21-28 mm",
         "image": "images_lyc\\u20b.png"
       },
       {
-        "id": "u21_state_a",
+        "id": "u21_a",
         "character": "u21",
         "text": "Frambeinet med en liten brun krok ytterst på skinneleggen (lupe)",
         "image": "images_lyc\\u21a.png"
       },
       {
-        "id": "u21_state_b",
+        "id": "u21_b",
         "character": "u21",
         "text": "Frambeinet uten krok på skinnebeinet (lupe)",
         "image": "images_lyc\\u21b.png"
       },
       {
-        "id": "u22_state_a",
+        "id": "u22_a",
         "character": "u22",
         "text": "Bakvingens underside med en &quot;øyeflekk&quot; bestående av en ekstra stor svart kantplett med sølvblå kjerne, og innenfor denne en stor oransje flekk",
         "image": "images_lyc\\u22a.png"
       },
       {
-        "id": "u22_state_b",
+        "id": "u22_b",
         "character": "u22",
         "text": "Bakvingens underside uten &quot;øyeflekk&quot;",
         "image": "images_lyc\\u22b.png"
       },
       {
-        "id": "u23_state_a",
+        "id": "u23_a",
         "character": "u23",
         "text": "Bakvingens underside gråbrun med store, til dels sammenflytende hvite felter",
         "image": "images_lyc\\u23a.png"
       },
       {
-        "id": "u23_state_b",
+        "id": "u23_b",
         "character": "u23",
         "text": "Bakvingens underside uten eller kun med beskjedne hvite tegninger",
         "image": "images_lyc\\u23b.png"
       },
       {
-        "id": "u24_state_a",
+        "id": "u24_a",
         "character": "u24",
         "text": "Undersidens grunnfarge grønn",
         "image": "images_lyc\\u24a.png"
       },
       {
-        "id": "u24_state_b",
+        "id": "u24_b",
         "character": "u24",
         "text": "Undersidens grunnfarge grå",
         "image": "images_lyc\\u24b.png"
       },
       {
-        "id": "u25_state_a",
+        "id": "u25_a",
         "character": "u25",
         "text": "Bakvingeundersiden med store hvite flekker eller streker",
         "image": "images_lyc\\u25a.png"
       },
       {
-        "id": "u25_state_b",
+        "id": "u25_b",
         "character": "u25",
         "text": "Bakvingeundersiden uten hvitt eller kun med små hvite prikker eller ringer",
         "image": "images_lyc\\u25b.png"
       },
       {
-        "id": "u26_state_a",
+        "id": "u26_a",
         "character": "u26",
         "text": "Bakvingeundersiden med en hvit kile fra ytterkanten inn mot midten",
         "image": "images_lyc\\u26a.png"
       },
       {
-        "id": "u26_state_b",
+        "id": "u26_b",
         "character": "u26",
         "text": "Bakvingeundersiden med flere delvis sammenflytende hvite flekker",
         "image": "images_lyc\\u26b.png"
       },
       {
-        "id": "u27_state_a",
+        "id": "u27_a",
         "character": "u27",
         "text": "Bakvingens underside uten tegninger langs ytterkanten",
         "image": "images_lyc\\u27a.png"
       },
       {
-        "id": "u27_state_b",
+        "id": "u27_b",
         "character": "u27",
         "text": "Bakvingens underside med hvite, grå og/eller oransje tegninger langs ytterkanten. Nordlig art",
         "image": "images_lyc\\u27b.png"
       },
       {
-        "id": "u28_state_a",
+        "id": "u28_a",
         "character": "u28",
         "text": "Undersiden sølvhvit med store svarte pletter uten hvit ring. Framvingens pletter er strukket ut diagonalt",
         "image": "images_lyc\\u28a.png"
       },
       {
-        "id": "u28_state_b",
+        "id": "u28_b",
         "character": "u28",
         "text": "Undersiden overveiende grå. De svarte plettene har vanligvis hvit ring",
         "image": "images_lyc\\u28b.png"
       },
       {
-        "id": "u29_state_a",
+        "id": "u29_a",
         "character": "u29",
         "text": "Bakvingeundersiden uten tegninger langs ytterkanten",
         "image": "images_lyc\\u29a.png"
       },
       {
-        "id": "u29_state_b",
+        "id": "u29_b",
         "character": "u29",
         "text": "Bakvingeundersiden med mørke og/eller lyse flekker langs ytterkanten",
         "image": "images_lyc\\u29b.png"
       },
       {
-        "id": "u30_state_a",
+        "id": "u30_a",
         "character": "u30",
         "text": "Bakvingeundersiden med et stort, turkis rotfelt. Framvingen med en rad runde svarte pletter som tiltar i størrelse mot bakkanten",
         "image": "images_lyc\\u30a.png"
       },
       {
-        "id": "u30_state_b",
+        "id": "u30_b",
         "character": "u30",
         "text": "Bakvingeundersidens rotfelt med mindre turkis bestøvning. Framvingens pletter små og jevnstore, eller manglende",
         "image": "images_lyc\\u30b.png"
       },
       {
-        "id": "u31_state_a",
+        "id": "u31_a",
         "character": "u31",
         "text": "Bakvingeundersiden med en hvit kile fra ytterkanten inn mot midten",
         "image": "images_lyc\\u31a.png"
       },
       {
-        "id": "u31_state_b",
+        "id": "u31_b",
         "character": "u31",
         "text": "Bakvingeundersiden uten hvit kiletegning",
         "image": "images_lyc\\u31b.png"
       },
       {
-        "id": "u32_state_a",
+        "id": "u32_a",
         "character": "u32",
         "text": "Svært liten art: 18-25 mm",
         "image": "images_lyc\\u32a.png"
       },
       {
-        "id": "u32_state_b",
+        "id": "u32_b",
         "character": "u32",
         "text": "Middels stor art: 24-34 mm",
         "image": "images_lyc\\u32b.png"
       },
       {
-        "id": "u33_state_a",
+        "id": "u33_a",
         "character": "u33",
         "text": "Undersiden med tallrike store svarte pletter. Framvingen med en svart plett i rotfeltet. Bakvingen med en dobbel rad tydelige svarte pletter langs ytterkanten. Svært stor art: 33-42 mm",
         "image": "images_lyc\\u33a.png"
       },
       {
-        "id": "u33_state_b",
+        "id": "u33_b",
         "character": "u33",
         "text": "Undersidens svarte pletter mindre og færre",
         "image": "images_lyc\\u33b.png"
       },
       {
-        "id": "u34_state_a",
+        "id": "u34_a",
         "character": "u34",
         "text": "Bakvingeundersiden med en hvit kile fra ytterkanten inn mot midten",
         "image": "images_lyc\\u34a.png"
       },
       {
-        "id": "u34_state_b",
+        "id": "u34_b",
         "character": "u34",
         "text": "Bakvingeundersiden uten hvit kile",
         "image": "images_lyc\\u34b.png"
       },
       {
-        "id": "u35_state_a",
+        "id": "u35_a",
         "character": "u35",
         "text": "Bakvingeundersidens svarte pletter omgitt av svært brede, til dels sammenflytende hvite ringer. Nordlig art",
         "image": "images_lyc\\u35a.png"
       },
       {
-        "id": "u35_state_b",
+        "id": "u35_b",
         "character": "u35",
         "text": "Bakvingeundersidens svarte pletter uten eller med kun smale hvite ringer",
         "image": "images_lyc\\u35b.png"
       },
       {
-        "id": "u36_state_a",
+        "id": "u36_a",
         "character": "u36",
         "text": "Bakvingeundersiden med en dobbel rad mørke flekker langs kanten, hvorav de indre er tydelig vinkelformede",
         "image": "images_lyc\\u36a.png"
       },
       {
-        "id": "u36_state_b",
+        "id": "u36_b",
         "character": "u36",
         "text": "Bakvingeundersiden med en dobbel rad mørke flekker langs kanten, hvorav de indre er runde eller avlange, ikke vinklet",
         "image": "images_lyc\\u36b.png"
@@ -1269,3451 +1269,3451 @@
     "pair": [
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "o1_state_a"
+        "state": "o1_a"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "o1_state_b"
+        "state": "o1_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o2_state_a"
+        "state": "o2_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "o2_state_b"
+        "state": "o2_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "o3_state_b"
+        "state": "o3_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "o3_state_a"
+        "state": "o3_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "o4_state_a"
+        "state": "o4_a"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "o4_state_b"
+        "state": "o4_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "o5_state_b"
+        "state": "o5_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "o5_state_b"
+        "state": "o5_b"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "o5_state_a"
+        "state": "o5_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o6_state_a"
+        "state": "o6_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "o6_state_b"
+        "state": "o6_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o12_state_a"
+        "state": "o12_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o12_state_a"
+        "state": "o12_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o12_state_a"
+        "state": "o12_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o12_state_b"
+        "state": "o12_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o12_state_a"
+        "state": "o12_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "o7_state_a"
+        "state": "o7_a"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "o7_state_a"
+        "state": "o7_a"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "o7_state_a"
+        "state": "o7_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "o7_state_a"
+        "state": "o7_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o7_state_b"
+        "state": "o7_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o8_state_a"
+        "state": "o8_a"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "o8_state_a"
+        "state": "o8_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o8_state_b"
+        "state": "o8_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o8_state_a"
+        "state": "o8_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "o8_state_a"
+        "state": "o8_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "o9_state_a"
+        "state": "o9_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "o9_state_a"
+        "state": "o9_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o9_state_b"
+        "state": "o9_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "o15_state_a"
+        "state": "o15_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o15_state_a"
+        "state": "o15_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o15_state_a"
+        "state": "o15_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o15_state_b"
+        "state": "o15_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "o15_state_b"
+        "state": "o15_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o15_state_a"
+        "state": "o15_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "o10_state_a"
+        "state": "o10_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o10_state_b"
+        "state": "o10_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "o11_state_a"
+        "state": "o11_a"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "o11_state_b"
+        "state": "o11_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o13_state_a"
+        "state": "o13_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o13_state_a"
+        "state": "o13_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o13_state_a"
+        "state": "o13_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o13_state_b"
+        "state": "o13_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o13_state_b"
+        "state": "o13_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o13_state_a"
+        "state": "o13_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "o14_state_a"
+        "state": "o14_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "o14_state_a"
+        "state": "o14_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o14_state_b"
+        "state": "o14_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "o14_state_a"
+        "state": "o14_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o14_state_a"
+        "state": "o14_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "o14_state_b"
+        "state": "o14_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o14_state_a"
+        "state": "o14_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "o14_state_b"
+        "state": "o14_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o14_state_b"
+        "state": "o14_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "o16_state_b"
+        "state": "o16_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "o16_state_a"
+        "state": "o16_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "f1_state_b"
+        "state": "f1_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "f1_state_a"
+        "state": "f1_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "f2_state_b"
+        "state": "f2_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "f2_state_a"
+        "state": "f2_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "f2_state_a"
+        "state": "f2_a"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "f2_state_a"
+        "state": "f2_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "f2_state_a"
+        "state": "f2_a"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "f2_state_a"
+        "state": "f2_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u1_state_b"
+        "state": "u1_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "u1_state_a"
+        "state": "u1_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u2_state_a"
+        "state": "u2_a"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "u2_state_b"
+        "state": "u2_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "u3_state_b"
+        "state": "u3_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u3_state_a"
+        "state": "u3_a"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "u4_state_b"
+        "state": "u4_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u4_state_a"
+        "state": "u4_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u4_state_a"
+        "state": "u4_a"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "u4_state_a"
+        "state": "u4_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "u4_state_a"
+        "state": "u4_a"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "u4_state_a"
+        "state": "u4_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u6_state_b"
+        "state": "u6_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u6_state_b"
+        "state": "u6_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "u6_state_a"
+        "state": "u6_a"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "u6_state_a"
+        "state": "u6_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u7_state_b"
+        "state": "u7_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u7_state_b"
+        "state": "u7_b"
       },
       {
         "taxon": "Satyrium_w-album_N",
-        "state": "u7_state_a"
+        "state": "u7_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "u7_state_b"
+        "state": "u7_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "u7_state_b"
+        "state": "u7_b"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u8_state_a"
+        "state": "u8_a"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u8_state_a"
+        "state": "u8_a"
       },
       {
         "taxon": "Thecla_betulae_M",
-        "state": "u8_state_b"
+        "state": "u8_b"
       },
       {
         "taxon": "Thecla_betulae_F",
-        "state": "u8_state_b"
+        "state": "u8_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u9_state_a"
+        "state": "u9_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u9_state_b"
+        "state": "u9_b"
       },
       {
         "taxon": "Scolitantides_orion_M",
-        "state": "u10_state_a"
+        "state": "u10_a"
       },
       {
         "taxon": "Scolitantides_orion_F",
-        "state": "u10_state_a"
+        "state": "u10_a"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u10_state_b"
+        "state": "u10_b"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u11_state_a"
+        "state": "u11_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u11_state_b"
+        "state": "u11_b"
       },
       {
         "taxon": "Eumedonia_eumedon_M",
-        "state": "u12_state_a"
+        "state": "u12_a"
       },
       {
         "taxon": "Eumedonia_eumedon_F",
-        "state": "u12_state_a"
+        "state": "u12_a"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u12_state_b"
+        "state": "u12_b"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u12_state_b"
+        "state": "u12_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u12_state_b"
+        "state": "u12_b"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u12_state_b"
+        "state": "u12_b"
       },
       {
         "taxon": "Aricia_artaxerxes_M",
-        "state": "u13_state_b"
+        "state": "u13_b"
       },
       {
         "taxon": "Aricia_artaxerxes_F",
-        "state": "u13_state_b"
+        "state": "u13_b"
       },
       {
         "taxon": "Polyommatus_icarus_M",
-        "state": "u13_state_a"
+        "state": "u13_a"
       },
       {
         "taxon": "Polyommatus_icarus_F",
-        "state": "u13_state_a"
+        "state": "u13_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u14_state_b"
+        "state": "u14_b"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u14_state_a"
+        "state": "u14_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u14_state_a"
+        "state": "u14_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u14_state_a"
+        "state": "u14_a"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u14_state_a"
+        "state": "u14_a"
       },
       {
         "taxon": "Lycaena_helle_M",
-        "state": "u15_state_a"
+        "state": "u15_a"
       },
       {
         "taxon": "Lycaena_helle_F",
-        "state": "u15_state_a"
+        "state": "u15_a"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u15_state_b"
+        "state": "u15_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u15_state_b"
+        "state": "u15_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u16_state_b"
+        "state": "u16_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u16_state_b"
+        "state": "u16_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u16_state_a"
+        "state": "u16_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u17_state_a"
+        "state": "u17_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u17_state_a"
+        "state": "u17_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u17_state_b"
+        "state": "u17_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u18_state_b"
+        "state": "u18_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u18_state_a"
+        "state": "u18_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u18_state_b"
+        "state": "u18_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u19_state_b"
+        "state": "u19_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u19_state_b"
+        "state": "u19_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u19_state_b"
+        "state": "u19_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u19_state_a"
+        "state": "u19_a"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u19_state_b"
+        "state": "u19_b"
       },
       {
         "taxon": "Plebejus_argyrognomon_M",
-        "state": "u20_state_a"
+        "state": "u20_a"
       },
       {
         "taxon": "Plebejus_argyrognomon_F",
-        "state": "u20_state_a"
+        "state": "u20_a"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u20_state_b"
+        "state": "u20_b"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u20_state_b"
+        "state": "u20_b"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u20_state_b"
+        "state": "u20_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u20_state_b"
+        "state": "u20_b"
       },
       {
         "taxon": "Plebejus_argus_M",
-        "state": "u21_state_a"
+        "state": "u21_a"
       },
       {
         "taxon": "Plebejus_argus_F",
-        "state": "u21_state_a"
+        "state": "u21_a"
       },
       {
         "taxon": "Plebejus_idas_M",
-        "state": "u21_state_b"
+        "state": "u21_b"
       },
       {
         "taxon": "Plebejus_idas_F",
-        "state": "u21_state_b"
+        "state": "u21_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Agriades_optilete_M",
-        "state": "u22_state_a"
+        "state": "u22_a"
       },
       {
         "taxon": "Agriades_optilete_F",
-        "state": "u22_state_a"
+        "state": "u22_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u22_state_b"
+        "state": "u22_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u23_state_a"
+        "state": "u23_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u23_state_a"
+        "state": "u23_a"
       },
       {
         "taxon": "Lycaena_phlaeas_M",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Lycaena_phlaeas_F",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Lycaena_virgaureae_M",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Lycaena_virgaureae_F",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Lycaena_hippothoe_M",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Lycaena_hippothoe_F",
-        "state": "u23_state_b"
+        "state": "u23_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Callophrys_rubi_N",
-        "state": "u24_state_a"
+        "state": "u24_a"
       },
       {
         "taxon": "Favonius_quercus_M",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Favonius_quercus_F",
-        "state": "u24_state_b"
+        "state": "u24_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u25_state_b"
+        "state": "u25_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u25_state_b"
+        "state": "u25_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u25_state_b"
+        "state": "u25_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u25_state_b"
+        "state": "u25_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u25_state_a"
+        "state": "u25_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u26_state_a"
+        "state": "u26_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u26_state_a"
+        "state": "u26_a"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u26_state_b"
+        "state": "u26_b"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u26_state_b"
+        "state": "u26_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u26_state_b"
+        "state": "u26_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u26_state_b"
+        "state": "u26_b"
       },
       {
         "taxon": "Agriades_orbitulus_M",
-        "state": "u27_state_a"
+        "state": "u27_a"
       },
       {
         "taxon": "Agriades_orbitulus_F",
-        "state": "u27_state_a"
+        "state": "u27_a"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u27_state_b"
+        "state": "u27_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u27_state_b"
+        "state": "u27_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Celastrina_argiolus_M",
-        "state": "u28_state_a"
+        "state": "u28_a"
       },
       {
         "taxon": "Celastrina_argiolus_F",
-        "state": "u28_state_a"
+        "state": "u28_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u28_state_b"
+        "state": "u28_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u29_state_a"
+        "state": "u29_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u29_state_b"
+        "state": "u29_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Glaucopsyche_alexis_M",
-        "state": "u30_state_a"
+        "state": "u30_a"
       },
       {
         "taxon": "Glaucopsyche_alexis_F",
-        "state": "u30_state_a"
+        "state": "u30_a"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u30_state_b"
+        "state": "u30_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u31_state_b"
+        "state": "u31_b"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u31_state_b"
+        "state": "u31_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u31_state_a"
+        "state": "u31_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u31_state_a"
+        "state": "u31_a"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u31_state_b"
+        "state": "u31_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u31_state_b"
+        "state": "u31_b"
       },
       {
         "taxon": "Cupido_minimus_M",
-        "state": "u32_state_a"
+        "state": "u32_a"
       },
       {
         "taxon": "Cupido_minimus_F",
-        "state": "u32_state_a"
+        "state": "u32_a"
       },
       {
         "taxon": "Cyaniris_semiargus_M",
-        "state": "u32_state_b"
+        "state": "u32_b"
       },
       {
         "taxon": "Cyaniris_semiargus_F",
-        "state": "u32_state_b"
+        "state": "u32_b"
       },
       {
         "taxon": "Phengaris_arion_N",
-        "state": "u33_state_a"
+        "state": "u33_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u33_state_b"
+        "state": "u33_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Aricia_nicias_M",
-        "state": "u34_state_a"
+        "state": "u34_a"
       },
       {
         "taxon": "Aricia_nicias_F",
-        "state": "u34_state_a"
+        "state": "u34_a"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u34_state_b"
+        "state": "u34_b"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u35_state_b"
+        "state": "u35_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u35_state_b"
+        "state": "u35_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u35_state_b"
+        "state": "u35_b"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u35_state_b"
+        "state": "u35_b"
       },
       {
         "taxon": "Agriades_aquilo_M",
-        "state": "u35_state_a"
+        "state": "u35_a"
       },
       {
         "taxon": "Agriades_aquilo_F",
-        "state": "u35_state_a"
+        "state": "u35_a"
       },
       {
         "taxon": "Phengaris_alcon_M",
-        "state": "u36_state_b"
+        "state": "u36_b"
       },
       {
         "taxon": "Phengaris_alcon_F",
-        "state": "u36_state_b"
+        "state": "u36_b"
       },
       {
         "taxon": "Polyommatus_amandus_M",
-        "state": "u36_state_a"
+        "state": "u36_a"
       },
       {
         "taxon": "Polyommatus_amandus_F",
-        "state": "u36_state_a"
+        "state": "u36_a"
       }
     ]
   },
@@ -4721,83 +4721,83 @@
     "dependency": [
       {
         "dependant": "o2",
-        "condition": "o1_state_a"
+        "condition": "o1_a"
       },
       {
         "dependant": "o4",
-        "condition": "o3_state_a"
+        "condition": "o3_a"
       },
       {
         "dependant": "o15",
-        "condition": "o6_state_a"
+        "condition": "o6_a"
       },
       {
         "dependant": "o13",
-        "condition": "o1_state_a"
+        "condition": "o1_a"
       },
       {
         "dependant": "o14",
-        "condition": "o6_state_a"
+        "condition": "o6_a"
       },
       {
         "dependant": "u3",
-        "condition": "u1_state_a"
+        "condition": "u1_a"
       },
       {
         "dependant": "u4",
-        "condition": "u2_state_b"
+        "condition": "u2_b"
       },
       {
         "dependant": "u7",
-        "condition": "u1_state_a"
+        "condition": "u1_a"
       },
       {
         "dependant": "u9",
-        "condition": "u1_state_a"
+        "condition": "u1_a"
       },
       {
         "dependant": "u9",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u12",
-        "condition": "u11_state_a"
+        "condition": "u11_a"
       },
       {
         "dependant": "u18",
-        "condition": "u17_state_b"
+        "condition": "u17_b"
       },
       {
         "dependant": "u25",
-        "condition": "u2_state_b"
+        "condition": "u2_b"
       },
       {
         "dependant": "u26",
-        "condition": "u2_state_b"
+        "condition": "u2_b"
       },
       {
         "dependant": "u28",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u29",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u33",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u34",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u35",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       },
       {
         "dependant": "u36",
-        "condition": "u2_state_a"
+        "condition": "u2_a"
       }
     ]
   }
