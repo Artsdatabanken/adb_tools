@@ -9,13 +9,13 @@
       {
         "id": "Cupido_minimus_M",
         "parent": "Cupido_minimus",
-        "text": "Dvergblåvinge - Cupido minimus<br>(Hann)",
+        "text": "Dvergblåvinge - Cupido minimus(Hann)",
         "image": "images_lyc\\099_Cupido_minimus_m.png"
       },
       {
         "id": "Cupido_minimus_F",
         "parent": "Cupido_minimus",
-        "text": "Dvergblåvinge - Cupido minimus<br>(Hunn)",
+        "text": "Dvergblåvinge - Cupido minimus(Hunn)",
         "image": "images_lyc\\099_Cupido_minimus_f.png"
       },
       {
@@ -26,13 +26,13 @@
       {
         "id": "Celastrina_argiolus_M",
         "parent": "Celastrina_argiolus",
-        "text": "Vårblåvinge - Celastrina argiolus<br>(Hann)",
+        "text": "Vårblåvinge - Celastrina argiolus(Hann)",
         "image": "images_lyc\\100_Celastrina_argiolus_m.png"
       },
       {
         "id": "Celastrina_argiolus_F",
         "parent": "Celastrina_argiolus",
-        "text": "Vårblåvinge - Celastrina argiolus<br>(Hunn)",
+        "text": "Vårblåvinge - Celastrina argiolus(Hunn)",
         "image": "images_lyc\\100_Celastrina_argiolus_f.png"
       },
       {
@@ -43,13 +43,13 @@
       {
         "id": "Scolitantides_orion_M",
         "parent": "Scolitantides_orion",
-        "text": "Klippeblåvinge - Scolitantides orion<br>(Hann)",
+        "text": "Klippeblåvinge - Scolitantides orion(Hann)",
         "image": "images_lyc\\101_Scolitantides_orion_m.png"
       },
       {
         "id": "Scolitantides_orion_F",
         "parent": "Scolitantides_orion",
-        "text": "Klippeblåvinge - Scolitantides orion<br>(Hunn)",
+        "text": "Klippeblåvinge - Scolitantides orion(Hunn)",
         "image": "images_lyc\\101_Scolitantides_orion_f.png"
       },
       {
@@ -60,13 +60,13 @@
       {
         "id": "Glaucopsyche_alexis_M",
         "parent": "Glaucopsyche_alexis",
-        "text": "Kløverblåvinge - Glaucopsyche alexis<br>(Hann)",
+        "text": "Kløverblåvinge - Glaucopsyche alexis(Hann)",
         "image": "images_lyc\\102_Glaucopsyche_alexis_m.png"
       },
       {
         "id": "Glaucopsyche_alexis_F",
         "parent": "Glaucopsyche_alexis",
-        "text": "Kløverblåvinge - Glaucopsyche alexis<br>(Hunn)",
+        "text": "Kløverblåvinge - Glaucopsyche alexis(Hunn)",
         "image": "images_lyc\\102_Glaucopsyche_alexis_f.png"
       },
       {
@@ -82,13 +82,13 @@
       {
         "id": "Phengaris_alcon_M",
         "parent": "Phengaris_alcon",
-        "text": "Søteblåvinge - Phengaris alcon<br>(Hann)",
+        "text": "Søteblåvinge - Phengaris alcon(Hann)",
         "image": "images_lyc\\104_Phengaris_alcon_m.png"
       },
       {
         "id": "Phengaris_alcon_F",
         "parent": "Phengaris_alcon",
-        "text": "Søteblåvinge - Phengaris alcon<br>(Hunn)",
+        "text": "Søteblåvinge - Phengaris alcon(Hunn)",
         "image": "images_lyc\\104_Phengaris_alcon_f.png"
       },
       {
@@ -99,13 +99,13 @@
       {
         "id": "Eumedonia_eumedon_M",
         "parent": "Eumedonia_eumedon",
-        "text": "Brun blåvinge - Aricia eumedon<br>(Hann)",
+        "text": "Brun blåvinge - Aricia eumedon(Hann)",
         "image": "images_lyc\\105_Aricia_eumedon_m.png"
       },
       {
         "id": "Eumedonia_eumedon_F",
         "parent": "Eumedonia_eumedon",
-        "text": "Brun blåvinge - Aricia eumedon<br>(Hunn)",
+        "text": "Brun blåvinge - Aricia eumedon(Hunn)",
         "image": "images_lyc\\105_Aricia_eumedon_f.png"
       },
       {
@@ -116,13 +116,13 @@
       {
         "id": "Aricia_artaxerxes_M",
         "parent": "Aricia_artaxerxes",
-        "text": "Sankthansblåvinge - Aricia artaxerxes<br>(Hann)",
+        "text": "Sankthansblåvinge - Aricia artaxerxes(Hann)",
         "image": "images_lyc\\106_Aricia_artaxerxes_m.png"
       },
       {
         "id": "Aricia_artaxerxes_F",
         "parent": "Aricia_artaxerxes",
-        "text": "Sankthansblåvinge - Aricia artaxerxes<br>(Hunn)",
+        "text": "Sankthansblåvinge - Aricia artaxerxes(Hunn)",
         "image": "images_lyc\\106_Aricia_artaxerxes_f.png"
       },
       {
@@ -133,13 +133,13 @@
       {
         "id": "Aricia_nicias_M",
         "parent": "Aricia_nicias",
-        "text": "Kileblåvinge - Aricia nicias<br>(Hann)",
+        "text": "Kileblåvinge - Aricia nicias(Hann)",
         "image": "images_lyc\\107_Aricia_nicias_m.png"
       },
       {
         "id": "Aricia_nicias_F",
         "parent": "Aricia_nicias",
-        "text": "Kileblåvinge - Aricia nicias<br>(Hunn)",
+        "text": "Kileblåvinge - Aricia nicias(Hunn)",
         "image": "images_lyc\\107_Aricia_nicias_f.png"
       },
       {
@@ -150,13 +150,13 @@
       {
         "id": "Cyaniris_semiargus_M",
         "parent": "Cyaniris_semiargus",
-        "text": "Engblåvinge - Cyaniris semiargus<br>(Hann)",
+        "text": "Engblåvinge - Cyaniris semiargus(Hann)",
         "image": "images_lyc\\114_Polyommatus_semiargus_m.png"
       },
       {
         "id": "Cyaniris_semiargus_F",
         "parent": "Cyaniris_semiargus",
-        "text": "Engblåvinge - Cyaniris semiargus<br>(Hunn)",
+        "text": "Engblåvinge - Cyaniris semiargus(Hunn)",
         "image": "images_lyc\\114_Polyommatus_semiargus_f.png"
       },
       {
@@ -167,13 +167,13 @@
       {
         "id": "Polyommatus_icarus_M",
         "parent": "Polyommatus_icarus",
-        "text": "Tiriltungeblåvinge - Polyommatus icarus<br>(Hann)",
+        "text": "Tiriltungeblåvinge - Polyommatus icarus(Hann)",
         "image": "images_lyc\\116_Polyommatus_icarus_m.png"
       },
       {
         "id": "Polyommatus_icarus_F",
         "parent": "Polyommatus_icarus",
-        "text": "Tiriltungeblåvinge - Polyommatus icarus<br>(Hunn)",
+        "text": "Tiriltungeblåvinge - Polyommatus icarus(Hunn)",
         "image": "images_lyc\\116_Polyommatus_icarus_f.png"
       },
       {
@@ -184,13 +184,13 @@
       {
         "id": "Polyommatus_amandus_M",
         "parent": "Polyommatus_amandus",
-        "text": "Sølvblåvinge - Polyommatus amandus<br>(Hann)",
+        "text": "Sølvblåvinge - Polyommatus amandus(Hann)",
         "image": "images_lyc\\115_Polyommatus_amandus_m.png"
       },
       {
         "id": "Polyommatus_amandus_F",
         "parent": "Polyommatus_amandus",
-        "text": "Sølvblåvinge - Polyommatus amandus<br>(Hunn)",
+        "text": "Sølvblåvinge - Polyommatus amandus(Hunn)",
         "image": "images_lyc\\115_Polyommatus_amandus_f.png"
       },
       {
@@ -201,13 +201,13 @@
       {
         "id": "Agriades_orbitulus_M",
         "parent": "Agriades_orbitulus",
-        "text": "Fjellblåvinge - Plebejus orbitulus<br>(Hann)",
+        "text": "Fjellblåvinge - Plebejus orbitulus(Hann)",
         "image": "images_lyc\\113_Albulina_orbitulus_m.png"
       },
       {
         "id": "Agriades_orbitulus_F",
         "parent": "Agriades_orbitulus",
-        "text": "Fjellblåvinge - Plebejus orbitulus<br>(Hunn)",
+        "text": "Fjellblåvinge - Plebejus orbitulus(Hunn)",
         "image": "images_lyc\\113_Albulina_orbitulus_f.png"
       },
       {
@@ -218,13 +218,13 @@
       {
         "id": "Agriades_optilete_M",
         "parent": "Agriades_optilete",
-        "text": "Myrblåvinge - Plebejus optilete<br>(Hann)",
+        "text": "Myrblåvinge - Plebejus optilete(Hann)",
         "image": "images_lyc\\112_Albulina_optilete_m.png"
       },
       {
         "id": "Agriades_optilete_F",
         "parent": "Agriades_optilete",
-        "text": "Myrblåvinge - Plebejus optilete<br>(Hunn)",
+        "text": "Myrblåvinge - Plebejus optilete(Hunn)",
         "image": "images_lyc\\112_Albulina_optilete_f.png"
       },
       {
@@ -235,13 +235,13 @@
       {
         "id": "Agriades_aquilo_M",
         "parent": "Agriades_aquilo",
-        "text": "Polarblåvinge - Plebejus aquilo<br>(Hann)",
+        "text": "Polarblåvinge - Plebejus aquilo(Hann)",
         "image": "images_lyc\\111_Agriades_aquilo_m.png"
       },
       {
         "id": "Agriades_aquilo_F",
         "parent": "Agriades_aquilo",
-        "text": "Polarblåvinge - Plebejus aquilo<br>(Hunn)",
+        "text": "Polarblåvinge - Plebejus aquilo(Hunn)",
         "image": "images_lyc\\111_Agriades_aquilo_f.png"
       },
       {
@@ -252,13 +252,13 @@
       {
         "id": "Plebejus_argyrognomon_M",
         "parent": "Plebejus_argyrognomon",
-        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon<br>(Hann)",
+        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon(Hann)",
         "image": "images_lyc\\110_Plebejus_argyrognomon_m.png"
       },
       {
         "id": "Plebejus_argyrognomon_F",
         "parent": "Plebejus_argyrognomon",
-        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon<br>(Hunn)",
+        "text": "Lakrismjeltblåvinge - Plebejus argyrognomon(Hunn)",
         "image": "images_lyc\\110_Plebejus_argyrognomon_f.png"
       },
       {
@@ -269,13 +269,13 @@
       {
         "id": "Plebejus_argus_M",
         "parent": "Plebejus_argus",
-        "text": "Argusblåvinge - Plebejus argus<br>(Hann)",
+        "text": "Argusblåvinge - Plebejus argus(Hann)",
         "image": "images_lyc\\108_Plebejus_argus_m.png"
       },
       {
         "id": "Plebejus_argus_F",
         "parent": "Plebejus_argus",
-        "text": "Argusblåvinge - Plebejus argus<br>(Hunn)",
+        "text": "Argusblåvinge - Plebejus argus(Hunn)",
         "image": "images_lyc\\108_Plebejus_argus_f.png"
       },
       {
@@ -286,13 +286,13 @@
       {
         "id": "Plebejus_idas_M",
         "parent": "Plebejus_idas",
-        "text": "Idasblåvinge - Plebejus idas<br>(Hann)",
+        "text": "Idasblåvinge - Plebejus idas(Hann)",
         "image": "images_lyc\\109_Plebejus_idas_m.png"
       },
       {
         "id": "Plebejus_idas_F",
         "parent": "Plebejus_idas",
-        "text": "Idasblåvinge - Plebejus idas<br>(Hunn)",
+        "text": "Idasblåvinge - Plebejus idas(Hunn)",
         "image": "images_lyc\\109_Plebejus_idas_f.png"
       },
       {
@@ -303,13 +303,13 @@
       {
         "id": "Lycaena_phlaeas_M",
         "parent": "Lycaena_phlaeas",
-        "text": "Ildgullvinge - Lycaena phlaeas<br>(Hann)",
+        "text": "Ildgullvinge - Lycaena phlaeas(Hann)",
         "image": "images_lyc\\117_Lycaena_phlaeas_m.png"
       },
       {
         "id": "Lycaena_phlaeas_F",
         "parent": "Lycaena_phlaeas",
-        "text": "Ildgullvinge - Lycaena phlaeas<br>(Hunn)",
+        "text": "Ildgullvinge - Lycaena phlaeas(Hunn)",
         "image": "images_lyc\\117_Lycaena_phlaeas_f.png"
       },
       {
@@ -320,13 +320,13 @@
       {
         "id": "Lycaena_virgaureae_M",
         "parent": "Lycaena_virgaureae",
-        "text": "Oransjegullvinge - Lycaena virgaureae<br>(Hann)",
+        "text": "Oransjegullvinge - Lycaena virgaureae(Hann)",
         "image": "images_lyc\\119_Lycaena_virgaureae_m.png"
       },
       {
         "id": "Lycaena_virgaureae_F",
         "parent": "Lycaena_virgaureae",
-        "text": "Oransjegullvinge - Lycaena virgaureae<br>(Hunn)",
+        "text": "Oransjegullvinge - Lycaena virgaureae(Hunn)",
         "image": "images_lyc\\119_Lycaena_virgaureae_f.png"
       },
       {
@@ -337,13 +337,13 @@
       {
         "id": "Lycaena_helle_M",
         "parent": "Lycaena_helle",
-        "text": "Fiolett gullvinge - Lycaena helle<br>(Hann)",
+        "text": "Fiolett gullvinge - Lycaena helle(Hann)",
         "image": "images_lyc\\118_Lycaena_helle_m.png"
       },
       {
         "id": "Lycaena_helle_F",
         "parent": "Lycaena_helle",
-        "text": "Fiolett gullvinge - Lycaena helle<br>(Hunn)",
+        "text": "Fiolett gullvinge - Lycaena helle(Hunn)",
         "image": "images_lyc\\118_Lycaena_helle_f.png"
       },
       {
@@ -354,13 +354,13 @@
       {
         "id": "Lycaena_hippothoe_M",
         "parent": "Lycaena_hippothoe",
-        "text": "Purpurgullvinge - Lycaena hippothoe<br>(Hann)",
+        "text": "Purpurgullvinge - Lycaena hippothoe(Hann)",
         "image": "images_lyc\\120_Lycaena_hippothoe_m.png"
       },
       {
         "id": "Lycaena_hippothoe_F",
         "parent": "Lycaena_hippothoe",
-        "text": "Purpurgullvinge - Lycaena hippothoe<br>(Hunn)",
+        "text": "Purpurgullvinge - Lycaena hippothoe(Hunn)",
         "image": "images_lyc\\120_Lycaena_hippothoe_f.png"
       },
       {
@@ -376,13 +376,13 @@
       {
         "id": "Favonius_quercus_M",
         "parent": "Favonius_quercus",
-        "text": "Eikestjertvinge - Favonius quercus<br>(Hann)",
+        "text": "Eikestjertvinge - Favonius quercus(Hann)",
         "image": "images_lyc\\124_Favonius_quercus_m.png"
       },
       {
         "id": "Favonius_quercus_F",
         "parent": "Favonius_quercus",
-        "text": "Eikestjertvinge - Favonius quercus<br>(Hunn)",
+        "text": "Eikestjertvinge - Favonius quercus(Hunn)",
         "image": "images_lyc\\124_Favonius_quercus_f.png"
       },
       {
@@ -398,13 +398,13 @@
       {
         "id": "Thecla_betulae_M",
         "parent": "Thecla_betulae",
-        "text": "Slåpetornstjertvinge - Thecla betulae<br>(Hann)",
+        "text": "Slåpetornstjertvinge - Thecla betulae(Hann)",
         "image": "images_lyc\\123_Thecla_betulae_m.png"
       },
       {
         "id": "Thecla_betulae_F",
         "parent": "Thecla_betulae",
-        "text": "Slåpetornstjertvinge - Thecla betulae<br>(Hunn)",
+        "text": "Slåpetornstjertvinge - Thecla betulae(Hunn)",
         "image": "images_lyc\\123_Thecla_betulae_f.png"
       }
     ]
