@@ -1,14 +1,15 @@
 <section>
-	<div style="display: inline-block; width: 50%;" data-bind="foreach: characters">
-		<div style="margin-bottom:10px;  overflow:hidden;">
+	<h1 data-bind="text: 'Viser ' + $root.valgteOrdener().length + ' av ' + $root.parents().length + ' ordener'"> </h1>
+	<div class="character-container" data-bind="foreach: characters">
+		<div class="character" data-bind="css: {skjult: $root.characterHidden($data.conditions)}">
 			<h5 data-bind="text: text"></h6>
-			<div data-bind="foreach: states">
-				<div style="height:50px; width: 50px; background:red; overflow:hidden; display: inline-block;" data-bind="text: text"></div>
+			<div class="state-container" data-bind="foreach: states">
+				<p class="state" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1},text: text, attr: {'data-stateid': $data.id}, click: $root.stateSelected"></p>
 			</div>
 		</div>
 		<hr/>
 	</div>
-	<div style="display: inline-block; width: 45%; vertical-align: top;" data-bind="foreach: items">
+	<div class="items-container" data-bind="foreach: currentItems">
 		<!-- <img width="16px" height="16px" data-bind="attr:{src: Image}" /> -->
 		<p data-bind="text: text"></p>
 	</div>
