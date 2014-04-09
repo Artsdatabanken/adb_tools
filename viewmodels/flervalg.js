@@ -21,32 +21,40 @@ define(function(require){
             return;
         }
 
+        //Finn items hvor alle states som er valgt er i statelisten til itemen
         var filtered = _.filter(items(), function(item) {
-            return _(selectedStates()).every(function(state){
+            return _(selectedStates()).all(function(state){
                     return _.contains(item.stateIds, state)
                 });
         });
 
-        var filteredIds = _.map(filtered, "id");
-        var parentsWithAllChildrenSelected = [];
+        var mergedChildren = combineSiblingsIntoParent(filtered);
+
+        currentItems(mergedChildren);
+    });
+
+    var combineSiblingsIntoParent = function(listOfItems) {
+        var itemIds = _.map(listOfItems, "id");
+        var parentsWithAllChildrenInList = [];
 
         _.forEach(parents(), function(parent) {
             if(parent.children.length === 0 ) { return; }
-            var allChildrenSelected = _.all(parent.children, function(siblingId) { return _.contains(filteredIds, siblingId)});
 
-            if(allChildrenSelected){
-                parentsWithAllChildrenSelected.push(parent);
+            //Sjekk om alle ungene til parenten skal vises
+            var allChildrenInList = _.all(parent.children, function(childId) { return _.contains(itemIds, childId)});
+
+            if(allChildrenInList){
+                parentsWithAllChildrenInList.push(parent);
             }
         });
 
-        var childrenToRemove = _.flatten(parentsWithAllChildrenSelected, "children");
+        var childrenToRemove = _.flatten(parentsWithAllChildrenInList, "children");
 
-        filtered = _.filter(filtered, function(item){ return ! _.contains(childrenToRemove, item.id)});
-        filtered = _.unique(filtered.concat(parentsWithAllChildrenSelected));
+        listOfItems = _.filter(listOfItems, function(item){ return ! _.contains(childrenToRemove, item.id)});
+        listOfItems = _.unique(listOfItems.concat(parentsWithAllChildrenInList));
 
-
-        currentItems(filtered);
-    });
+        return listOfItems;
+    };
 
     var characterHidden = function(conditions) {
         if(conditions.length === 0){
