@@ -108,6 +108,9 @@ define(function(require){
                 var pairs = response.pairs.pair;
                 var taxa = response.taxa.taxon;
                 var dependencies = response.dependencies.dependency;
+                var states = response.states.state;
+                var characters =  response.characters.character;
+
 
                 _.forEach(taxa, function(taxon){
                     taxon.stateIds = _(pairs).filter({taxon: taxon.id}).map('state').value();
@@ -126,12 +129,10 @@ define(function(require){
                 });
 
                 that.currentItems(that.parents());
-                var states = response.states.state;
-                var characters =  response.characters.character;
 
                 _.forEach(characters, function(character){
-                    character.states = _.filter(states, {character: character.id});
-                    character.conditions = _(dependencies).filter({dependant: character.id}).map('condition').value();
+                    character.states = _.where(states, {character: character.id});
+                    character.conditions = _(dependencies).where({dependant: character.id}).map('condition').value();
                 });
 
                 that.characters = characters;
