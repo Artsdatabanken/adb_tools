@@ -3,7 +3,7 @@ define(function(require){
     var ko = require('knockout');
     var _ = require('underscore');
 
-    var characters;
+    var characters = ko.observableArray();
     var parents = ko.observableArray();
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
@@ -13,7 +13,27 @@ define(function(require){
 
     var filterParents = function(list) {
         return _.filter(list, function(item){return !item.parent});
-    }
+    };
+
+    var charactersToShow = ko.computed(function() {
+        return _.filter(characters(), function(character){
+
+            //Først sjekk på conditions og valgte states
+            if(_.isEmpty(character.conditions)){ return true; }
+
+            var intersection = _.intersection(selectedStates(), character.conditions);
+            if(_.isEmpty(intersection)){//Ikke vis hvis den har conditions, men ingen av de er valgt
+                return false;
+            }
+
+
+
+            // var characterStateIds = _.map(character.states, 'id');
+            // return _.any(currentItems(), function(item) {
+            //     return !_.isEmpty(_.intersection(item.stateIds, characterStateIds));
+            // });
+        });
+    });
 
     var filteredItems = ko.computed(function() {
         if(selectedStates().length === 0){
@@ -108,6 +128,7 @@ define(function(require){
         selectedStates: selectedStates,
         stateSelected: stateSelected,
         characterHidden: characterHidden,
+        charactersToShow: charactersToShow,
 
         activate: function () {
             var that = this;
@@ -143,7 +164,7 @@ define(function(require){
                     character.conditions = _(dependencies).where({dependant: character.id}).map('condition').value();
                 });
 
-                that.characters = characters;
+                that.characters(characters);
             });
         }
     };

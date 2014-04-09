@@ -1,6 +1,6 @@
 <section>
-	<h1 data-bind="text: 'Viser ' + $root.valgteOrdener().length + ' av ' + $root.parents().length + ' ordener'"> </h1>
-	<div class="character-container" data-bind="foreach: characters">
+	<h1 data-bind="text: 'Viser ' + $root.currentItems().length + ' av ' + $root.parents().length + ' ordener'"> </h1>
+	<div class="character-container" data-bind="foreach: charactersToShow">
 		<div class="character" data-bind="css: {skjult: $root.characterHidden($data.conditions)}">
 			<h5 data-bind="text: text"></h6>
 			<div class="state-container" data-bind="foreach: states">
