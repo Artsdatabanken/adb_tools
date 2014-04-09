@@ -1,7 +1,7 @@
 <section>
 	<h1 data-bind="text: 'Viser ' + $root.currentItems().length + ' av ' + $root.parents().length + ' ordener'"> </h1>
 	<div class="character-container" data-bind="foreach: charactersToShow">
-		<div class="character" data-bind="css: {skjult: $root.characterHidden($data.conditions)}">
+		<div class="character">
 			<h5 data-bind="text: text"></h6>
 			<div class="state-container" data-bind="foreach: states">
 				<div class="state" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1}, attr: {'data-stateid': $data.id}, click: $root.stateSelected">

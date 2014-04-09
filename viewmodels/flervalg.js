@@ -76,19 +76,6 @@ define(function(require){
         return listOfItems;
     };
 
-    var characterHidden = function(conditions) {
-        if(conditions.length === 0){
-            return false;
-        }
-
-        var intersection = _.intersection(selectedStates(), conditions);
-        if(intersection.length === 0){//Skjult hvis den har conditions, men ingen av de er valgt
-            return true;
-        }
-
-        return false;
-    };
-
     var stateSelected = function(data, event) {
         settInnStateIListeOgOppdaterSelectedStates(data.id);
     };
@@ -110,7 +97,6 @@ define(function(require){
         characters: characters,
         selectedStates: selectedStates,
         stateSelected: stateSelected,
-        characterHidden: characterHidden,
         charactersToShow: charactersToShow,
 
         activate: function () {
