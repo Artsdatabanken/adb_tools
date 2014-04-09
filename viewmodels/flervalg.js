@@ -89,22 +89,6 @@ define(function(require){
         return false;
     };
 
-    var valgteOrdener = ko.computed(function(){
-        if(currentItems().length === 0) {
-            return parents();
-        }
-
-        var selectedParents = _.map(currentItems(), function(item){
-            if(!item.parent){ //Hvis den er valgt, men ikke har noe parent, er den sin egen 'orden'
-                return item.id;
-            }
-            return item.parent;
-        });
-        return _.filter(parents(), function(parent){
-            return _.contains(selectedParents, parent.id);
-        });
-    });
-
     var stateSelected = function(data, event) {
         settInnStateIListeOgOppdaterSelectedStates(data.id);
     };
@@ -122,7 +106,6 @@ define(function(require){
     return {
         items: items,
         parents: parents,
-        valgteOrdener: valgteOrdener,
         currentItems: currentItems,
         characters: characters,
         selectedStates: selectedStates,
