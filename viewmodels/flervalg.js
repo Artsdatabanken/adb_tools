@@ -90,6 +90,38 @@ define(function(require){
         selectedStates(_.map(selectedCharacters)); //Hent ut states fra valgte characters og sett til valgte states.
     };
 
+    var lagCSV = function(){
+        var taxons = items();
+        var states = _(characters()).map("states").flatten().map("id").value();
+
+        var matrix = {};
+
+        _.forEach(states, function(stateId){
+            matrix[stateId] = [];
+
+            _.forEach(taxons, function(item){
+                matrix[stateId].push(_.contains(item.stateIds, stateId));
+            });
+        });
+
+        var csvContent = "data:text/csv;charset=utf-8,";
+
+        csvContent += ";" + _.map(taxons, "text").join(";") + "\n"; //Taxons top row, empty first cell
+
+        _.forOwn(matrix, function(value, key){
+            csvContent += key + ";";
+            csvContent += value.join(";");
+            csvContent += "\n";
+        });
+
+        var encodedUri = encodeURI(csvContent);
+        var link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", "nokkel.csv");
+
+        link.click();
+    }
+
     return {
         items: items,
         parents: parents,
