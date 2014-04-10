@@ -1,19 +1,19 @@
-<section>
+<section class="row-fluid">
 	<h1 data-bind="text: 'Viser ' + $root.currentItems().length + ' av ' + $root.parents().length + ' ordener'"> </h1>
-	<div class="character-container" data-bind="foreach: charactersToShow">
+	<div class="character-container col-sm-8" data-bind="foreach: charactersToShow">
 		<div class="character">
 			<h5 data-bind="text: text"></h6>
-			<div class="state-container" data-bind="foreach: states">
-				<div class="state" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1}, attr: {'data-stateid': $data.id}, click: $root.stateSelected">
-					<img width="16px" height="16px" data-bind="attr:{src: 'Content/images/' + image}" />
+			<div class="state-container row-fluid" data-bind="foreach: states">
+				<div class="state col-md-6" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1}, attr: {'data-stateid': $data.id}, click: $root.stateSelected">
+					<!-- <img width="16px" height="16px" data-bind="attr:{src: 'Content/images/' + image}" /> -->
 					<p data-bind="text: text"></p>
 				</div>
 			</div>
 		</div>
 		<hr/>
 	</div>
-	<div class="items-container" data-bind="foreach: currentItems">
-		<img width="16px" height="16px" data-bind="attr:{src: 'Content/images/' + image}" />
+	<div class="items-container col-sm-4" data-bind="foreach: currentItems">
+		<!-- <img width="16px" height="16px" data-bind="attr:{src: 'Content/images/' + image}" /> -->
 		<p data-bind="text: text"></p>
 	</div>
 </section>
