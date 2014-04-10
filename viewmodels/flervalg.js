@@ -130,7 +130,7 @@ define(function(require){
 
                 _.forEach(characters, function(character){
                     character.states = _.where(states, {character: character.id});
-                    character.conditions = _(dependencies).where({dependant: character.id}).map('condition').value();
+                    character.conditions = _(dependencies).where({dependant: character.id}).map('condition').flatten().value();
                 });
 
                 that.characters(characters);
