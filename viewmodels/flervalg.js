@@ -12,28 +12,33 @@ define(function(require){
     var selectedCharacters = {};
 
     var filterParents = function(list) {
-        return _.filter(list, function(item){return !item.parent});
+        return _.filter(list, function(item){ return !item.parent; });
     };
 
     var charactersToShow = ko.computed(function() {
         return _.filter(characters(), function(character){
 
-            //Først sjekk på conditions og valgte states
-            if(_.isEmpty(character.conditions)){ return true; }
-
-            var intersection = _.intersection(selectedStates(), character.conditions);
-            if(_.isEmpty(intersection)){//Ikke vis hvis den har conditions, men ingen av de er valgt
-                return false;
+            if(!_.isEmpty(character.conditions)){
+                var intersection = _.intersection(selectedStates(), character.conditions);
+                if(_.isEmpty(intersection)){//Ikke vis hvis den har conditions, men ingen av de er valgt
+                    return false;
+                }
+                return true;
             }
 
-
-
-            // var characterStateIds = _.map(character.states, 'id');
-            // return _.any(currentItems(), function(item) {
-            //     return !_.isEmpty(_.intersection(item.stateIds, characterStateIds));
-            // });
+            return characterNeededByList(character);
         });
     });
+
+    var characterNeededByList = function(character) {
+        var states = character.states;
+
+        return _.any(states, function(state){
+            return _.any(currentItems(), function(item){
+                return _.contains(item.stateIds, state.id);
+            });
+        });
+    };
 
     var filteredItems = ko.computed(function() {
         if(selectedStates().length === 0){
