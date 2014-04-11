@@ -17,6 +17,8 @@
     var selectedKategorier = ko.observableArray([]);
     var selectedArtsgrupper = ko.observableArray([]);
     var selectedHovedhabitater = ko.observableArray([]);
+    var searchTerms = ko.observable("");
+
     var gridViewModelSettings = {
         data: currentItems,
         columns: [
@@ -40,10 +42,11 @@
     };
     var filteredItems = ko.computed(function() {
         gridViewModelSettings.currentPageIndex(0);
+        var foundItems;
         if (selectedKategorier().length === 0 && selectedArtsgrupper().length === 0 && selectedHovedhabitater().length === 0) {
-            currentItems(items());
+            foundItems = items();
         } else {
-            currentItems(ko.utils.arrayFilter(items(), function(item) {
+            foundItems = ko.utils.arrayFilter(items(), function(item) {
                             var kategoriSelected = true;
                             if(selectedKategorier().length !== 0){
                                 kategoriSelected = selectedKategorier().indexOf(item.kategori.substring(0,2)) !== -1;
@@ -57,9 +60,32 @@
                                 hovedhabitatSelected = !_.isEmpty(_.intersection(item.hovedhabitat, selectedHovedhabitater()));
                             }
                             return artsgruppeSelected && kategoriSelected && hovedhabitatSelected;
-            }));
+            });
         }
+
+        if(searchTerms().length !== 0){
+            foundItems = filterSearch(foundItems);
+        }
+
+        currentItems(foundItems);
     });
+
+    var filterSearch = function(listOfItems) {
+        var terms = searchTerms().split(" ");
+
+        return _.filter(listOfItems, function(item){
+            return _.all(terms, function(term) {
+                term = term.toLowerCase();
+                if(item.kategori.toLowerCase().indexOf(term) === 0) { return true;}
+                if(item.ekspertgruppe.toLowerCase().indexOf(term) === 0) { return true; }
+                if(item.scientificName.toLowerCase().indexOf(term) === 0) { return true; }
+                if(item.vernacularName.toLowerCase().indexOf(term) === 0) { return true; }
+                return _.any(item.hovedhabitat, function(habitat){
+                    if(habitat.toLowerCase().indexOf(term) === 0) { return true; }
+                });
+            });
+        });
+    };
 
     return {
         gridViewModelSettings: gridViewModelSettings,
@@ -69,6 +95,7 @@
         selectedKategorier: selectedKategorier,
         selectedArtsgrupper: selectedArtsgrupper,
         selectedHovedhabitater: selectedHovedhabitater,
+        searchTerms: searchTerms,
 
         activate: function () {
             var that = this;
