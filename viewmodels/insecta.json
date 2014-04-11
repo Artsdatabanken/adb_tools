@@ -1,0 +1,6787 @@
+{
+  "name": "Ordensnokkel",
+  "taxa": {
+    "taxon": [
+      {
+        "id": "coll",
+        "text": "Spretthaler - Collembola",
+        "image": "images\\insektnokkel_takson_collembola.png"
+      },
+      {
+        "id": "prot",
+        "text": "Proturer - Protura"
+      },
+      {
+        "id": "dipl",
+        "text": "Tohaler - Diplura"
+      },
+      {
+        "id": "arch",
+        "text": "Hoppebørstehaler - Archaeognatha"
+      },
+      {
+        "id": "zyge",
+        "text": "Børstehaler - Zygentoma",
+        "image": "images\\insektnokkel_takson_zygentoma.png"
+      },
+      {
+        "id": "ephe",
+        "text": "Døgnfluer - Ephemeroptera",
+        "image": "images\\insektnokkel_takson_ephemeroptera.png"
+      },
+      {
+        "id": "ephe_nymfe",
+        "parent": "ephe",
+        "text": "Døgnfluer - Ephemeroptera (Nymfe)",
+        "image": "images\\insektnokkel_takson_ephemeroptera_nymfe.png"
+      },
+      {
+        "id": "ephe_imago",
+        "parent": "ephe",
+        "text": "Døgnfluer - Ephemeroptera (Imago)",
+        "image": "images\\insektnokkel_takson_ephemeroptera.png"
+      },
+      {
+        "id": "odon",
+        "text": "øyenstikkere - Odonata",
+        "image": "images\\insektnokkel_takson_odonata.png"
+      },
+      {
+        "id": "odon_nymfe",
+        "parent": "odon",
+        "text": "øyenstikkere - Odonata (Nymfe)",
+        "image": "images\\insektnokkel_takson_odonata_nymfe.png"
+      },
+      {
+        "id": "odon_imago",
+        "parent": "odon",
+        "text": "øyenstikkere - Odonata (Imago)",
+        "image": "images\\insektnokkel_takson_odonata.png"
+      },
+      {
+        "id": "dict",
+        "text": "Kakerlakker - Dictyoptera: Blattodea",
+        "image": "images\\insektnokkel_takson_blattodea.png"
+      },
+      {
+        "id": "dict_nymfe",
+        "parent": "dict",
+        "text": "Kakerlakker - Dictyoptera: Blattodea (Nymfe)",
+        "image": "images\\insektnokkel_takson_blattodea_nymfe.png"
+      },
+      {
+        "id": "dict_imago",
+        "parent": "dict",
+        "text": "Kakerlakker - Dictyoptera: Blattodea (Imago)",
+        "image": "images\\insektnokkel_takson_blattodea.png"
+      },
+      {
+        "id": "plec",
+        "text": "Steinfluer - Plecoptera",
+        "image": "images\\insektnokkel_takson_plecoptera.png"
+      },
+      {
+        "id": "plec_nymfe",
+        "parent": "plec",
+        "text": "Steinfluer - Plecoptera (Nymfe)"
+      },
+      {
+        "id": "plec_imago",
+        "parent": "plec",
+        "text": "Steinfluer - Plecoptera (Imago)",
+        "image": "images\\insektnokkel_takson_plecoptera.png"
+      },
+      {
+        "id": "plec_imago_brachypter",
+        "parent": "plec_imago",
+        "text": "Steinfluer - Plecoptera (Kortvinget imago)"
+      },
+      {
+        "id": "plec_imago_macropter",
+        "parent": "plec_imago",
+        "text": "Steinfluer - Plecoptera (Langvinget imago)",
+        "image": "images\\insektnokkel_takson_plecoptera.png"
+      },
+      {
+        "id": "derm",
+        "text": "Saksedyr - Dermaptera",
+        "image": "images\\insektnokkel_takson_dermaptera.png"
+      },
+      {
+        "id": "derm_nymfe",
+        "parent": "derm",
+        "text": "Saksedyr - Dermaptera (Nymfe)"
+      },
+      {
+        "id": "derm_imago",
+        "parent": "derm",
+        "text": "Saksedyr - Dermaptera (Imago)",
+        "image": "images\\insektnokkel_takson_dermaptera.png"
+      },
+      {
+        "id": "orth",
+        "text": "Rettvinger - Orthoptera",
+        "image": "images\\insektnokkel_takson_orthoptera.png"
+      },
+      {
+        "id": "orth_nymfe",
+        "parent": "orth",
+        "text": "Rettvinger - Orthoptera (Nymfe)"
+      },
+      {
+        "id": "orth_imago",
+        "parent": "orth",
+        "text": "Rettvinger - Orthoptera (Imago)",
+        "image": "images\\insektnokkel_takson_orthoptera.png"
+      },
+      {
+        "id": "hemi",
+        "text": "Nebbmunner - Hemiptera"
+      },
+      {
+        "id": "auch",
+        "parent": "hemi",
+        "text": "Nebbmunner - Hemiptera (Sikade)",
+        "image": "images\\insektnokkel_takson_hemiptera_auchenorrhyncha.png"
+      },
+      {
+        "id": "auch_nymfe",
+        "parent": "auch",
+        "text": "Nebbmunner - Hemiptera (Sikade: nymfe)"
+      },
+      {
+        "id": "auch_imago",
+        "parent": "auch",
+        "text": "Nebbmunner - Hemiptera (Sikade: imago)",
+        "image": "images\\insektnokkel_takson_hemiptera_auchenorrhyncha.png"
+      },
+      {
+        "id": "hete",
+        "parent": "hemi",
+        "text": "Nebbmunner - Hemiptera (Tege)",
+        "image": "images\\insektnokkel_takson_hemiptera_heteroptera.png"
+      },
+      {
+        "id": "hete_nymfe",
+        "parent": "hete",
+        "text": "Nebbmunner - Hemiptera (Tege: nymfe)",
+        "image": "images\\insektnokkel_takson_hemiptera_heteroptera_nymfe.png"
+      },
+      {
+        "id": "hete_imago",
+        "parent": "hete",
+        "text": "Nebbmunner - Hemiptera (Tege: imago)",
+        "image": "images\\insektnokkel_takson_hemiptera_heteroptera.png"
+      },
+      {
+        "id": "ster",
+        "parent": "hemi",
+        "text": "Nebbmunner - Hemiptera (Plantelus)",
+        "image": "images\\insektnokkel_takson_hemiptera_sternorrhyncha.png"
+      },
+      {
+        "id": "ster_nymfe",
+        "parent": "ster",
+        "text": "Nebbmunner - Hemiptera (Plantelus: nymfe)"
+      },
+      {
+        "id": "ster_imago",
+        "parent": "ster",
+        "text": "Nebbmunner - Hemiptera (Plantelus: imago)"
+      },
+      {
+        "id": "cocc_apter",
+        "parent": "ster",
+        "text": "Nebbmunner - Hemiptera (Skjoldlus: vingeløs)",
+        "image": "images\\insektnokkel_takson_hemiptera_sternorrhyncha_coccoidea.png"
+      },
+      {
+        "id": "cocc_macropter",
+        "parent": "ster",
+        "text": "Nebbmunner - Hemiptera (Skjoldlus: vinget)"
+      },
+      {
+        "id": "thys",
+        "text": "Trips - Thysanoptera"
+      },
+      {
+        "id": "thys_nymfe",
+        "parent": "thys",
+        "text": "Trips - Thysanoptera (Nymfe)"
+      },
+      {
+        "id": "thys_imago",
+        "parent": "thys",
+        "text": "Trips - Thysanoptera (Imago)"
+      },
+      {
+        "id": "psoc",
+        "text": "Støvlus - Psocoptera",
+        "image": "images\\insektnokkel_takson_psocoptera.png"
+      },
+      {
+        "id": "psoc_nymfe",
+        "parent": "psoc",
+        "text": "Støvlus - Psocoptera (Nymfe)",
+        "image": "images\\insektnokkel_takson_psocoptera_nymfe.png"
+      },
+      {
+        "id": "psoc_imago",
+        "parent": "psoc",
+        "text": "Støvlus - Psocoptera (Imago)",
+        "image": "images\\insektnokkel_takson_psocoptera.png"
+      },
+      {
+        "id": "phth",
+        "text": "Lus - Phthiraptera",
+        "image": "images\\insektnokkel_takson_phthiraptera.png"
+      },
+      {
+        "id": "isch",
+        "parent": "phth",
+        "text": "Lus - Phthiraptera (Bitende lus)",
+        "image": "images\\insektnokkel_takson_phthiraptera.png"
+      },
+      {
+        "id": "anop",
+        "parent": "phth",
+        "text": "Lus - Phthiraptera (Sugende lus)"
+      },
+      {
+        "id": "cole",
+        "text": "Biller - Coleoptera"
+      },
+      {
+        "id": "cole_larve",
+        "parent": "cole",
+        "text": "Biller - Coleoptera (Larve)"
+      },
+      {
+        "id": "cole_larve_pars",
+        "parent": "cole_larve",
+        "text": "Biller - Coleoptera (Larve)"
+      },
+      {
+        "id": "scir_larve",
+        "parent": "cole_larve",
+        "text": "Biller - Coleoptera (Hårbille: Larve)",
+        "image": "images\\insektnokkel_takson_coleoptera_scirtidae_larve.png"
+      },
+      {
+        "id": "ripi_larve",
+        "parent": "cole_larve",
+        "text": "Biller - Coleoptera (Ripiphoridae: Planidiumlarve)"
+      },
+      {
+        "id": "cole_imago",
+        "parent": "cole",
+        "text": "Biller - Coleoptera (Imago)"
+      },
+      {
+        "id": "cole_imago_pars",
+        "parent": "cole_imago",
+        "text": "Biller - Coleoptera (Imago)"
+      },
+      {
+        "id": "cole_lamp",
+        "parent": "cole_imago",
+        "text": "Biller - Coleoptera (Vingeløs imago)"
+      },
+      {
+        "id": "mega",
+        "text": "Mudderfluer - Megaloptera",
+        "image": "images\\insektnokkel_takson_megaloptera.png"
+      },
+      {
+        "id": "mega_larve",
+        "parent": "mega",
+        "text": "Mudderfluer - Megaloptera (Larve)"
+      },
+      {
+        "id": "mega_imago",
+        "parent": "mega",
+        "text": "Mudderfluer - Megaloptera (Imago)",
+        "image": "images\\insektnokkel_takson_megaloptera.png"
+      },
+      {
+        "id": "raph",
+        "text": "Kamelhalsfluer - Raphidioptera"
+      },
+      {
+        "id": "raph_larve",
+        "parent": "raph",
+        "text": "Kamelhalsfluer - Raphidioptera (Larve)"
+      },
+      {
+        "id": "raph_imago",
+        "parent": "raph",
+        "text": "Kamelhalsfluer - Raphidioptera (Imago)"
+      },
+      {
+        "id": "neur",
+        "text": "Nettvinger - Neuroptera",
+        "image": "images\\insektnokkel_takson_neuroptera.png"
+      },
+      {
+        "id": "neur_larve",
+        "parent": "neur",
+        "text": "Nettvinger - Neuroptera (Larve)",
+        "image": "images\\insektnokkel_takson_neuroptera_larve.png"
+      },
+      {
+        "id": "neur_larve_pars",
+        "parent": "neur_larve",
+        "text": "Nettvinger - Neuroptera (Larve)",
+        "image": "images\\insektnokkel_takson_neuroptera_larve.png"
+      },
+      {
+        "id": "sisy_larve",
+        "parent": "neur_larve",
+        "text": "Nettvinger - Neuroptera (Svampeflue: larve)"
+      },
+      {
+        "id": "neur_imago",
+        "parent": "neur",
+        "text": "Nettvinger - Neuroptera (Imago)",
+        "image": "images\\insektnokkel_takson_neuroptera.png"
+      },
+      {
+        "id": "neur_imago_pars",
+        "parent": "neur_imago",
+        "text": "Nettvinger - Neuroptera (Imago)",
+        "image": "images\\insektnokkel_takson_neuroptera.png"
+      },
+      {
+        "id": "coni_imago",
+        "parent": "neur_imago",
+        "text": "Nettvinger - Neuroptera (Middløve: imago)",
+        "image": "images\\insektnokkel_takson_neuroptera_coniopterygidae.png"
+      },
+      {
+        "id": "hyme",
+        "text": "Veps - Hymenoptera",
+        "image": "images\\insektnokkel_takson_hymenoptera.png"
+      },
+      {
+        "id": "hyme_larve",
+        "parent": "hyme",
+        "text": "Veps - Hymenoptera (Larve)"
+      },
+      {
+        "id": "symp_larve",
+        "parent": "hyme_larve",
+        "text": "Veps - Hymenoptera (Planteveps: larve)",
+        "image": "images\\insektnokkel_takson_hymenoptera_symphyta_larve.png"
+      },
+      {
+        "id": "symp_larve_pars",
+        "parent": "symp_larve",
+        "text": "Veps - Hymenoptera (Planteveps: larve)",
+        "image": "images\\insektnokkel_takson_hymenoptera_symphyta_larve.png"
+      },
+      {
+        "id": "siri_larve",
+        "parent": "symp_larve",
+        "text": "Veps - Hymenoptera (Bartreveps: larve)"
+      },
+      {
+        "id": "pont_larve",
+        "parent": "symp_larve",
+        "text": "Veps - Hymenoptera (Pontania: larve)"
+      },
+      {
+        "id": "apoc_larve",
+        "parent": "hyme_larve",
+        "text": "Veps - Hymenoptera (Stilkveps: larve)"
+      },
+      {
+        "id": "apoc_larve_1",
+        "parent": "apoc_larve",
+        "text": "Veps - Hymenoptera (Stilkveps: parasittisk larve)"
+      },
+      {
+        "id": "apoc_larve_2",
+        "parent": "apoc_larve",
+        "text": "Veps - Hymenoptera (Stilkveps: galledannende larve)"
+      },
+      {
+        "id": "apoc_larve_3",
+        "parent": "apoc_larve",
+        "text": "Veps - Hymenoptera (Stilkveps: stengelborende larve)"
+      },
+      {
+        "id": "apoc_larve_4",
+        "parent": "apoc_larve",
+        "text": "Veps - Hymenoptera (Stilkveps: sosial/solitær larve)"
+      },
+      {
+        "id": "hyme_imago",
+        "parent": "hyme",
+        "text": "Veps - Hymenoptera (Imago)",
+        "image": "images\\insektnokkel_takson_hymenoptera.png"
+      },
+      {
+        "id": "hyme_imago_pars",
+        "parent": "hyme_imago",
+        "text": "Veps - Hymenoptera (Imago)",
+        "image": "images\\insektnokkel_takson_hymenoptera.png"
+      },
+      {
+        "id": "myma_imago",
+        "parent": "hyme_imago",
+        "text": "Veps - Hymenoptera (Dvergveps: imago)"
+      },
+      {
+        "id": "tric",
+        "text": "Vårfluer - Trichoptera"
+      },
+      {
+        "id": "tric_larve",
+        "parent": "tric",
+        "text": "Vårfluer - Trichoptera (Larve)",
+        "image": "images\\insektnokkel_takson_trichoptera_larve.png"
+      },
+      {
+        "id": "tric_imago",
+        "parent": "tric",
+        "text": "Vårfluer - Trichoptera (Imago)",
+        "image": "images\\insektnokkel_takson_trichoptera.png"
+      },
+      {
+        "id": "lepi",
+        "text": "Sommerfugler - Lepidoptera",
+        "image": "images\\insektnokkel_takson_lepidoptera.png"
+      },
+      {
+        "id": "lepi_larve",
+        "parent": "lepi",
+        "text": "Sommerfugler - Lepidoptera (Larve)"
+      },
+      {
+        "id": "lepi_larve_1",
+        "parent": "lepi_larve",
+        "text": "Sommerfugler - Lepidoptera (Dvergmøll: larve)"
+      },
+      {
+        "id": "lepi_larve_2",
+        "parent": "lepi_larve",
+        "text": "Sommerfugler - Lepidoptera (Frittlevende larve)"
+      },
+      {
+        "id": "lepi_larve_3",
+        "parent": "lepi_larve",
+        "text": "Sommerfugler - Lepidoptera (Minerende, borende eller galledannende larve)"
+      },
+      {
+        "id": "lepi_imago",
+        "parent": "lepi",
+        "text": "Sommerfugler - Lepidoptera (Imago)"
+      },
+      {
+        "id": "siph",
+        "text": "Lopper - Siphonaptera",
+        "image": "images\\insektnokkel_takson_siphonaptera.png"
+      },
+      {
+        "id": "siph_larve",
+        "parent": "siph",
+        "text": "Lopper - Siphonaptera (Larve)"
+      },
+      {
+        "id": "siph_imago",
+        "parent": "siph",
+        "text": "Lopper - Siphonaptera (Imago)",
+        "image": "images\\insektnokkel_takson_siphonaptera.png"
+      },
+      {
+        "id": "meco",
+        "text": "Nebbfluer - Mecoptera",
+        "image": "images\\insektnokkel_takson_mecoptera.png"
+      },
+      {
+        "id": "meco_larve",
+        "parent": "meco",
+        "text": "Nebbfluer - Mecoptera (Larve)"
+      },
+      {
+        "id": "pano_larve",
+        "parent": "meco_larve",
+        "text": "Nebbfluer - Mecoptera (Skorpionflue: larve)"
+      },
+      {
+        "id": "bore_larve",
+        "parent": "meco_larve",
+        "text": "Nebbfluer - Mecoptera (Snønebbflue: larve)"
+      },
+      {
+        "id": "meco_imago",
+        "parent": "meco",
+        "text": "Nebbfluer - Mecoptera (Imago)",
+        "image": "images\\insektnokkel_takson_mecoptera.png"
+      },
+      {
+        "id": "pano_imago",
+        "parent": "meco_imago",
+        "text": "Nebbfluer - Mecoptera (Skorpionflue: imago)",
+        "image": "images\\insektnokkel_takson_mecoptera.png"
+      },
+      {
+        "id": "bore_imago",
+        "parent": "meco_imago",
+        "text": "Nebbfluer - Mecoptera (Snønebbflue: imago)",
+        "image": "images\\insektnokkel_takson_mecoptera_boreidae.png"
+      },
+      {
+        "id": "dipt",
+        "text": "Tovinger - Diptera",
+        "image": "images\\insektnokkel_takson_diptera.png"
+      },
+      {
+        "id": "dipt_larve",
+        "parent": "dipt",
+        "text": "Tovinger - Diptera (Larve)",
+        "image": "images\\insektnokkel_takson_diptera_nematocera_larve.png"
+      },
+      {
+        "id": "dipt_imago",
+        "parent": "dipt",
+        "text": "Tovinger - Diptera (Imago)",
+        "image": "images\\insektnokkel_takson_diptera.png"
+      },
+      {
+        "id": "nema_imago",
+        "parent": "dipt_imago",
+        "text": "Tovinger - Diptera (Mygg: imago)",
+        "image": "images\\insektnokkel_takson_diptera_nematocera.png"
+      },
+      {
+        "id": "nema_imago_pars",
+        "parent": "nema_imago",
+        "text": "Tovinger - Diptera (Mygg: imago)",
+        "image": "images\\insektnokkel_takson_diptera_nematocera.png"
+      },
+      {
+        "id": "pnyx_imago",
+        "parent": "nema_imago",
+        "text": "Tovinger - Diptera (Pnyxia: imago)"
+      },
+      {
+        "id": "brac_imago",
+        "parent": "dipt_imago",
+        "text": "Tovinger - Diptera (Flue: imago)",
+        "image": "images\\insektnokkel_takson_diptera.png"
+      },
+      {
+        "id": "brac_imago_pars",
+        "parent": "brac_imago",
+        "text": "Tovinger - Diptera (Flue: imago)",
+        "image": "images\\insektnokkel_takson_diptera.png"
+      },
+      {
+        "id": "brau_imago",
+        "parent": "brac_imago",
+        "text": "Tovinger - Diptera (Bielusflue: imago)"
+      },
+      {
+        "id": "hipp_aptera_imago",
+        "parent": "brac_imago",
+        "text": "Tovinger - Diptera (Lusflue: imago)"
+      },
+      {
+        "id": "nyct_imago",
+        "parent": "brac_imago",
+        "text": "Tovinger - Diptera (Flaggermusflue: imago)"
+      },
+      {
+        "id": "stre",
+        "text": "Viftevinger - Strepsiptera",
+        "image": "images\\insektnokkel_takson_strepsiptera.png"
+      },
+      {
+        "id": "stre_plan",
+        "parent": "stre",
+        "text": "Viftevinger - Strepsiptera (Planidiumlarve)"
+      },
+      {
+        "id": "stre_plan_1",
+        "parent": "stre_plan",
+        "text": "Viftevinger - Strepsiptera (Planidiumlarve i vert)"
+      },
+      {
+        "id": "stre_plan_2",
+        "parent": "stre_plan",
+        "text": "Viftevinger - Strepsiptera (Planidiumlarve utenfor vert)"
+      },
+      {
+        "id": "stre_parasittlarve",
+        "parent": "stre",
+        "text": "Viftevinger - Strepsiptera (Parasittisk larve)"
+      },
+      {
+        "id": "stre_imago_hann",
+        "parent": "stre",
+        "text": "Viftevinger - Strepsiptera (Imago hann)",
+        "image": "images\\insektnokkel_takson_strepsiptera.png"
+      },
+      {
+        "id": "stre_imago_hunn",
+        "parent": "stre",
+        "text": "Viftevinger - Strepsiptera (Imago hunn)"
+      }
+    ]
+  },
+  "characters": {
+    "character": [
+      {
+        "id": "habitat1",
+        "text": "Livsmiljø"
+      },
+      {
+        "id": "habitat2",
+        "text": "Livsmiljø på land"
+      },
+      {
+        "id": "habitat3",
+        "text": "Livsmiljø i plantevev"
+      },
+      {
+        "id": "mat1",
+        "text": "Føde"
+      },
+      {
+        "id": "mat2",
+        "text": "Dyreføde"
+      },
+      {
+        "id": "kropp1",
+        "text": "Kroppsbygning"
+      },
+      {
+        "id": "brystbein1",
+        "text": "Brystbein"
+      },
+      {
+        "id": "brystbein2",
+        "text": "Brystbein: kloledd"
+      },
+      {
+        "id": "vinger1",
+        "text": "Vinger"
+      },
+      {
+        "id": "vinger2",
+        "text": "Vinger: tekstur og fasong"
+      },
+      {
+        "id": "vinger3",
+        "text": "Vinger: framvingens ribbenett"
+      },
+      {
+        "id": "vinger4",
+        "text": "Vinger: størrelse"
+      },
+      {
+        "id": "vinger5",
+        "text": "Vinger: hår, skjell og voksbekledning"
+      },
+      {
+        "id": "vinger6",
+        "text": "Vinger: vingenode"
+      },
+      {
+        "id": "vinger7",
+        "text": "Vinger: ribbenettets forgreininger"
+      },
+      {
+        "id": "vinger8",
+        "text": "Vinger: framvingestruktur"
+      },
+      {
+        "id": "vinger9",
+        "text": "Vinger: modifikasjon av vingepar"
+      },
+      {
+        "id": "vinger10",
+        "text": "Dekkvingestruktur"
+      },
+      {
+        "id": "hode1",
+        "text": "Hode"
+      },
+      {
+        "id": "oyne1",
+        "text": "øyne"
+      },
+      {
+        "id": "oyne2",
+        "text": "øyne: øyetype"
+      },
+      {
+        "id": "oyne3",
+        "text": "øyne: panneøyne"
+      },
+      {
+        "id": "antenner1",
+        "text": "Antenner"
+      },
+      {
+        "id": "antenner2",
+        "text": "Antenner: utforming"
+      }
+    ]
+  },
+  "states": {
+    "state": [
+      {
+        "id": "habitat1_a",
+        "character": "habitat1",
+        "text": "På land, inklusive vannoverflaten og strandsonen",
+        "image": "images\\insektnokkel_trekk_land.png"
+      },
+      {
+        "id": "habitat1_b",
+        "character": "habitat1",
+        "text": "I vann",
+        "image": "images\\insektnokkel_trekk_ferskvann.png"
+      },
+      {
+        "id": "habitat2_a",
+        "character": "habitat2",
+        "text": "Frittlevende eller i habitater som jord, strøfall, sopp, morken ved, reir og bol",
+        "image": "images\\insektnokkel_trekk_land.png"
+      },
+      {
+        "id": "habitat2_b",
+        "character": "habitat2",
+        "text": "I levende plantevev (galledannere, bladminerere, vedborere m.m.)",
+        "image": "images\\insektnokkel_trekk_larve_med_parasitt.png"
+      },
+      {
+        "id": "habitat2_c",
+        "character": "habitat2",
+        "text": "I levende dyrevev (parasitter og parasittoider)",
+        "image": "images\\insektnokkel_trekk_larve_med_parasitt.png"
+      },
+      {
+        "id": "habitat2_d",
+        "character": "habitat2",
+        "text": "I pels eller fjærdrakt"
+      },
+      {
+        "id": "habitat3_a",
+        "character": "habitat3",
+        "text": "I bladminer",
+        "image": "images\\insektnokkel_trekk_bladminerer.png"
+      },
+      {
+        "id": "habitat3_b",
+        "character": "habitat3",
+        "text": "I galler",
+        "image": "images\\insektnokkel_trekk_eikegaller.png"
+      },
+      {
+        "id": "habitat3_c",
+        "character": "habitat3",
+        "text": "I stengel, rot, blomst eller frukt av urteaktig plante",
+        "image": "images\\insektnokkel_trekk_larve_i_stengel.png"
+      },
+      {
+        "id": "habitat3_d",
+        "character": "habitat3",
+        "text": "I ved, inklusive rotved",
+        "image": "images\\insektnokkel_trekk_billegalleri.png"
+      },
+      {
+        "id": "mat1_a",
+        "character": "mat1",
+        "text": "Planter (inklusive plantesaft og nektar)"
+      },
+      {
+        "id": "mat1_b",
+        "character": "mat1",
+        "text": "Dyr (inklusive blod og kroppsvæske)"
+      },
+      {
+        "id": "mat1_c",
+        "character": "mat1",
+        "text": "Sopp eller lav"
+      },
+      {
+        "id": "mat1_d",
+        "character": "mat1",
+        "text": "Møkk eller åtsler"
+      },
+      {
+        "id": "mat1_e",
+        "character": "mat1",
+        "text": "Detritus (dvs strøfall og døde planterester)"
+      },
+      {
+        "id": "mat1_f",
+        "character": "mat1",
+        "text": "Ingen føde (munndeler vanligvis tilbakedannet)"
+      },
+      {
+        "id": "mat2_a",
+        "character": "mat2",
+        "text": "Rovdyr på insekter og andre små dyr"
+      },
+      {
+        "id": "mat2_b",
+        "character": "mat2",
+        "text": "Blodsuger"
+      },
+      {
+        "id": "mat2_c",
+        "character": "mat2",
+        "text": "Endoparasitt"
+      },
+      {
+        "id": "kropp1_a",
+        "character": "kropp1",
+        "text": "Kroppen med tydelig inndeling i hode, bryst og bakkropp. Brystet består av tre kroppssegmenter og er tydelig avsnevret fra, eller har vesentlig annerledes oppbygning enn bakkroppen. Brystbein finnes. Vinger vanligvis tilstede"
+      },
+      {
+        "id": "kropp1_b",
+        "character": "kropp1",
+        "text": "Det første brystsegmentet danner på ryggsiden et kraftig ryggskjold (pronotum). De to bakre er mindre og mykere og går rett over i bakkroppen. Unntaksvis er begge de to første brystsegmentene kraftig utviklet. Brystbein finnes. Vinger vanligvis tilstede"
+      },
+      {
+        "id": "kropp1_c",
+        "character": "kropp1",
+        "text": "Brystet og bakkroppen har liknende oppbygning og er tett sammensveiset uten nevneverdig innsnevring mellom. Brystbein finnes eller mangler. Hodet kan være redusert eller mangle. Alltid vingeløs"
+      },
+      {
+        "id": "brystbein1_a",
+        "character": "brystbein1",
+        "text": "Brystbein finnes"
+      },
+      {
+        "id": "brystbein1_b",
+        "character": "brystbein1",
+        "text": "Brystbein mangler"
+      },
+      {
+        "id": "brystbein2_a",
+        "character": "brystbein2",
+        "text": "Brystbein med to (unntaksvis tre) klør på ytterste ledd, i det minste på noen av beinene"
+      },
+      {
+        "id": "brystbein2_b",
+        "character": "brystbein2",
+        "text": "Brystbein med &eacute;n klo på ytterste ledd"
+      },
+      {
+        "id": "brystbein2_c",
+        "character": "brystbein2",
+        "text": "Brystbein uten klo på  ytterste ledd"
+      },
+      {
+        "id": "vinger1_a",
+        "character": "vinger1",
+        "text": "To par funksjonelle flygevinger (i hvile kan bakvingen være mer eller mindre skjult)"
+      },
+      {
+        "id": "vinger1_b",
+        "character": "vinger1",
+        "text": "Ett par funksjonelle vinger som i hvile er godt synlige (ikke sammenbrettbare)"
+      },
+      {
+        "id": "vinger1_c",
+        "character": "vinger1",
+        "text": "Framvingene omdannet til harde eller læraktige dekkvinger. Hvis bakvinger finnes, skjules de i hvile helt eller delvis av dekkvingene"
+      },
+      {
+        "id": "vinger1_d",
+        "character": "vinger1",
+        "text": "Mangler funksjonelle flygevinger, men har vingeanlegg eller modifiserte/rudimentære vinger"
+      },
+      {
+        "id": "vinger1_e",
+        "character": "vinger1",
+        "text": "Helt uten spor av vingeanlegg på de to bakre brystsegmentene"
+      },
+      {
+        "id": "vinger2_a",
+        "character": "vinger2",
+        "text": "Vinger hele eller flikete. Fram- og bakvinge med lik, membranøs struktur"
+      },
+      {
+        "id": "vinger2_b",
+        "character": "vinger2",
+        "text": "Vinger hele eller flikete. Framvinger læraktige, bakvinger membranøse"
+      },
+      {
+        "id": "vinger2_c",
+        "character": "vinger2",
+        "text": "Vinger svært smale eller kølleformede med lange kanthår"
+      },
+      {
+        "id": "vinger3_a",
+        "character": "vinger3",
+        "text": "Framvingen med tallrike langsgående og tverrgående ribber. Minst ti ribber ender i vingens framkant"
+      },
+      {
+        "id": "vinger3_b",
+        "character": "vinger3",
+        "text": "Framvingen med tallrike langsgående og tverrgående ribber. Færre enn ti ribber ender i vingens framkant"
+      },
+      {
+        "id": "vinger3_c",
+        "character": "vinger3",
+        "text": "Framvingen med færre og hovedsakelig langsgående ribber"
+      },
+      {
+        "id": "vinger3_d",
+        "character": "vinger3",
+        "text": "Framvingen med svært redusert eller helt manglende ribbenett (tre eller færre ribber)"
+      },
+      {
+        "id": "vinger4_a",
+        "character": "vinger4",
+        "text": "Framvingen tydelig lengre enn bakvingen. "
+      },
+      {
+        "id": "vinger4_b",
+        "character": "vinger4",
+        "text": "Begge vingepar har omtrent samme lengde"
+      },
+      {
+        "id": "vinger5_a",
+        "character": "vinger5",
+        "text": "Vinger uten skjellbekledning og uten eller kun med glissen behåring."
+      },
+      {
+        "id": "vinger5_b",
+        "character": "vinger5",
+        "text": "Vinger med tett behåring"
+      },
+      {
+        "id": "vinger5_c",
+        "character": "vinger5",
+        "text": "Vinger helt eller delvis kledd med flate, overlappende skjell"
+      },
+      {
+        "id": "vinger5_d",
+        "character": "vinger5",
+        "text": "Vinger dekket av et hvitt vokslag"
+      },
+      {
+        "id": "vinger6_a",
+        "character": "vinger6",
+        "text": "Hver vinge med en liten knekk (vingenode) på midten eller indre del av framkanten"
+      },
+      {
+        "id": "vinger6_b",
+        "character": "vinger6",
+        "text": "Vingene uten knekk på framkanten"
+      },
+      {
+        "id": "vinger7_a",
+        "character": "vinger7",
+        "text": "Vingenes ribber med tallrike gaffelforgreininger nær vingekanten"
+      },
+      {
+        "id": "vinger7_b",
+        "character": "vinger7",
+        "text": "Vingenes ribber uten tallrike forgreininger nær vingekanten"
+      },
+      {
+        "id": "vinger8_a",
+        "character": "vinger8",
+        "text": "Framvingen todelt med et læraktig parti ved basis og et membranøst parti ytterst"
+      },
+      {
+        "id": "vinger8_b",
+        "character": "vinger8",
+        "text": "Framvingen ensartet"
+      },
+      {
+        "id": "vinger9_a",
+        "character": "vinger9",
+        "text": "Bakvingene omdannet til svingkøller (haltere)"
+      },
+      {
+        "id": "vinger9_b",
+        "character": "vinger9",
+        "text": "Framvingene omdannet til svingkøller (haltere)"
+      },
+      {
+        "id": "vinger9_c",
+        "character": "vinger9",
+        "text": "Bakvingen redusert men membranøs, ikke kølleaktig"
+      },
+      {
+        "id": "vinger9_d",
+        "character": "vinger9",
+        "text": "Bakvingen helt fraværende"
+      },
+      {
+        "id": "vinger10_a",
+        "character": "vinger10",
+        "text": "Dekkvingene læraktige med synlig ribbenett"
+      },
+      {
+        "id": "vinger10_b",
+        "character": "vinger10",
+        "text": "Dekkvingene læraktige eller harde, uten ekte ribbenett men ofte med langsgående furer, riller eller punktrader"
+      },
+      {
+        "id": "hode1_a",
+        "character": "hode1",
+        "text": "Hode velutviklet, stort eller lite, vanligvis utstyrt med øyne og/eller følehorn"
+      },
+      {
+        "id": "hode1_b",
+        "character": "hode1",
+        "text": "Hode svært redusert eller helt fraværende. øyne og følehorn mangler"
+      },
+      {
+        "id": "oyne1_a",
+        "character": "oyne1",
+        "text": "Hodet med fasettøyne eller ett eller flere par sidepunktøyne, ofte også 1-3 panneøyne"
+      },
+      {
+        "id": "oyne1_b",
+        "character": "oyne1",
+        "text": "Hodet helt uten øyne"
+      },
+      {
+        "id": "oyne2_a",
+        "character": "oyne2",
+        "text": "Hodet med to (sjeldnere fire) fasettøyne bestående av noen få til flere tusen tettsittende, sekskantede fasetter"
+      },
+      {
+        "id": "oyne2_b",
+        "character": "oyne2",
+        "text": "Hodet med to bringebærliknende øyne sammensatt av store, runde men godt adskilte enkeltøyne"
+      },
+      {
+        "id": "oyne2_c",
+        "character": "oyne2",
+        "text": "Hodet uten ekte fasettøyne, men med ett eller flere (opptil 30) adskilte sidepunktøyne. Panneøyne finnes eller mangler"
+      },
+      {
+        "id": "oyne3_a",
+        "character": "oyne3",
+        "text": "Ingen panneøyne"
+      },
+      {
+        "id": "oyne3_b",
+        "character": "oyne3",
+        "text": "Ett panneøye"
+      },
+      {
+        "id": "oyne3_c",
+        "character": "oyne3",
+        "text": "To panneøyne"
+      },
+      {
+        "id": "oyne3_d",
+        "character": "oyne3",
+        "text": "Tre panneøyne"
+      },
+      {
+        "id": "antenner1_a",
+        "character": "antenner1",
+        "text": "Antenner mer enn dobbelt så lange som hodet"
+      },
+      {
+        "id": "antenner1_b",
+        "character": "antenner1",
+        "text": "Antenner høyst dobbelt så lange som hodet, eller fraværende"
+      },
+      {
+        "id": "antenner2_a",
+        "character": "antenner2",
+        "text": "Antenner trådformede med fem eller flere segmenter"
+      },
+      {
+        "id": "antenner2_b",
+        "character": "antenner2",
+        "text": "Antenner fjærformede, kamformede eller  kølleformede"
+      },
+      {
+        "id": "antenner2_c",
+        "character": "antenner2",
+        "text": "De to første antenneleddene kraftige, de påfølgende danner en hårfin svepe"
+      },
+      {
+        "id": "antenner2_d",
+        "character": "antenner2",
+        "text": "Antenner annerledes eller mangler"
+      }
+    ]
+  },
+  "pairs": {
+    "pair": [
+      {
+        "taxon": "coll",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "prot",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "dipl",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "habitat1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "prot",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "dipl",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "habitat2_d"
+      },
+      {
+        "taxon": "anop",
+        "state": "habitat2_d"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "habitat2_d"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat2_b"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "habitat2_d"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "habitat2_d"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "habitat2_a"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "habitat2_c"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat3_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat3_c"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat3_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "habitat3_b"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "habitat3_b"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "habitat3_c"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat3_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat3_b"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat3_c"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat3_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat3_b"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat3_c"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "habitat3_d"
+      },
+      {
+        "taxon": "coll",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "coll",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "coll",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "prot",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "prot",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "dipl",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "dipl",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "arch",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "arch",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "zyge",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "zyge",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "isch",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "isch",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "anop",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat1_e"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat1_c"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat1_d"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "mat1_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "mat1_b"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "mat1_f"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "anop",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "mat2_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "mat2_c"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "mat2_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat2_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "mat2_b"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "mat2_c"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "mat2_c"
+      },
+      {
+        "taxon": "coll",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "prot",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "dipl",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "arch",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "zyge",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "isch",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "anop",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "kropp1_b"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "kropp1_a"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "kropp1_c"
+      },
+      {
+        "taxon": "coll",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "prot",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "dipl",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "brystbein1_a"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "brystbein1_b"
+      },
+      {
+        "taxon": "coll",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "prot",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "dipl",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "anop",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "brystbein2_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "brystbein2_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "brystbein2_c"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "brystbein2_c"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "brystbein2_c"
+      },
+      {
+        "taxon": "coll",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "prot",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "dipl",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "arch",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "zyge",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "isch",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "anop",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "vinger1_c"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "vinger1_d"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "vinger1_b"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "vinger1_e"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger2_b"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger2_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger2_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger2_b"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger2_c"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger2_c"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger2_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger3_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger3_d"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger3_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger3_c"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger4_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger4_b"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "vinger5_d"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger5_b"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "vinger5_d"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "vinger5_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "vinger5_c"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "vinger5_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "vinger6_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger6_b"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "vinger7_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger7_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger7_b"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "vinger7_b"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "vinger7_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "vinger7_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger8_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger8_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger8_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger8_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger9_c"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "vinger9_d"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger9_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger9_c"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "vinger9_d"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "vinger9_c"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "vinger9_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "vinger9_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "vinger9_a"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "vinger9_b"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "vinger10_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "vinger10_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "vinger10_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger10_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "vinger10_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "vinger10_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "vinger10_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "vinger10_b"
+      },
+      {
+        "taxon": "coll",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "prot",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "dipl",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "hode1_a"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "hode1_b"
+      },
+      {
+        "taxon": "coll",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "prot",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "dipl",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "arch",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "anop",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "oyne1_b"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "oyne1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "arch",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "cocc_apter",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "isch",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "anop",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "oyne2_b"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "oyne2_a"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "oyne2_c"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "oyne2_b"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "oyne2_b"
+      },
+      {
+        "taxon": "coll",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "zyge",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne3_b"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne3_c"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "oyne3_d"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "oyne3_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "prot",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "dipl",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "anop",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "antenner1_b"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "antenner1_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "coll",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "prot",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "dipl",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "arch",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "zyge",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "ephe_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "ephe_imago",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "odon_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "odon_imago",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "dict_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "dict_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "plec_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "plec_imago_brachypter",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "plec_imago_macropter",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "derm_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "derm_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "orth_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "orth_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "auch_nymfe",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "auch_imago",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "hete_nymfe",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "hete_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "ster_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "ster_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "cocc_macropter",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "thys_nymfe",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "thys_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "psoc_nymfe",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "psoc_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "isch",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "anop",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "cole_larve_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "scir_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "ripi_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "cole_imago_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "cole_lamp",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "mega_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "mega_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "raph_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "raph_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "neur_larve_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "sisy_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "neur_imago_pars",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "coni_imago",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "symp_larve_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "siri_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "pont_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "apoc_larve_1",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "apoc_larve_2",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "apoc_larve_3",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "apoc_larve_4",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "hyme_imago_pars",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "myma_imago",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "tric_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "tric_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "lepi_larve_1",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "lepi_larve_2",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "lepi_larve_3",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "lepi_imago",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "siph_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "siph_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "pano_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "bore_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "pano_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "bore_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "dipt_larve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "antenner2_b"
+      },
+      {
+        "taxon": "nema_imago_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "pnyx_imago",
+        "state": "antenner2_a"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "brac_imago_pars",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "brau_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "antenner2_c"
+      },
+      {
+        "taxon": "hipp_aptera_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "nyct_imago",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "stre_plan_1",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "stre_plan_2",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "stre_parasittlarve",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "stre_imago_hann",
+        "state": "antenner2_d"
+      },
+      {
+        "taxon": "stre_imago_hunn",
+        "state": "antenner2_d"
+      }
+    ]
+  },
+  "dependencies": {
+    "dependency": [
+      {
+        "dependant": "habitat2",
+        "condition": "habitat1_a"
+      },
+      {
+        "dependant": "habitat3",
+        "condition": "habitat2_b"
+      },
+      {
+        "dependant": "mat2",
+        "condition": "mat1_b"
+      },
+      {
+        "dependant": "brystbein2",
+        "condition": "brystbein1_a"
+      },
+      {
+        "dependant": "vinger2",
+        "condition": "vinger1_a"
+      },
+      {
+        "dependant": "vinger3",
+        "condition": "vinger1_a"
+      },
+      {
+        "dependant": "vinger4",
+        "condition": "vinger1_a"
+      },
+      {
+        "dependant": "vinger5",
+        "condition": "vinger2_a"
+      },
+      {
+        "dependant": "vinger6",
+        "condition": "vinger2_a"
+      },
+      {
+        "dependant": "vinger7",
+        "condition": "vinger2_a"
+      },
+      {
+        "dependant": "vinger8",
+        "condition": "vinger2_b"
+      },
+      {
+        "dependant": "vinger9",
+        "condition": "vinger1_b"
+      },
+      {
+        "dependant": "vinger10",
+        "condition": "vinger1_c"
+      },
+      {
+        "dependant": "oyne1",
+        "condition": "hode1_a"
+      },
+      {
+        "dependant": "oyne2",
+        "condition": "oyne1_a"
+      },
+      {
+        "dependant": "oyne3",
+        "condition": "oyne1_a"
+      },
+      {
+        "dependant": "antenner2",
+        "condition": [
+          "antenner1_a",
+          "antenner1_b"
+        ]
+      }
+    ]
+  }
+}
