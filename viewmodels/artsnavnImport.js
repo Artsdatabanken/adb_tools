@@ -1,7 +1,6 @@
 ﻿define(function (require) {
     var system = require('durandal/system');
     var app = require('durandal/app');
-    var SimpleGrid = require('./simpleGrid');
     var ko = require('knockout');
     var http = require('plugins/http');
     var serializer = require('plugins/serializer');
