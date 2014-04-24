@@ -27,7 +27,7 @@ define(function (require) {
         router: true,
         dialog: true,
         widget: {
-            kinds: ['grid']
+            kinds: ['grid', 'treemenu']
         }
     });
 
