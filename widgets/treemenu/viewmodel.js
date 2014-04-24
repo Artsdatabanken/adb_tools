@@ -34,14 +34,15 @@
                 return;
             }
             _.forEach(that.items, function(item){
-                recurFunc(item, terms);
+                _.forEach(item.children, function(child){
+                    recurFunc(child, terms);
+                });
             });
         });
     };
 
     var hideAll = function(item) {
         item.hidden(true);
-
         _.forEach(item.children, function(child){ hideAll(child);});
     }
 
@@ -65,6 +66,7 @@
 
         if(found.length > 0) {
             item.hidden(false);
+            return true;
         }
     };
 
