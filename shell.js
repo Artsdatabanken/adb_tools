@@ -11,7 +11,6 @@
         },
         activate: function () {
             router.map([
-                { route: '', title: 'Welcome', moduleId: 'viewmodels/welcome', nav: true },
                 { route: 'Ansvarsarter', title: 'Ansvarsarter', moduleId: 'viewmodels/ansvarsarter', nav: true },
                 { route: 'ArtsnavnImport', title: 'ArtsnavnImport', moduleId: 'viewmodels/artsnavnImport', nav: true },
                 { route: 'Flervalg', title: 'Flervalg', moduleId: 'viewmodels/flervalg', nav: true },
