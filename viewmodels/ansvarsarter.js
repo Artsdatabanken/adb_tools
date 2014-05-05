@@ -70,6 +70,20 @@
         currentItems(foundItems);
     });
 
+    var summaryText = ko.computed(function() {
+        var textConcat = selectedKategorier().concat(selectedArtsgrupper()).concat(selectedHovedhabitater());
+        textConcat = textConcat.concat(_.isEmpty(searchTerms()) ? [] : searchTerms().split(" "));
+        var text = textConcat.join(", ");
+        var numHits = currentItems().length + " treff";
+
+        var bindingText = "";
+        if(!_.isEmpty(text)){
+            bindingText = " gav "
+        }
+
+        return text + bindingText + numHits;
+    });
+
     var filterSearch = function(listOfItems) {
         var terms = searchTerms().split(" ");
 
@@ -96,6 +110,7 @@
         selectedArtsgrupper: selectedArtsgrupper,
         selectedHovedhabitater: selectedHovedhabitater,
         searchTerms: searchTerms,
+        summaryText: summaryText,
 
         activate: function () {
             var that = this;
