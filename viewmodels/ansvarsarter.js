@@ -84,6 +84,13 @@
         return text + bindingText + numHits;
     });
 
+    var resetFilters = function() {
+        selectedKategorier([]);
+        selectedArtsgrupper([]);
+        selectedHovedhabitater([]);
+        searchTerms("");
+    };
+
     var filterSearch = function(listOfItems) {
         var terms = searchTerms().split(" ");
 
@@ -111,6 +118,7 @@
         selectedHovedhabitater: selectedHovedhabitater,
         searchTerms: searchTerms,
         summaryText: summaryText,
+        resetFilters: resetFilters,
 
         activate: function () {
             var that = this;
