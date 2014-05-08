@@ -19,6 +19,7 @@
             <select multiple title='Velg hovedhabitater' class="form-control" data-bind="selectPicker: selectedHovedhabitater, selectPickerOptions: { optionsArray: hovedhabitater }"></select>
         </div>
     </div>
+    <button data-bind="click: resetFilters" class="btn btn-info pull-right">Reset</button> <span data-bind="text: summaryText"></span>
 
     <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </div>

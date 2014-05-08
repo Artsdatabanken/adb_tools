@@ -70,15 +70,36 @@
         currentItems(foundItems);
     });
 
+    var summaryText = ko.computed(function() {
+        var textConcat = selectedKategorier().concat(selectedArtsgrupper()).concat(selectedHovedhabitater());
+        textConcat = textConcat.concat(_.isEmpty(searchTerms()) ? [] : searchTerms().split(/\s+/));
+        var text = textConcat.join(", ");
+        var numHits = currentItems().length + " treff";
+
+        var bindingText = "";
+        if(!_.isEmpty(text)){
+            bindingText = " gav "
+        }
+
+        return text + bindingText + numHits;
+    });
+
+    var resetFilters = function() {
+        selectedKategorier([]);
+        selectedArtsgrupper([]);
+        selectedHovedhabitater([]);
+        searchTerms("");
+    };
+
     var filterSearch = function(listOfItems) {
-        var terms = searchTerms().split(" ");
+        var terms = searchTerms().split(/\s+/);
 
         return _.filter(listOfItems, function(item){
             return _.all(terms, function(term) {
                 term = term.toLowerCase();
                 if(item.kategori.toLowerCase().indexOf(term) === 0) { return true;}
                 if(item.ekspertgruppe.toLowerCase().indexOf(term) === 0) { return true; }
-                if(item.scientificName.toLowerCase().indexOf(term) === 0) { return true; }
+                if(item.scientificName.toLowerCase().indexOf(term) !== -1) { return true; }
                 if(item.vernacularName.toLowerCase().indexOf(term) === 0) { return true; }
                 return _.any(item.hovedhabitat, function(habitat){
                     if(habitat.toLowerCase().indexOf(term) === 0) { return true; }
@@ -96,6 +117,8 @@
         selectedArtsgrupper: selectedArtsgrupper,
         selectedHovedhabitater: selectedHovedhabitater,
         searchTerms: searchTerms,
+        summaryText: summaryText,
+        resetFilters: resetFilters,
 
         activate: function () {
             var that = this;
