@@ -72,7 +72,7 @@
 
     var summaryText = ko.computed(function() {
         var textConcat = selectedKategorier().concat(selectedArtsgrupper()).concat(selectedHovedhabitater());
-        textConcat = textConcat.concat(_.isEmpty(searchTerms()) ? [] : searchTerms().split(" "));
+        textConcat = textConcat.concat(_.isEmpty(searchTerms()) ? [] : searchTerms().split(/\s+/));
         var text = textConcat.join(", ");
         var numHits = currentItems().length + " treff";
 
@@ -92,7 +92,7 @@
     };
 
     var filterSearch = function(listOfItems) {
-        var terms = searchTerms().split(" ");
+        var terms = searchTerms().split(/\s+/);
 
         return _.filter(listOfItems, function(item){
             return _.all(terms, function(term) {
