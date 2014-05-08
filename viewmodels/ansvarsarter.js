@@ -99,7 +99,7 @@
                 term = term.toLowerCase();
                 if(item.kategori.toLowerCase().indexOf(term) === 0) { return true;}
                 if(item.ekspertgruppe.toLowerCase().indexOf(term) === 0) { return true; }
-                if(item.scientificName.toLowerCase().indexOf(term) === 0) { return true; }
+                if(item.scientificName.toLowerCase().indexOf(term) !== -1) { return true; }
                 if(item.vernacularName.toLowerCase().indexOf(term) === 0) { return true; }
                 return _.any(item.hovedhabitat, function(habitat){
                     if(habitat.toLowerCase().indexOf(term) === 0) { return true; }
