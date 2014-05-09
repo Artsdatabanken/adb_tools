@@ -27,9 +27,18 @@
     </table>
 
     <div>
-        <button class="btn btn-default" data-bind='click: downloadCsv, visible: showDownload()'>
-            Last ned CSV
+        <button data-toggle="modal" data-target="#CsvDataModal" class="btn btn-default" data-bind='click: downloadCsv'>
+            Kopier tabelldata
         </button>
+        <div class="modal fade" id="CsvDataModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                        <span>Marker all teksten (Ctrl-a), kopier den (Ctrl-c) og lim inn i Excel</span>
+                        <textarea data-bind="text: csvData"></textarea>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <ul class="pagination pagination-sm">

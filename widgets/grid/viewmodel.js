@@ -14,31 +14,22 @@
         return columns;
     };
 
-    SimpleGrid.prototype.showDownload = function(){
-        return Modernizr.adownload;
-    }
-
     SimpleGrid.prototype.downloadCsv = function() {
         if(this.data().length === 0) { return; }
 
-        var csvContent = "data:text/csv;charset=utf-8,";
+        var csvContent = "";
 
         var texts = _.map(this.columns, function(item) { return item.rowText });
-        csvContent += _.map(this.columns, function(item) { return item.headerText }).join(";") + "\n";
+        csvContent += _.map(this.columns, function(item) { return item.headerText }).join("\t") + "\n";
 
         this.data().forEach(function(object, index){
             texts.forEach(function(text){
                 csvContent += typeof text === 'function' ? text(object) : object[text];
-                csvContent += ";";
+                csvContent += "\t";
             });
             csvContent += "\n";
         });
-        var encodedUri = encodeURI(csvContent);
-        var link = document.createElement("a");
-        link.setAttribute("href", encodedUri);
-        link.setAttribute("download", "data.csv");
-
-        link.click();
+        this.csvData(csvContent);
     };
 
     SimpleGrid.prototype.activate = function(settings) {
@@ -46,6 +37,7 @@
         this.data = configuration.data;
         this.currentPageIndex = configuration.currentPageIndex || ko.observable(0);
         this.pageSize = configuration.pageSize || 5;
+        this.csvData = ko.observable("");
 
         this.sortBy = configuration.sortBy;
 
