@@ -28,13 +28,14 @@
 
     <div>
         <button data-toggle="modal" data-target="#CsvDataModal" class="btn btn-default" data-bind='click: downloadCsv'>
-            Kopier tabelldata
+            Tabell i Excel-vennlig format
         </button>
+        <span class="help-block">Åpner et vindu med alt innholdet fra tabellen slik at dette kan kopieres og limes inn i f.eks. Excel</span>
         <div class="modal fade" id="CsvDataModal" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                        <span>Marker all teksten (Ctrl-a), kopier den (Ctrl-c) og lim inn i Excel</span>
-                        <textarea data-bind="text: csvData"></textarea>
+                    <span class="help-block">Marker all teksten (Ctrl-a), kopier den (Ctrl-c) og lim inn i Excel</span>
+                    <textarea data-bind="text: csvData"></textarea>
                 </div>
             </div>
         </div>
