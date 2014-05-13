@@ -21,20 +21,22 @@
     </div>
 
     <div class="row-fluid">
-        <button data-bind="click: resetFilters" class="btn btn-info">Reset</button>
-        <span data-bind="text: currentItems().length + ' treff'"></span>
+        <strong data-bind="text: currentItems().length + ' treff'"></strong>
     </div>
-    <br/>
     <div class="row-fluid">
     <!-- ko foreach: selectedKategorier -->
-        <span data-bind="text: $data, click: function(){$parent.selectedKategorier.remove($data)}" class="btn btn-primary btn-xs"></span>
+        <button data-bind="text: $data, click: function(){$parent.selectedKategorier.remove($data)}" class="btn btn-primary btn-xs top-buffer"></button>
     <!-- /ko -->
     <!-- ko foreach: selectedArtsgrupper -->
-        <span data-bind="text: $data, click: function(){$parent.selectedArtsgrupper.remove($data)}" class="btn btn-primary btn-xs"></span>
+        <button data-bind="text: $data, click: function(){$parent.selectedArtsgrupper.remove($data)}" class="btn btn-primary btn-xs top-buffer"></button>
     <!-- /ko -->
     <!-- ko foreach: selectedHovedhabitater -->
-        <span data-bind="text: $data, click: function(){$parent.selectedHovedhabitater.remove($data)}" class="btn btn-primary btn-xs"></span>
+        <button data-bind="text: $data, click: function(){$parent.selectedHovedhabitater.remove($data)}" class="btn btn-primary btn-xs top-buffer"></button>
+    <!-- /ko -->
+    <!-- ko if: selectedKategorier().length !== 0 || selectedArtsgrupper().length !== 0 || selectedHovedhabitater().length !== 0 -->
+        <button data-bind="click: resetFilters" class="btn btn-danger btn-xs top-buffer">Fjern alle <i class="glyphicon glyphicon-remove"></i></button>
     <!-- /ko -->
     </div>
+    <br/>
     <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </div>
