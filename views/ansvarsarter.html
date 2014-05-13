@@ -19,7 +19,22 @@
             <select multiple title='Velg hovedhabitater' class="form-control" data-bind="selectPicker: selectedHovedhabitater, selectPickerOptions: { optionsArray: hovedhabitater }"></select>
         </div>
     </div>
-    <button data-bind="click: resetFilters" class="btn btn-info pull-right">Reset</button> <span data-bind="text: summaryText"></span>
 
+    <div class="row-fluid">
+        <button data-bind="click: resetFilters" class="btn btn-info">Reset</button>
+        <span data-bind="text: currentItems().length + ' treff'"></span>
+    </div>
+    <br/>
+    <div class="row-fluid">
+    <!-- ko foreach: selectedKategorier -->
+        <span data-bind="text: $data, click: function(){$parent.selectedKategorier.remove($data)}" class="btn btn-primary btn-xs"></span>
+    <!-- /ko -->
+    <!-- ko foreach: selectedArtsgrupper -->
+        <span data-bind="text: $data, click: function(){$parent.selectedArtsgrupper.remove($data)}" class="btn btn-primary btn-xs"></span>
+    <!-- /ko -->
+    <!-- ko foreach: selectedHovedhabitater -->
+        <span data-bind="text: $data, click: function(){$parent.selectedHovedhabitater.remove($data)}" class="btn btn-primary btn-xs"></span>
+    <!-- /ko -->
+    </div>
     <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </div>
