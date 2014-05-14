@@ -14,7 +14,8 @@
                 { route: 'Ansvarsarter', title: 'Ansvarsarter', moduleId: 'viewmodels/ansvarsarter', nav: true },
                 { route: 'ArtsnavnImport', title: 'ArtsnavnImport', moduleId: 'viewmodels/artsnavnImport', nav: true },
                 { route: 'Flervalg', title: 'Flervalg', moduleId: 'viewmodels/flervalg', nav: true },
-                { route: 'Galleri/:id', title: 'Galleri', moduleId: 'viewmodels/galleri', nav: true}
+                { route: 'Galleri/:id', title: 'Galleri', moduleId: 'viewmodels/galleri', nav: true},
+                { route: 'Søk', title: 'Søk', moduleId: 'viewmodels/search', nav: true}
             ]).buildNavigationModel();
 
             return router.activate();
