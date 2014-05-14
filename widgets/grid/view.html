@@ -16,11 +16,11 @@
             <tr data-bind="foreach: $parent.columns">
                 <!-- ko if: typeof href !== 'undefined' -->
                 <td>
-                    <a data-bind="attr: { href: typeof href == 'function' ? href($parent) : $parent[href]}, text: $parent[rowText]"></a>
+                    <a data-bind="attr: { href: typeof href == 'function' ? href($parent) : $parent[href]}, text: $parent[rowText], css: $data.classList === undefined ? '' : classList"></a>
                 </td>
                 <!-- /ko -->
                 <!-- ko if: typeof href === 'undefined' -->
-                <td data-bind="text: typeof rowText == 'function' ? rowText($parent) : $parent[rowText]"></td>
+                <td data-bind="text: typeof rowText == 'function' ? rowText($parent) : $parent[rowText], css: $data.classList === undefined ? '' : classList"></td>
                 <!-- /ko -->
             </tr>
         </tbody>
