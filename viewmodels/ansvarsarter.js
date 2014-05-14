@@ -22,7 +22,7 @@
     var gridViewModelSettings = {
         data: currentItems,
         columns: [
-            { headerText: "Vitenskapelignavn", isSortable: true, rowText: "scientificName", href: function (item) { return "http://www.artsportalen.artsdatabanken.no/#/Rodliste2010/Vurdering/" + item.scientificName.replace(" ", "_") + "/" + item.rodlistevurderingID; } },
+            { headerText: "Vitenskapelignavn", isSortable: true, rowText: "scientificName", classList: "scientific-name", href: function (item) { return "http://www.artsportalen.artsdatabanken.no/#/Rodliste2010/Vurdering/" + item.scientificName.replace(" ", "_") + "/" + item.rodlistevurderingID; } },
             { headerText: "Populærnavn", isSortable: true, rowText: "vernacularName" },
             { headerText: "Kategori", isSortable: true, rowText: "kategori" },
             { headerText: "Hovedhabitat", rowText: function (item) { return item.hovedhabitat.join(", ");  } },
