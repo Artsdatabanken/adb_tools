@@ -6,6 +6,7 @@
     var search = ko.observable("");
     var items = ko.observableArray([]);
     var selectedRanks = ko.observableArray([]);
+    var suggestions = ko.observableArray([]);
 
     var rankMapping = ko.observableArray([
         { text: "Art"           , value: "species"},
@@ -71,19 +72,32 @@
     };
 
     var currentSearch;
+    var currentSuggest;
     ko.computed(function(){
         if(currentSearch) { currentSearch.abort(); }
+        if(currentSuggest) { currentSuggest.abort(); }
         currentSearch = http.get("/Api/Taxon/ScientificName", {scientificName: search(), taxonRank: selectedRanks()});
         currentSearch.then(function (response) {
             items(response);
         });
+
+        currentSuggest = http.get("Api/Taxon/ScientificName/Suggest", {scientificName: search()});
+        currentSuggest.then(function (response) {
+            suggestions(response);
+        });
     });
+
+    var doSearch = function(term) {
+        search(term);
+    };
 
     return {
         search: search,
         gridViewModelSettings: gridViewModelSettings,
         rankMapping: rankMapping,
         selectedRanks: selectedRanks,
+        suggestions: suggestions,
+        doSearch: doSearch,
 
         activate : function() {
             return http.get("/Api/Taxon/ScientificName").then(function (response) {
