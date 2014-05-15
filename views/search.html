@@ -1,5 +1,13 @@
 ﻿<section id="Search">
-	<input class="form-control" data-bind="value: search, valueUpdate:'keyup'"/>
-
+	<div class="row">
+        <div class="form-group col-sm-6">
+            <label>Søk:</label>
+            <input class="form-control" data-bind="value: search, valueUpdate:'keyup'"/>
+        </div>
+        <div class="form-group col-sm-6">
+            <label>Rank:</label>
+            <select multiple title='Velg ranks' class="form-control" data-bind="selectPicker: selectedRanks,optionsText: 'text', optionsValue : 'value',  selectPickerOptions: { optionsArray: rankMapping}"></select>
+        </div>
+    </div>
 	<div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </section>
