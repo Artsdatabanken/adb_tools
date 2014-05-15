@@ -86,7 +86,9 @@
         selectedRanks: selectedRanks,
 
         activate : function() {
-
+            return http.get("/Api/Taxon/ScientificName").then(function (response) {
+                items(response);
+            });
         }
     }
 })
