@@ -70,9 +70,11 @@
         }
     };
 
+    var currentSearch;
     ko.computed(function(){
-        if(search().length < 3){ return; }
-        var hit = http.get("/Api/Taxon/ScientificName", {scientificName: search(), taxonRank: selectedRanks()}).then(function (response) {
+        if(currentSearch) { currentSearch.abort(); }
+        currentSearch = http.get("/Api/Taxon/ScientificName", {scientificName: search(), taxonRank: selectedRanks()});
+        currentSearch.then(function (response) {
             items(response);
         });
     });
