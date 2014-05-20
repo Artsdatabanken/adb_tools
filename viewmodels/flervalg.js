@@ -189,6 +189,13 @@ define(function(require){
                 _.forEach(characters, function(character){
                     character.states = _.where(states, {character: character.id});
                     character.conditions = _(dependencies).where({dependant: character.id}).map('condition').flatten().value();
+
+                    _.forEach(character.states, function(state){
+                        state.html = ko.observable();
+                        http.get("Widgets/135260").then(function(response){
+                            state.html(response);
+                        });
+                    })
                 });
 
                 that.characters(characters);
