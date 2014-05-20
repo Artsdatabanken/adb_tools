@@ -167,9 +167,11 @@ define(function(require){
                 _.forEach(taxa, function(taxon){
                     taxon.stateIds = _(pairs).filter({taxon: taxon.id}).map('state').value();
                     taxon.html = ko.observable();
-                    http.get("Widgets/135260").then(function(response){
-                        taxon.html(response);
-                    });
+                    if (taxon.widget != undefined) {
+                        http.get(taxon.widget).then(function (response) {
+                            taxon.html(response);
+                        });
+                    }
                 });
 
                 that.items(taxa);
@@ -192,9 +194,11 @@ define(function(require){
 
                     _.forEach(character.states, function(state){
                         state.html = ko.observable();
-                        http.get("Widgets/135260").then(function(response){
-                            state.html(response);
-                        });
+                        if (state.widget != undefined) {
+                            http.get(state.widget).then(function (response) {
+                                state.html(response);
+                            });
+                        }
                     })
                 });
 

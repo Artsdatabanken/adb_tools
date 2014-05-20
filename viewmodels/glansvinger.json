@@ -4,36 +4,42 @@
       {
         "id": "Cupido_minimus",
         "text": "Dvergblåvinge - Cupido minimus",
-        "image": "images_lyc\\099_Cupido_minimus_m.png"
+        "image": "images_lyc\\099_Cupido_minimus_m.png",
+		"widget": "Widgets/138547"
       },
       {
         "id": "Cupido_minimus_M",
         "parent": "Cupido_minimus",
         "text": "Dvergblåvinge - Cupido minimus(Hann)",
-        "image": "images_lyc\\099_Cupido_minimus_m.png"
+        "image": "images_lyc\\099_Cupido_minimus_m.png",
+		"widget": "Widgets/135260"
       },
       {
         "id": "Cupido_minimus_F",
         "parent": "Cupido_minimus",
         "text": "Dvergblåvinge - Cupido minimus(Hunn)",
-        "image": "images_lyc\\099_Cupido_minimus_f.png"
+        "image": "images_lyc\\099_Cupido_minimus_f.png",
+		"widget": "Widgets/135261"
       },
       {
         "id": "Celastrina_argiolus",
         "text": "Vårblåvinge - Celastrina argiolus",
-        "image": "images_lyc\\100_Celastrina_argiolus_m.png"
+        "image": "images_lyc\\100_Celastrina_argiolus_m.png",
+		"widget": "Widgets/138624"
       },
       {
         "id": "Celastrina_argiolus_M",
         "parent": "Celastrina_argiolus",
         "text": "Vårblåvinge - Celastrina argiolus(Hann)",
-        "image": "images_lyc\\100_Celastrina_argiolus_m.png"
+        "image": "images_lyc\\100_Celastrina_argiolus_m.png",
+		"widget": "Widgets/138622"
       },
       {
         "id": "Celastrina_argiolus_F",
         "parent": "Celastrina_argiolus",
         "text": "Vårblåvinge - Celastrina argiolus(Hunn)",
-        "image": "images_lyc\\100_Celastrina_argiolus_f.png"
+        "image": "images_lyc\\100_Celastrina_argiolus_f.png",
+		"widget": "Widgets/138623"
       },
       {
         "id": "Scolitantides_orion",
@@ -631,13 +637,15 @@
         "id": "o1_a",
         "character": "o1",
         "text": "Vingeoversiden med blå tegninger eller blå glans",
-        "image": "images_lyc\\o1a.png"
+        "image": "images_lyc\\o1a.png",
+		"widget": "Widgets/135204"
       },
       {
         "id": "o1_b",
         "character": "o1",
         "text": "Vingeoversiden uten blå tegninger, i høyden med litt blå pudring nær roten",
-        "image": "images_lyc\\o1b.png"
+        "image": "images_lyc\\o1b.png",
+		"widget": "Widgets/135205"
       },
       {
         "id": "o2_a",
