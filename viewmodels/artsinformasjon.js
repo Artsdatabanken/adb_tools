@@ -23,11 +23,13 @@
         }
     };
 
-    ko.computed(function parseInput(){
+    var parseInput = function (){
         if(inputText().length === 0) { return; }
 
         var lines = inputText().split("\n");
         headers(lines[0].split(/\t/));
+        headers.push("Forslag");
+        createColumnHeaders();
 
         items(_.map(_.rest(lines), function(line){
             var item = {};
@@ -37,18 +39,26 @@
             });
             return item;
         }));
-    });
 
-    ko.computed(function createColumnHeaders(){
+        getAdditionalInfo();
+    };
+
+    var createColumnHeaders = function(){
         var headerColumns = _.map(headers(), function(header){
             return {headerText: header, isSortable: true, rowText: header}
         });
         columns(headerColumns);
-    });
+    };
 
-    ko.computed(function(){
+    var getAdditionalInfo = function() {
 
-    });
+        var promises = [];
+        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia');}));
+        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia2');}));
+        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia3');}));
+
+        $.when.apply(undefined, promises).then(function() {console.log('all done');});
+    };
 
     return {
         inputText: inputText,
