@@ -166,6 +166,10 @@ define(function(require){
 
                 _.forEach(taxa, function(taxon){
                     taxon.stateIds = _(pairs).filter({taxon: taxon.id}).map('state').value();
+                    taxon.html = ko.observable();
+                    http.get("Widgets/135260").then(function(response){
+                        taxon.html(response);
+                    });
                 });
 
                 that.items(taxa);
