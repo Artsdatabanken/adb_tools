@@ -1,10 +1,12 @@
 ﻿define(function(require) {
     var ko = require('knockout');
     var _ = require('underscore');
+    var http = require('plugins/http')
 
     var headerNames = ["scientificname", "vitenskapelignavn"];
     var headers = ko.observableArray([]);
     var inputText = ko.observable("");
+    var parsedItems;
     var items = ko.observableArray([]);
     var columns = ko.observableArray([]);
     var gridViewModelSettings = {
@@ -31,14 +33,14 @@
         headers.push("Forslag");
         createColumnHeaders();
 
-        items(_.map(_.rest(lines), function(line){
+        parsedItems = _.map(_.rest(lines), function(line){
             var item = {};
             var splitLine = line.split(/\t/)
             _.each(headers(), function(header, index){
                 item[header] = splitLine[index];
             });
             return item;
-        }));
+        });
 
         getAdditionalInfo();
     };
@@ -51,17 +53,35 @@
     };
 
     var getAdditionalInfo = function() {
-
         var promises = [];
-        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia');}));
-        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia2');}));
-        promises.push( http.get("Api/Taxon/ScientificName", {scientificName: "sad"}).then(function(){console.log('heia3');}));
+        var secondLevelPromises = [];
+        var newItems = [];
 
-        $.when.apply(undefined, promises).then(function() {console.log('all done');});
+        _.forEach(parsedItems, function(item){
+            newItems.push(item);
+            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn})
+                .then(function(response){
+                    if(response.length === 0){
+                        secondLevelPromises.push(http.get("Api/Taxon/ScientificName/Suggest", {scientificName: item.Vitenskapelignavn})
+                            .then(function(response){
+                                item.Forslag = response.join(", ");
+                            }));
+                    }
+                })
+            );
+
+        });
+
+        $.when.apply(undefined, promises).then(function() {
+            $.when.apply(undefined, secondLevelPromises).then(function() {
+                items(newItems);
+            });
+        });
     };
 
     return {
         inputText: inputText,
+        parseInput: parseInput,
         gridViewModelSettings: gridViewModelSettings,
 
         activate : function() {
