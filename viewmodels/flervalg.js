@@ -15,30 +15,48 @@ define(function(require){
         return _.filter(list, function(item){ return !item.parent; });
     };
 
-    var charactersToShow = ko.computed(function() {
-        return _.filter(characters(), function(character){
-
+    var filterConditionsCharacter = function(characters) {
+        return _.filter(characters, function(character){
             if(!_.isEmpty(character.conditions)){
                 var intersection = _.intersection(selectedStates(), character.conditions);
-                if(_.isEmpty(intersection)){//Ikke vis hvis den har conditions, men ingen av de er valgt
+                if(_.isEmpty(intersection)){//Do not show if it has conditions, but none of them are chosen
                     return false;
                 }
                 return true;
             }
-
-            return characterNeededByList(character);
-        });
-    });
-
-    var characterNeededByList = function(character) {
-        var states = character.states;
-
-        return _.any(states, function(state){
-            return _.any(currentItems(), function(item){
-                return _.contains(item.stateIds, state.id);
-            });
+            return true;
         });
     };
+
+    var charactersToShow = ko.computed(function() {
+        //Find all stateIds for currently shown items, and for children if applicable.
+        //Parents do not have their own stateIds, only their children have
+        var statesCurrentIds = _.map(currentItems(), function(item){
+
+            //Will work without children as well, just a noop then
+            var children = item.children;
+            children = _.filter(items(), function(item){
+                return _.contains(children, item.id);
+            });
+            var states = _.flatten(children, "stateIds");
+
+            //No children, use own states instead
+            if(states.length === 0) { states = item.stateIds }
+            return states;
+        });
+
+        //statesCurrentIds is a list of lists, that contain all the states for each item
+        var filteredCharacters = _.filter(characters(), function(character){
+            var stateIds = _.map(character.states, "id");
+
+            //For a character to be shown, it has to have one of its states in all of the states for the current items
+            return _.all(statesCurrentIds, function(state) {
+                return ! _.isEmpty(_.intersection(state, stateIds));
+            });
+        });
+
+        return filterConditionsCharacter(filteredCharacters);
+    });
 
     var filteredItems = ko.computed(function() {
         if(selectedStates().length === 0){
@@ -174,20 +192,6 @@ define(function(require){
                     }
                 });
 
-                that.items(taxa);
-                that.parents(filterParents(that.items()));
-
-                _.forEach(that.parents(), function(parent){
-                    parent.children = [];
-                    _.forEach(that.items(), function(item){
-                        if(item.parent === parent.id){
-                            parent.children.push(item.id);
-                        }
-                    });
-                });
-
-                that.currentItems(that.parents());
-
                 _.forEach(characters, function(character){
                     character.states = _.where(states, {character: character.id});
                     character.conditions = _(dependencies).where({dependant: character.id}).map('condition').flatten().value();
@@ -202,7 +206,21 @@ define(function(require){
                     })
                 });
 
+                var parents = filterParents(taxa);
+                _.forEach(parents, function(parent){
+                    parent.children = [];
+                    _.forEach(taxa, function(item){
+                        if(item.parent === parent.id){
+                            parent.children.push(item.id);
+                        }
+                    });
+                });
+                that.parents(parents);
+
+                that.currentItems(parents);
+                that.items(taxa);
                 that.characters(characters);
+
             });
         }
     };
