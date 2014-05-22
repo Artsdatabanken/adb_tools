@@ -19,8 +19,9 @@
 
         var csvContent = "";
 
-        var texts = _.map(this.columns, function(item) { return item.rowText });
-        csvContent += _.map(this.columns, function(item) { return item.headerText }).join("\t") + "\n";
+        var columns = typeof this.columns === "function" ? this.columns() : this.columns;
+        var texts = _.map(columns, function(item) { return item.rowText });
+        csvContent += _.map(columns, function(item) { return item.headerText }).join("\t") + "\n";
 
         this.data().forEach(function(object, index){
             texts.forEach(function(text){
