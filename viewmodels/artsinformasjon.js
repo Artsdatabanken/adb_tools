@@ -9,6 +9,26 @@
     var parsedItems;
     var items = ko.observableArray([]);
     var columns = ko.observableArray([]);
+    var typeaheadHit = ko.observable("");
+    var typeaheads2 = ko.observableArray(["a", "aa", "ada", "dvadaa"]);
+
+    var substringMatcher = function(strs) {
+        return function findMatches(query, callback) {
+            var matches, substringRegex;
+            matches = [];
+            substrRegex = new RegExp(query, "i");
+
+            $.each(strs(), function(i, str) {
+                if (substrRegex.test(str)) {
+                    matches.push({ value: str });
+                }
+            });
+            callback(matches);
+        };
+    };
+
+    var typeaheads = substringMatcher(typeaheads2);
+
     var gridViewModelSettings = {
         data: items,
         columns: columns,
@@ -91,6 +111,8 @@
     return {
         inputText: inputText,
         parseInput: parseInput,
+        typeaheadHit: typeaheadHit,
+        typeaheads: typeaheads,
         gridViewModelSettings: gridViewModelSettings,
 
         activate : function() {

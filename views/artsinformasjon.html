@@ -1,5 +1,10 @@
 ﻿<div>
     <textarea autofocus rows="20" class="form-control" data-bind="value: inputText, valueUpdate: 'keyup'"></textarea>
+    <div class="top-buffer">
+            <label>Søk etter artsnivå:</label>
+            <input class="form-control" type="text" data-bind="typeahead: typeaheads, value: typeaheadHit"/>
+    </div>
+
     <button class="btn btn-primary top-buffer" data-bind="click: parseInput">Parse</button>
     <div data-bind='grid:{configuration: gridViewModelSettings}'>
         <table data-dummy="dummy">
