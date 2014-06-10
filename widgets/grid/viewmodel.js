@@ -20,6 +20,7 @@
         var csvContent = "";
 
         var columns = typeof this.columns === "function" ? this.columns() : this.columns;
+        columns = _.filter(columns, function(column) { return !column.skipCsv } );
         var texts = _.map(columns, function(item) { return item.rowText });
         csvContent += _.map(columns, function(item) { return item.headerText }).join("\t") + "\n";
 
