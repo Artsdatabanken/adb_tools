@@ -1,5 +1,26 @@
 ﻿<div>
-	<textarea data-bind="value: inputText, valueUpdate: 'keyup'"></textarea>
-    <button class="btn btn-primary" data-bind="click: parseInput">Parse</button>
-    <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
+    <textarea autofocus rows="20" class="form-control" data-bind="value: inputText, valueUpdate: 'keyup'"></textarea>
+    <button class="btn btn-primary top-buffer" data-bind="click: parseInput">Parse</button>
+    <div data-bind='grid:{configuration: gridViewModelSettings}'>
+        <table data-dummy="dummy">
+            <tr data-bind="foreach: $parent.columns" data-part="table-row">
+                <!-- ko if: headerText === 'Forslag' -->
+                    <!-- ko if: $parent.Forslag -->
+                        <!-- ko if: $parent.Forslag().length === 0 -->
+                            <td><input data-bind="value: $parent.Vitenskapelignavn, valueUpdate: 'keyup'"/></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.Forslag().length > 0 -->
+                            <td><select data-bind="value: $parent.Vitenskapelignavn, options: $parent.Forslag, optionsCaption: 'Mener du en av disse?'"></select></td>
+                        <!-- /ko -->
+                    <!-- /ko -->
+                    <!-- ko ifnot: $parent.Forslag-->
+                        <td></td>
+                    <!-- /ko -->
+                <!-- /ko -->
+                <!-- ko ifnot: headerText === 'Forslag' -->
+                    <td data-bind="text: typeof rowText == 'function' ? rowText($parent) : $parent[rowText], css: $data.classList === undefined ? '' : classList"></td>
+                <!-- /ko -->
+            </tr>
+        </table>
+    </div>
 </div>

@@ -47,7 +47,15 @@
 
     var createColumnHeaders = function(){
         var headerColumns = _.map(headers(), function(header){
-            return {headerText: header, isSortable: true, rowText: header}
+            return {
+                        headerText: header,
+                        isSortable: true,
+                        rowText: function(item) {
+                                if(typeof item[header] === "function") return item[header]();
+                                return item[header];
+                        },
+                        skipCsv: header === "Forslag"
+                    }
         });
         columns(headerColumns);
     };
@@ -64,7 +72,8 @@
                     if(response.length === 0){
                         secondLevelPromises.push(http.get("Api/Taxon/ScientificName/Suggest", {scientificName: item.Vitenskapelignavn})
                             .then(function(response){
-                                item.Forslag = response.join(", ");
+                                item.Forslag = ko.observableArray(response);
+                                item.Vitenskapelignavn = ko.observable(item.Vitenskapelignavn);
                             }));
                     }
                 })
