@@ -13,7 +13,7 @@
             </tr>
         </thead>
         <tbody class="table table-hover" data-bind="foreach: itemsOnCurrentPage">
-            <tr data-bind="foreach: $parent.columns">
+            <tr data-bind="foreach: $parent.columns" data-part="table-row">
                 <!-- ko if: typeof href !== 'undefined' -->
                 <td>
                     <a data-bind="attr: { href: typeof href == 'function' ? href($parent) : $parent[href]}, text: $parent[rowText], css: $data.classList === undefined ? '' : classList"></a>
