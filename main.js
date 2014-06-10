@@ -15,7 +15,8 @@ define(function (require) {
     var system = require('durandal/system');
     var app = require('durandal/app');
     var viewLocator = require('durandal/viewLocator');
-    var selectBindings = require('../../App/koSelectBinding');
+    var selectBindings = require('koSelectBinding');
+    var typeaheadBinding = require('typeaheadBinding');
 
     //>>excludeStart("build", true);
     system.debug(true);
