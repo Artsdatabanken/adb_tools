@@ -9,25 +9,42 @@
     var parsedItems;
     var items = ko.observableArray([]);
     var columns = ko.observableArray([]);
-    var typeaheadHit = ko.observable("");
-    var typeaheads2 = ko.observableArray(["a", "aa", "ada", "dvadaa"]);
+    var typeaheadSelectedValue = ko.observable({});
+    var typeaheadTextValue = ko.observable();
+    var searchName = ko.observable();
+    var searchId = "";
 
-    var substringMatcher = function(strs) {
-        return function findMatches(query, callback) {
-            var matches, substringRegex;
-            matches = [];
-            substrRegex = new RegExp(query, "i");
+    ko.computed(function() {
+        if( _.isEmpty(typeaheadTextValue()) || typeaheadSelectedValue().ScientificName !== typeaheadTextValue()) {
+            searchName("Du søker nå i alle arter");
+            searchId = "";
+        }
+        else {
+            searchName("Du søker nå fra og med " + typeaheadSelectedValue().ScientificName);
+            searchId = typeaheadSelectedValue().id;
+        }
+    });
 
-            $.each(strs(), function(i, str) {
-                if (substrRegex.test(str)) {
-                    matches.push({ value: str });
-                }
-            });
-            callback(matches);
-        };
+    var typeaheadSource = {
+        source: function() {
+                    var currentSearch;
+                    return function(query, callback) {
+                        if(currentSearch) { currentSearch.abort(); }
+                        currentSearch = http.get("/Api/Taxon/ScientificName/Lookup", {scientificName: query});
+                        currentSearch.then(function (response) {
+                            callback(response);
+                        });
+                        return currentSearch;
+                    }
+                }(),
+        displayKey: function(item) { return item.ScientificName + " <span class='text-muted'>" + item.ScientificNameAuthorship + "</span>"; },
+        valueKey: "ScientificName"
     };
 
-    var typeaheads = substringMatcher(typeaheads2);
+    var typeaheadOptions = {
+        hint: false,
+        minLength: 2
+    };
 
     var gridViewModelSettings = {
         data: items,
@@ -47,6 +64,7 @@
 
     var parseInput = function (){
         if(inputText().length === 0) { return; }
+        items([]);
 
         var lines = inputText().split("\n");
         headers(lines[0].split(/\t/));
@@ -87,36 +105,55 @@
 
         _.forEach(parsedItems, function(item){
             newItems.push(item);
-            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn})
-                .then(function(response){
+            item.Id = ko.observable()
+            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn, higherClassificationId: searchId})
+                .then(function(response) {
                     if(response.length === 0){
                         secondLevelPromises.push(http.get("Api/Taxon/ScientificName/Suggest", {scientificName: item.Vitenskapelignavn})
                             .then(function(response){
                                 item.Forslag = ko.observableArray(response);
                                 item.Vitenskapelignavn = ko.observable(item.Vitenskapelignavn);
                             }));
+                    } else {
+                        item.Id(response[0].scientificNameID);
                     }
                 })
             );
-
         });
 
         $.when.apply(undefined, promises).then(function() {
             $.when.apply(undefined, secondLevelPromises).then(function() {
+                headers.push("Id");
+                createColumnHeaders();
                 items(newItems);
             });
+        });
+    };
+
+    var parseFixedTable = function() {
+        _.forEach(items(), function(item){
+            if(typeof item.Vitenskapelignavn !== "function") { return; } //Skip items that had a hit the first time around
+
+            http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn, higherClassificationId: searchId})
+                .then(function(response) {
+                    if(response.length > 0) {
+                        item.Forslag(null);
+                        item.Vitenskapelignavn(response[0].scientificName);
+                        item.Id(response[0].scientificNameID);
+                    }
+                });
         });
     };
 
     return {
         inputText: inputText,
         parseInput: parseInput,
-        typeaheadHit: typeaheadHit,
-        typeaheads: typeaheads,
+        parseFixedTable: parseFixedTable,
+        typeaheadSelectedValue: typeaheadSelectedValue,
+        typeaheadSource: typeaheadSource,
+        typeaheadOptions: typeaheadOptions,
+        typeaheadTextValue: typeaheadTextValue,
+        searchName: searchName,
         gridViewModelSettings: gridViewModelSettings,
-
-        activate : function() {
-
-        }
     };
 });

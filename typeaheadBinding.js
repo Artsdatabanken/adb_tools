@@ -6,11 +6,8 @@
             var $element = $(element);
             var allBindings = allBindingsAccessor();
             var typeaheadOpts = {};
-            var source = { source: ko.utils.unwrapObservable(valueAccessor()) };
-
-            triggerChange = function() {
-                $element.change();
-            }
+            var source = ko.utils.unwrapObservable(valueAccessor());
+            var selectedValue;
 
             if (allBindings.typeaheadOptions) {
                 $.each(allBindings.typeaheadOptions, function (optionName, optionValue) {
@@ -18,9 +15,26 @@
                 });
             }
 
+             if (allBindings.selectedValue) {
+                selectedValue = allBindings.selectedValue
+             }
+
+            var triggerChange = function($event, changeValue, datasetName) {
+                if(selectedValue) { selectedValue(changeValue); }
+                $element.val(changeValue[source.valueKey]);
+                $element.change();
+            }
+
+            var blurFix = function() {
+                if($element.val() === "") { return; }
+                $element.val(selectedValue()[source.valueKey]);
+            }
+
             $element.attr("autocomplete", "off").typeahead(typeaheadOpts, source )
                 .on("typeahead:selected", triggerChange)
-                .on("typeahead:autocompleted", triggerChange);
+                .on("typeahead:autocompleted", triggerChange)
+                .on("typeahead:cursorchanged", triggerChange)
+                .on("blur", blurFix);
         }
     };
 });
