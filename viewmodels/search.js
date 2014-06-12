@@ -97,6 +97,11 @@
         search(term);
     };
 
+    var resetFilters = function () {
+        selectedRanks([]);
+        search("");
+    };
+
     return {
         search: search,
         gridViewModelSettings: gridViewModelSettings,
@@ -104,6 +109,7 @@
         selectedRanks: selectedRanks,
         suggestions: suggestions,
         doSearch: doSearch,
+        resetFilters: resetFilters,
 
         activate : function() {
             return http.get("/Api/Taxon/ScientificName").then(function (response) {

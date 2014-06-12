@@ -15,5 +15,13 @@
             <a data-bind="text: $data, click: $parent.doSearch" href="#"></a>
         </li>
     </ul>
+    <div class="row-fluid">
+        <!-- ko foreach: selectedRanks -->
+        <button data-bind="text: $data, click: function(){$parent.selectedRanks.remove($data)}" class="btn btn-primary btn-xs top-buffer"></button>
+        <!-- /ko -->
+        <!-- ko if: selectedRanks().length !== 0 -->
+        <button data-bind="click: resetFilters" class="btn btn-danger btn-xs top-buffer">Fjern alle <i class="glyphicon glyphicon-remove"></i></button>
+        <!-- /ko -->
+    </div>
     <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </section>
