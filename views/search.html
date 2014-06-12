@@ -5,13 +5,15 @@
             <input class="form-control" data-bind="value: search, valueUpdate:'keyup'"/>
         </div>
         <div class="form-group col-sm-6">
-            <label>Rank:</label>
+            <label>Filter:</label>
             <select multiple title='Velg ranks' class="form-control" data-bind="selectPicker: selectedRanks,optionsText: 'text', optionsValue : 'value',  selectPickerOptions: { optionsArray: rankMapping}"></select>
         </div>
     </div>
     <span data-bind="css: {hidden: suggestions().length === 0}">Mente du:</span>
-    <div class="" data-bind="foreach: suggestions">
-        <a data-bind="text: $data, click: $parent.doSearch" href="#"></a>
-    </div>
+    <ul class="list-inline" data-bind="foreach: suggestions" style="display:inline-block;">
+        <li>
+            <a data-bind="text: $data, click: $parent.doSearch" href="#"></a>
+        </li>
+    </ul>
     <div data-bind='grid:{configuration: gridViewModelSettings}'></div>
 </section>

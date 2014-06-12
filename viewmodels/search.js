@@ -57,6 +57,12 @@
                 rowText: function(item) {return _.where(rankMapping(), {value: item.taxonRank})[0].text},
                 classList: "break-line"
             },
+            {
+                headerText: "Scientific Name Id",
+                isSortable: false,
+                rowText: "scientificNameID",
+                classList: "break-line"
+            }
         ],
         pageSize: 25,
         currentPageIndex: ko.observable(0),
@@ -83,7 +89,7 @@
 
         currentSuggest = http.get("Api/Taxon/ScientificName/Suggest", {scientificName: search()});
         currentSuggest.then(function (response) {
-            suggestions(response);
+            suggestions(_.filter(response, function(x) { return x != search(); }));
         });
     });
 
