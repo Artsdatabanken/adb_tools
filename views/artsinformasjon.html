@@ -15,10 +15,10 @@
                 <!-- ko if: headerText === 'Forslag' -->
                     <!-- ko if: $parent.Forslag -->
                         <!-- ko if: $parent.Forslag().length === 0 -->
-                            <td><input data-bind="value: $parent.Vitenskapelignavn, valueUpdate: 'keyup'"/></td>
+                            <td><input data-bind="value: $parent.ScientificName, valueUpdate: 'keyup'" /></td>
                         <!-- /ko -->
                         <!-- ko if: $parent.Forslag().length > 0 -->
-                            <td><select data-bind="value: $parent.Vitenskapelignavn, options: $parent.Forslag, optionsCaption: 'Mener du en av disse?'"></select></td>
+                            <td><select data-bind="value: $parent.ScientificName, options: $parent.Forslag, optionsCaption: 'Mener du en av disse?'"></select></td>
                         <!-- /ko -->
                     <!-- /ko -->
                     <!-- ko ifnot: $parent.Forslag-->

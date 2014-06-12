@@ -105,16 +105,18 @@
 
         _.forEach(parsedItems, function(item){
             newItems.push(item);
-            item.Id = ko.observable()
-            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn, higherClassificationId: searchId})
+            item.Id = ko.observable();
+            item.ScientificName = ko.observable();
+            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn.trim(), higherClassificationId: searchId})
                 .then(function(response) {
                     if(response.length === 0){
                         secondLevelPromises.push(http.get("Api/Taxon/ScientificName/Suggest", {scientificName: item.Vitenskapelignavn})
                             .then(function(response){
                                 item.Forslag = ko.observableArray(response);
-                                item.Vitenskapelignavn = ko.observable(item.Vitenskapelignavn);
+                                item.ScientificName = ko.observable(item.ScientificName);
                             }));
                     } else {
+                        item.ScientificName(response[0].scientificName);
                         item.Id(response[0].scientificNameID);
                     }
                 })
@@ -124,6 +126,7 @@
         $.when.apply(undefined, promises).then(function() {
             $.when.apply(undefined, secondLevelPromises).then(function() {
                 headers.push("Id");
+                headers.push("ScientificName");
                 createColumnHeaders();
                 items(newItems);
             });
@@ -132,13 +135,13 @@
 
     var parseFixedTable = function() {
         _.forEach(items(), function(item){
-            if(typeof item.Vitenskapelignavn !== "function") { return; } //Skip items that had a hit the first time around
+            if (typeof item.ScientificName !== "function") { return; } //Skip items that had a hit the first time around
 
-            http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn, higherClassificationId: searchId})
+            http.get("Api/Taxon/ScientificName", { scientificName: item.ScientificName.trim(), higherClassificationId: searchId })
                 .then(function(response) {
                     if(response.length > 0) {
                         item.Forslag(null);
-                        item.Vitenskapelignavn(response[0].scientificName);
+                        item.ScientificName(response[0].scientificName);
                         item.Id(response[0].scientificNameID);
                     }
                 });
