@@ -7,7 +7,8 @@ define(function(require){
     var parents = ko.observableArray();
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
-    var selectedStates = ko.observableArray();
+    var selectedStates = ko.observableArray([]);
+    var implicitStates = ko.observableArray([]);
     var dependencies = ko.observableArray();
     var selectedCharacters = {};
 
@@ -18,7 +19,8 @@ define(function(require){
     var filterConditionsCharacter = function(characters) {
         return _.filter(characters, function(character){
             if(!_.isEmpty(character.conditions)){
-                var intersection = _.intersection(selectedStates(), character.conditions);
+                var states = selectedStates().concat(implicitStates());
+                var intersection = _.intersection(states, character.conditions);
                 if(_.isEmpty(intersection)){//Do not show if it has conditions, but none of them are chosen
                     return false;
                 }
@@ -28,10 +30,10 @@ define(function(require){
         });
     };
 
-    var charactersToShow = ko.computed(function() {
+    var findStatesCurrentItems = function() {
         //Find all stateIds for currently shown items, and for children if applicable.
         //Parents do not have their own stateIds, only their children have
-        var statesCurrentIds = _.map(currentItems(), function(item){
+        return  _.map(currentItems(), function(item){
 
             //Will work without children as well, just a noop then
             var children = item.children;
@@ -44,6 +46,10 @@ define(function(require){
             if(states.length === 0) { states = item.stateIds }
             return states;
         });
+    };
+
+    var charactersToShow = ko.computed(function() {
+        var statesCurrentIds = findStatesCurrentItems();
 
         //statesCurrentIds is a list of lists, that contain all the states for each item
         var filteredCharacters = _.filter(characters(), function(character){
@@ -64,9 +70,14 @@ define(function(require){
             return;
         }
 
-        //Finn items hvor alle states som er valgt er i statelisten til itemen
+        //Find items where all the states that are selected, are in the statelist for the item
         var filtered = _.filter(items(), function(item) {
-            return _(selectedStates()).all(function(state){
+            var states;
+            //If only 1 taxon remains, all states are implicitly selected, as they all 'belong' to the taxon.
+            //Therefore we can't use the implicitly selected states
+            if(currentItems().length === 1) { states = selectedStates(); }
+            else { states = selectedStates().concat(implicitStates()); }
+            return _(states).all(function(state){
                     return _.contains(item.stateIds, state)
                 });
         });
@@ -74,6 +85,27 @@ define(function(require){
         var mergedChildren = combineSiblingsIntoParent(filtered);
 
         currentItems(mergedChildren);
+    });
+
+    ko.computed(function() {
+        var statesCurrentIds = findStatesCurrentItems();
+        var groups = _.groupBy(_.flatten(statesCurrentIds));
+        var keys = _.keys(groups); //All unique states for current items
+
+        var implicitlySelectedStates = _.filter(groups, function(list) {
+            var currentState = list[0]; //Always at least one item, all items are the same
+            var currentChar = currentState.split("_")[0];
+            var hasSiblingState = _.any(keys, function(state) {
+                var stateChar = state.split("_")[0];
+                return stateChar === currentChar && state !== currentState
+            });
+
+            return list.length === currentItems().length && !hasSiblingState;
+        });
+
+        implicitlySelectedStates = _.map(implicitlySelectedStates, function(list){ return list[0]; });
+        implicitlySelectedStates = _.filter(implicitlySelectedStates, function(state){ return ! _.contains(selectedStates(), state); });
+        implicitStates(implicitlySelectedStates);
     });
 
     var combineSiblingsIntoParent = function(listOfItems) {
@@ -138,6 +170,7 @@ define(function(require){
         selectedStates: selectedStates,
         stateSelected: stateSelected,
         charactersToShow: charactersToShow,
+        implicitStates: implicitStates,
 
         activate: function () {
             var that = this;

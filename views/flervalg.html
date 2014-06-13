@@ -4,7 +4,7 @@
 		<div class="character">
 			<h5 data-bind="text: text"></h6>
 			<div class="state-container row-fluid" data-bind="foreach: states">
-				<div class="state col-md-6" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1}, attr: {'data-stateid': $data.id}, click: $root.stateSelected">
+				<div class="state col-md-6" data-bind="css: {selected: $root.selectedStates.indexOf($data.id) > -1, implicitSelected: $root.implicitStates.indexOf($data.id) > -1}, attr: {'data-stateid': $data.id}, click: $root.stateSelected">
 					<!-- <img width="16px" height="16px" data-bind="attr:{src: 'Content/images/' + image}" /> -->
 					<p data-bind="text: text"></p>
 					<div data-bind="html: html"></div>
