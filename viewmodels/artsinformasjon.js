@@ -21,7 +21,7 @@
         }
         else {
             searchName("Du søker nå fra og med " + typeaheadSelectedValue().ScientificName);
-            searchId = typeaheadSelectedValue().id;
+            searchId = typeaheadSelectedValue().ScientificNameID;
         }
     });
 
@@ -107,7 +107,8 @@
             newItems.push(item);
             item.Id = ko.observable();
             item.ScientificName = ko.observable();
-            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn.trim(), higherClassificationId: searchId})
+            console.log(searchId);
+            promises.push(http.get("Api/Taxon/ScientificName", {scientificName: item.Vitenskapelignavn.trim(), higherClassificationID: searchId})
                 .then(function(response) {
                     if(response.length === 0){
                         secondLevelPromises.push(http.get("Api/Taxon/ScientificName/Suggest", {scientificName: item.Vitenskapelignavn})
@@ -137,7 +138,7 @@
         _.forEach(items(), function(item){
             if (typeof item.ScientificName !== "function") { return; } //Skip items that had a hit the first time around
 
-            http.get("Api/Taxon/ScientificName", { scientificName: item.ScientificName.trim(), higherClassificationId: searchId })
+            http.get("Api/Taxon/ScientificName", { scientificName: item.ScientificName.trim(), higherClassificationID: searchId })
                 .then(function(response) {
                     if(response.length > 0) {
                         item.Forslag(null);
