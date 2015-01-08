@@ -1,0 +1,17 @@
+﻿<div>
+    <div class="well well-sm">
+        <form role="form">
+            <div class="form-group">
+                <label for="from">Input</label>
+                <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div data-bind='pager: { configuration: pagerViewModelSettings }'>
+        <div data-part="item">
+            <input data-bind="value: ScientificName" />
+            <div class="list-group" data-bind="html:html"></div>
+        </div>
+    </div>
+</div>
