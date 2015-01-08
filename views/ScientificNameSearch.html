@@ -10,7 +10,10 @@
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
         <div data-part="item">
-            <input data-bind="value: ScientificName" />
+            <form class=".form-inline">
+                <input class="form-control" data-bind="value: ScientificName" />
+                <select class="form-control" data-bind="options: result, optionsCaption: 'Choose one...', value: selectedResult, optionsText: function(item) { return item.scientificName + ' ' + item.scientificNameAuthorship }, valueAllowUnset: true"></select>
+            </form>
             <div class="list-group" data-bind="html:html"></div>
         </div>
     </div>

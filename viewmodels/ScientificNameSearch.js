@@ -25,16 +25,36 @@
             }).map(
                 function (row) {
                     return {
-                        'ScientificName': row
+                        'ScientificName': ko.observable(row)
                     };
                 }
             );
 
         _.forEach(readItems, function (item) {
-            item.html = ko.observable();
-            http.get("/Databank/ScientificName/?Template=ListGroupItem&q=" + item.ScientificName).then(function (response) {
-                item.html(response);
+            item.result = ko.observable();
+            item.selectedResult = ko.observable();
+
+            http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName() }).then(function (response) {
+                item.result(response);
+
+                if (item.result().length == 1)
+                {
+                    item.selectedResult(item.result()[0]);
+                }
             });
+
+            item.html = ko.observable();
+
+            item.htmlCompute = ko.computed(function () {
+                if (item.selectedResult() == undefined) {
+                    item.html('');
+                }
+                else {
+                    http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + "?Template=ListGroupItem").then(function (response) {
+                        item.html(response);
+                    });
+                }
+            }, item);
         });
 
         items(readItems);
