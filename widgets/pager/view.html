@@ -2,12 +2,12 @@
     <div data-part="item"></div>
 </div>
 
-<ul class="pagination pagination-sm">
+<ul class="pagination pagination-sm" data-bind="visible: maxPageIndex() > 1">
     <li>
         <a href="#" data-bind="click: function () { currentPageIndex(0); }">&laquo;</a>
     </li>
     <!-- ko foreach: ko.utils.range(0, maxPageIndex) -->
-    <li data-bind="css: { active: $data == $parent.currentPageIndex(), hidden: $data > $parent.currentPageIndex()+5 || $data < $parent.currentPageIndex()-5  }">
+    <li data-bind="css: { active: $data == $parent.currentPageIndex(), hidden: $data > $parent.currentPageIndex() + 5 || $data < $parent.currentPageIndex() - 5  }">
         <a href="#" data-bind="text: $data + 1, click: function () { $parent.currentPageIndex($data); }"></a>
     </li>
     <!-- /ko -->
