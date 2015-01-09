@@ -5,16 +5,22 @@
                 <label for="from">Input</label>
                 <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
             </div>
+            <button class="btn btn-default" data-bind="click: parseInputItems">Parse</button>
         </form>
     </div>
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
-        <div data-part="item">
-            <form class=".form-inline">
+        <form class="row" data-part="item">
+            <div class="col-md-4">
                 <input class="form-control" data-bind="value: ScientificName" />
-                <select class="form-control" data-bind="options: result, optionsCaption: 'Choose one...', value: selectedResult, optionsText: function(item) { return item.scientificName + ' ' + item.scientificNameAuthorship }, valueAllowUnset: true"></select>
-            </form>
-            <div class="list-group" data-bind="html:html"></div>
-        </div>
+            </div>
+            <div class="col-md-8">
+                <select class="form-control" data-bind="options: result, visible: result().length > 1, optionsCaption: 'Choose one...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                <div class="list-group" data-bind="visible: html, html:html"></div>
+                <div data-bind="foreach:suggest">
+                    <button type="button" class="btn btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
