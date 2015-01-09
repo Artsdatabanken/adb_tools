@@ -7,6 +7,7 @@
     var serializer = require('plugins/serializer');
 
     var input = ko.observable("");
+    var resultFilter = ko.observable(true);
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
 
@@ -21,7 +22,7 @@
     };
 
     var parseInputItems = function () {
-        var rows = input().split("\n");//;.slice(1);
+        var rows = input().split("\n");
         
         var readItems = 
             _.filter(rows, function (row) {
@@ -37,10 +38,12 @@
                     item.result = ko.observableArray();
                     item.selectedResult = ko.observable();
                     item.suggest = ko.observableArray();
+                    item.html = ko.observable();
 
                     item.resultCompute = ko.computed(function () {
                         http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName() }).then(function (response) {
                             item.result(response);
+                            item.selectedResult("");
 
                             if (item.result().length == 1) {
                                 item.selectedResult(item.result()[0]);
@@ -48,14 +51,11 @@
                             else if (item.result().length == 0)
                             {
                                 http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
-                                    console.log(response);
                                     item.suggest(response);
                                 });
                             }
                         });
                     }, item);
-
-                    item.html = ko.observable();
 
                     item.htmlCompute = ko.computed(function () {
                         if (item.selectedResult() == undefined) {
@@ -78,9 +78,14 @@
     var filteredItems = ko.computed(function () {
         pagerViewModelSettings.currentPageIndex(0);
 
-        var foundItems = items();
+        var foundItems =
+            _.filter(items(),
+                function (item) {
+                    return (resultFilter()) ? (item.selectedResult() == undefined) : true;
+                }
+            );
 
-        currentItems(items());
+        currentItems(foundItems);
     });
 
     return {
@@ -88,6 +93,7 @@
         input: input,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,
+        resultFilter: resultFilter,
 
         activate: function () {
         }

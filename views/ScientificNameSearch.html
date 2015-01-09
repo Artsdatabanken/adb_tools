@@ -2,23 +2,39 @@
     <div class="well well-sm">
         <form role="form">
             <div class="form-group">
-                <label for="from">Input</label>
-                <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
+                <label for="from">Navneliste</label>
+                <textarea class="form-control" id="Input" placeholder="F.eks. Bombus magnus eller Carex*" rows="10" data-bind="value: input"></textarea>
+                <span class="help-block">Legg en eller flere linjer for hvert navn. Bruk * etter navnet for å søke etter alle navn som begynner med oppgitt navn.</span>
             </div>
-            <button class="btn btn-default" data-bind="click: parseInputItems">Parse</button>
+            <button class="btn btn-default" data-bind="click: parseInputItems">Start</button>
+            <input type="checkbox" data-bind="checked: resultFilter" />
         </form>
     </div>
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
         <form class="row" data-part="item">
             <div class="col-md-4">
-                <input class="form-control" data-bind="value: ScientificName" />
+                <div class="form-group" data-bind="css: { 'has-warning has-feedback': result().length == 0 }">
+                    <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>
+                    <input class="form-control" data-bind="value: ScientificName, attr: { id: 'input_' + $index() }" />
+                    <!-- ko if: result().length == 0 -->
+                    <span style="position:absolute; line-height:2" class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                    <!-- /ko -->
+                </div>
             </div>
             <div class="col-md-8">
-                <select class="form-control" data-bind="options: result, visible: result().length > 1, optionsCaption: 'Choose one...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == undefined }, visible: result().length > 1">
+                    <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                </div>
                 <div class="list-group" data-bind="visible: html, html:html"></div>
-                <div data-bind="foreach:suggest">
-                    <button type="button" class="btn btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
+                <div data-bind="visible: suggest().length > 0">
+                    <div class="form-group">
+                        <label for="from">Mente du: </label>
+                        <!-- ko foreach: suggest -->
+                        <button type="button" class="btn btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
+                        <!-- /ko -->
+                        <span>?</span>
+                    </div>
                 </div>
             </div>
         </form>
