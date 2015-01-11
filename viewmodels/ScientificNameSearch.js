@@ -8,6 +8,7 @@
 
     var input = ko.observable("");
     var resultFilter = ko.observable(true);
+    var higherClassification = ko.observable();
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
 
@@ -41,7 +42,7 @@
                     item.html = ko.observable();
 
                     item.resultCompute = ko.computed(function () {
-                        http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName() }).then(function (response) {
+                        http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
                             item.result(response);
                             item.selectedResult("");
 
@@ -91,11 +92,18 @@
     return {
         pagerViewModelSettings: pagerViewModelSettings,
         input: input,
+        higherClassification: higherClassification,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,
         resultFilter: resultFilter,
 
-        activate: function () {
+        activate: function (scientificNameID) {
+            if (scientificNameID)
+            {
+                http.get("/Api/Taxon/ScientificName/" + scientificNameID).then(function (response) {
+                    higherClassification(response);
+                });
+            }
         }
     };
 });

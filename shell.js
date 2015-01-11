@@ -17,7 +17,7 @@
                 { route: 'Galleri/:id', title: 'Galleri', moduleId: 'viewmodels/galleri', nav: true},
                 { route: 'Sok', title: 'Søk', moduleId: 'viewmodels/search', nav: true},
                 { route: 'Artsinformasjon', title: 'Artsinformasjon', moduleId: 'viewmodels/artsinformasjon', nav: true },
-                { route: 'ScientificNameSearch', title: 'ScientificNameSearch', moduleId: 'viewmodels/ScientificNameSearch', nav: true }
+                { route: 'ScientificNameSearch(/:scientificNameID)', title: 'ScientificNameSearch', moduleId: 'viewmodels/ScientificNameSearch', nav: true }
             ]).buildNavigationModel();
 
             return router.activate();
