@@ -66,34 +66,36 @@
     </div>
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
-        <form class="row" data-part="item">
-            <div class="col-md-3">
-                <div class="form-group" data-bind="css: { 'has-warning has-feedback': result().length == 0 }">
-                    <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>
-                    <input class="form-control" data-bind="value: ScientificName, attr: { id: 'input_' + $index() }" />
-                    <!-- ko if: result().length == 0 -->
-                    <span style="position:absolute; line-height:2" class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-                    <!-- /ko -->
+        <div data-part="items" data-bind="foreach: itemsOnCurrentPage">
+            <form class="row" data-part="item">
+                <div class="col-md-3">
+                    <div class="form-group" data-bind="css: { 'has-warning has-feedback': result().length == 0 }">
+                        <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>
+                        <input class="form-control" data-bind="value: ScientificName, attr: { id: 'input_' + $index() }" />
+                        <!-- ko if: result().length == 0 -->
+                        <span style="position:absolute; line-height:2" class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                        <!-- /ko -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-9">
-                <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }, visible: result().length > 1">
-                    <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                <div class="col-md-9">
+                    <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }, visible: result().length > 1">
+                        <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                    </div>
+                    <div class="list-group" data-bind="visible: html, html:html"></div>
+                    <div class="form-group" data-bind="visible: suggest().length > 0">
+                        <span>Mente du: </span>
+                        <!-- ko foreach: suggest -->
+                        <button type="button" class="btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
+                        <!-- /ko -->
+                        <span>?</span>
+                        <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { suggest.removeAll() }">
+                            <span class="glyphicon glyphicon-remove text-danger"></span>
+                            Fjern forslag
+                        </button>
+                    </div>
+                    <div data-bind="visible: message, text: message"></div>
                 </div>
-                <div class="list-group" data-bind="visible: html, html:html"></div>
-                <div class="form-group" data-bind="visible: suggest().length > 0">
-                    <span>Mente du: </span>
-                    <!-- ko foreach: suggest -->
-                    <button type="button" class="btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
-                    <!-- /ko -->
-                    <span>?</span>
-                    <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { suggest.removeAll() }">
-                        <span class="glyphicon glyphicon-remove text-danger"></span>
-                        Fjern forslag
-                    </button>
-                </div>
-                <div data-bind="visible: message, text: message"></div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
