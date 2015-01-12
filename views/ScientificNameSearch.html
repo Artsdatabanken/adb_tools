@@ -12,7 +12,20 @@
             <button class="btn btn-default" data-bind="click: parseInputItems">Start</button>
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" data-bind="checked: resultFilter" />
+                    <input type="checkbox" name="resultFilterGroup" value="exact" data-bind="checked: resultFilter" />
+                    <span>Eksakt treff</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="resultFilterGroup" value="multiple" data-bind="checked: resultFilter" />
+                    <span>Flere treff</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="resultFilterGroup" value="none" data-bind="checked: resultFilter" />
+                    <span>Ingen treff</span>
                 </label>
             </div>
         </form>

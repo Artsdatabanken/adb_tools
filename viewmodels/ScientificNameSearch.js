@@ -7,7 +7,7 @@
     var serializer = require('plugins/serializer');
 
     var input = ko.observable("");
-    var resultFilter = ko.observable(true);
+    var resultFilter = ko.observableArray(["exact", "multiple", "none"]);
     var higherClassification = ko.observable();
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
@@ -53,9 +53,10 @@
                             else if (item.result().length == 0)
                             {
                                 http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
-                                    if (_.some(response, item.ScientificName ))
+                                    if (_.contains(response, item.ScientificName() ))
                                     {
                                         item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
+                                        item.suggest("");
                                     }
                                     else {
                                         item.suggest(response);
@@ -89,7 +90,14 @@
         var foundItems =
             _.filter(items(),
                 function (item) {
-                    return (resultFilter()) ? (item.selectedResult() == undefined) : true;
+                    if (_.contains(resultFilter(), "exact") && item.result().length == 1)
+                        return true;
+                    if (_.contains(resultFilter(), "multiple") && item.result().length > 1)
+                        return true;
+                    if (_.contains(resultFilter(), "none") && item.result().length == 0)
+                        return true;
+                    else 
+                        return false;
                 }
             );
 
@@ -108,8 +116,6 @@
             if (queryString != undefined && queryString.q != undefined) {
                 input(queryString.q);
             }
-
-            console.log(queryString);
 
             if (scientificNameID)
             {
