@@ -155,6 +155,7 @@
         pagerViewModelSettings: pagerViewModelSettings,
         input: input,
         output: output,
+        items: items,
         higherClassification: higherClassification,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,

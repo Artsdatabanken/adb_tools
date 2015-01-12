@@ -6,9 +6,9 @@
             <!-- /ko -->
             <div class="form-group">
                 <label for="from">Navneliste</label>
-                <textarea class="form-control" placeholder="F.eks. Bombus magnus eller Carex*" data-bind="value: input, attr: { 'rows': Math.min(pagerViewModelSettings.data().length + 3, 10) }"></textarea>
+                <textarea class="form-control" placeholder="F.eks. Bombus magnus eller Carex*" data-bind="value: input, attr: { 'rows': Math.min(items().length + 3, 10) }"></textarea>
                 <button type="button" class="btn btn-link btn-xs pull-right" data-bind="visible: input, click: function(data, event) { input('') }">
-                    <span class="glyphicon glyphicon-remove"></span>
+                    <span class="glyphicon glyphicon-remove text-danger"></span>
                     Tøm
                 </button>
                 <span class="help-block">Legg en eller flere linjer for hvert navn. Bruk * etter navnet for å søke etter alle navn som begynner med oppgitt navn.</span>
@@ -19,26 +19,27 @@
                 <span class="glyphicon glyphicon-play"></span>
                 Start
             </button>
-            <span>Filter:</span>
-            <div class="checkbox">
-                <label>
+
+            <div class="input-group">
+                <label class="checkbox-inline">
+                    <strong>Filter:</strong>
+                </label>
+
+                <label class="checkbox-inline">
                     <input type="checkbox" name="resultFilterGroup" value="exact" data-bind="checked: resultFilter" />
                     <span>Eksakt treff</span>
                 </label>
-            </div>
-            <div class="checkbox">
-                <label>
+                <label class="checkbox-inline">
                     <input type="checkbox" name="resultFilterGroup" value="multiple" data-bind="checked: resultFilter" />
                     <span>Flere treff</span>
                 </label>
-            </div>
-            <div class="checkbox">
-                <label>
+                <label class="checkbox-inline">
                     <input type="checkbox" name="resultFilterGroup" value="none" data-bind="checked: resultFilter" />
                     <span>Ingen treff</span>
                 </label>
             </div>
-            <div class="btn-group">
+
+            <div class="btn-group pull-right">
                 <button type="button" class="btn btn-default" data-bind="click: function(data, event) { generateOutput() }">
                     <span class="glyphicon glyphicon-list-alt"></span>
                     Eksport
@@ -53,11 +54,12 @@
                     </li>
                 </ul>
             </div>
+            <span class="help-block">Start oppslag med navnene i listen. Bruk filtrene for å undersøke resultatet nærmere. Trykk "Eksport" for å generere en Excel-vennlig utgave av resultatet.</span>
         </form>
         <form class="clearfix" data-bind="visible: output">
-            <textarea class="form-control" data-bind="value: output, attr: { 'rows': Math.min(pagerViewModelSettings.data().length + 1, 10) }"></textarea>
+            <textarea class="form-control" data-bind="value: output, attr: { 'rows': Math.min(items().length + 1, 10) }"></textarea>
             <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { output('') }">
-                <span class="glyphicon glyphicon-remove"></span>
+                <span class="glyphicon glyphicon-remove text-danger"></span>
                 Tøm
             </button>
         </form>
@@ -65,7 +67,7 @@
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
         <form class="row" data-part="item">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="form-group" data-bind="css: { 'has-warning has-feedback': result().length == 0 }">
                     <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>
                     <input class="form-control" data-bind="value: ScientificName, attr: { id: 'input_' + $index() }" />
@@ -74,19 +76,19 @@
                     <!-- /ko -->
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }, visible: result().length > 1">
                     <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
                 </div>
                 <div class="list-group" data-bind="visible: html, html:html"></div>
-                <div class="form-group"  data-bind="visible: suggest().length > 0">
-                    <label for="from">Mente du: </label>
+                <div class="form-group" data-bind="visible: suggest().length > 0">
+                    <span>Mente du: </span>
                     <!-- ko foreach: suggest -->
                     <button type="button" class="btn-link" data-bind="text: $data, click: function(data, event) { $parent.ScientificName(data) }">Link</button>
                     <!-- /ko -->
                     <span>?</span>
-                    <button type="button" class="btn btn-link btn-xs" data-bind="click: function(data, event) { suggest.removeAll() }">
-                        <span class="glyphicon glyphicon-remove"></span>
+                    <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { suggest.removeAll() }">
+                        <span class="glyphicon glyphicon-remove text-danger"></span>
                         Fjern forslag
                     </button>
                 </div>
