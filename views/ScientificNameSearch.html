@@ -1,16 +1,20 @@
 ﻿<div>
     <div class="well well-sm">
         <form role="form">
+            <!-- ko if: higherClassification() -->
+            <input class="form-control" type="text" data-bind="value: higherClassification().scientificName" readonly />
+            <!-- /ko -->
             <div class="form-group">
                 <label for="from">Navneliste</label>
                 <textarea class="form-control" id="Input" placeholder="F.eks. Bombus magnus eller Carex*" rows="10" data-bind="value: input"></textarea>
                 <span class="help-block">Legg en eller flere linjer for hvert navn. Bruk * etter navnet for å søke etter alle navn som begynner med oppgitt navn.</span>
             </div>
-            <!-- ko if: higherClassification() -->
-            <input type="text" data-bind="value: higherClassification().scientificName" />
-            <!-- /ko -->
             <button class="btn btn-default" data-bind="click: parseInputItems">Start</button>
-            <input type="checkbox" data-bind="checked: resultFilter" />
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" data-bind="checked: resultFilter" />
+                </label>
+            </div>
         </form>
     </div>
 
@@ -39,6 +43,7 @@
                         <span>?</span>
                     </div>
                 </div>
+                <div data-bind="visible: message, text: message"></div>
             </div>
         </form>
     </div>

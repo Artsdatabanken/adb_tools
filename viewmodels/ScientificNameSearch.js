@@ -38,6 +38,7 @@
                 function (item) {
                     item.result = ko.observableArray();
                     item.selectedResult = ko.observable();
+                    item.message = ko.observable();
                     item.suggest = ko.observableArray();
                     item.html = ko.observable();
 
@@ -52,7 +53,13 @@
                             else if (item.result().length == 0)
                             {
                                 http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
-                                    item.suggest(response);
+                                    if (_.some(response, item.ScientificName ))
+                                    {
+                                        item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
+                                    }
+                                    else {
+                                        item.suggest(response);
+                                    } 
                                 });
                             }
                         });
@@ -97,7 +104,13 @@
         scientificNameLabel: scientificNameLabel,
         resultFilter: resultFilter,
 
-        activate: function (scientificNameID) {
+        activate: function (scientificNameID, queryString) {
+            if (queryString != undefined && queryString.q != undefined) {
+                input(queryString.q);
+            }
+
+            console.log(queryString);
+
             if (scientificNameID)
             {
                 http.get("/Api/Taxon/ScientificName/" + scientificNameID).then(function (response) {
