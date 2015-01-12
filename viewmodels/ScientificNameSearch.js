@@ -156,6 +156,7 @@
         input: input,
         output: output,
         items: items,
+        currentItems: currentItems,
         higherClassification: higherClassification,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,

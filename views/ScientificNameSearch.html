@@ -37,6 +37,12 @@
                     <input type="checkbox" name="resultFilterGroup" value="none" data-bind="checked: resultFilter" />
                     <span>Ingen treff</span>
                 </label>
+
+                <label class="checkbox-inline">
+                    <span data-bind="text: currentItems().length"></span>
+                    <span> av </span>
+                    <span data-bind="text: items().length"></span>
+                </label>
             </div>
 
             <div class="btn-group pull-right">
