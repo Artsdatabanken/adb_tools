@@ -7,6 +7,7 @@
     var serializer = require('plugins/serializer');
 
     var input = ko.observable("");
+    var output = ko.observable("");
     var resultFilter = ko.observableArray(["exact", "multiple", "none"]);
     var higherClassification = ko.observable();
     var items = ko.observableArray();
@@ -30,19 +31,22 @@
                 return row;
             }).map(
                 function (row) {
-                    return {
-                        'ScientificName': ko.observable(row)
-                    };
-                }
-            ).map(
-                function (item) {
+                    var item = {};
+
+                    item.inputRow = row;
+                    item.ScientificName = ko.observable("");
                     item.result = ko.observableArray();
-                    item.selectedResult = ko.observable();
+                    item.selectedResult = ko.observable("");
                     item.message = ko.observable();
                     item.suggest = ko.observableArray();
                     item.html = ko.observable();
 
-                    item.resultCompute = ko.computed(function () {
+                    return item;
+                }
+            ).map(
+                function (item) {
+
+                    item.ScientificName.subscribe(function (newValue) {
                         http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
                             item.result(response);
                             item.selectedResult("");
@@ -64,18 +68,27 @@
                                 });
                             }
                         });
-                    }, item);
+                    });
 
-                    item.htmlCompute = ko.computed(function () {
-                        if (item.selectedResult() == undefined) {
+                    item.selectedResult.subscribe(function (newValue) {
+                        console.log(newValue);
+
+                        if (newValue == "") {
                             item.html('');
                         }
                         else {
-                            http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + "?Template=ListGroupItem").then(function (response) {
+                            http.get("/Databank/ScientificName/" + newValue.scientificNameID + "?Template=ListGroupItem").then(function (response) {
                                 item.html(response);
                             });
                         }
-                    }, item);
+
+                    });
+
+                    return item;
+                }
+            ).map(
+                function (item) {
+                    item.ScientificName(item.inputRow);
 
                     return item;
                 }
@@ -104,13 +117,49 @@
         currentItems(foundItems);
     });
 
+    var generateOutput = function()
+    {
+        var outputContent = "";
+
+        ["taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "higherClassification"].forEach(function (value) {
+            outputContent += value;
+            outputContent += "\t";
+        });
+
+        items().forEach(function (item, index) {
+            outputContent += "\n";
+
+            if (item.selectedResult() != undefined)
+            {
+                var s = item.selectedResult();
+                [   s.taxonID,
+                    s.scientificNameID,
+                    s.scientificName,
+                    s.scientificNameAuthorship,
+                    (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificNameID,
+                    (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificName,
+                    (_.find(s.higherClassification, { "taxonRank": "kingdom" })) ? _.find(s.higherClassification, { "taxonRank": "kingdom" }).scientificName : "",
+                    _.map(s.higherClassification, function (hi) { return hi.scientificName }).join(" ")
+
+                ].forEach(function (value) {
+                    outputContent += value;
+                    outputContent += "\t";
+                });
+            }
+        });
+
+        output(outputContent);
+    }
+
     return {
         pagerViewModelSettings: pagerViewModelSettings,
         input: input,
+        output: output,
         higherClassification: higherClassification,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,
         resultFilter: resultFilter,
+        generateOutput: generateOutput,
 
         activate: function (scientificNameID, queryString) {
             if (queryString != undefined && queryString.q != undefined) {
