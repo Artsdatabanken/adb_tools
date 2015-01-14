@@ -45,6 +45,13 @@
                 </label>
             </div>
 
+            <div class="input-group">
+                <select data-bind="value: template">
+                    <option value="">Ingen</option>
+                    <option value="ListGroupItem">ListGroupItem</option>
+                </select>
+            </div>
+
             <div class="btn-group pull-right">
                 <button type="button" class="btn btn-default" data-bind="click: function(data, event) { generateOutput() }">
                     <span class="glyphicon glyphicon-list-alt"></span>

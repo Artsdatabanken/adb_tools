@@ -13,6 +13,8 @@
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
 
+    var template = ko.observableArray([""]);
+
     var scientificNameLabel = function (sciName) {
         return sciName.scientificName + " " + sciName.scientificNameAuthorship + ((sciName.acceptedNameUsage) ? (" >>> " + sciName.acceptedNameUsage.scientificName + " " + sciName.acceptedNameUsage.scientificNameAuthorship) : "");
     }
@@ -71,17 +73,25 @@
                     });
 
                     item.selectedResult.subscribe(function (newValue) {
-                        console.log(newValue);
-
-                        if (newValue == "") {
+                        if (newValue == "" || !template()) {
                             item.html('');
                         }
                         else {
-                            http.get("/Databank/ScientificName/" + newValue.scientificNameID + "?Template=ListGroupItem").then(function (response) {
+                            http.get("/Databank/ScientificName/" + newValue.scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
                                 item.html(response);
                             });
                         }
+                    });
 
+                    template.subscribe(function (newValue) {
+                        if (item.selectedResult() == "" || newValue == "") {
+                            item.html('');
+                        }
+                        else {
+                            http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                item.html(response);
+                            });
+                        }
                     });
 
                     return item;
@@ -161,6 +171,7 @@
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,
         resultFilter: resultFilter,
+        template: template,
         generateOutput: generateOutput,
 
         activate: function (scientificNameID, queryString) {
