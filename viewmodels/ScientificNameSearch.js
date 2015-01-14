@@ -33,7 +33,7 @@
                 function (row) {
                     var item = {};
 
-                    item.inputRow = row;
+                    item.inputRow = row.replace(/\s+/g, ' ').trim();
                     item.ScientificName = ko.observable("");
                     item.result = ko.observableArray();
                     item.selectedResult = ko.observable("");
