@@ -75,18 +75,25 @@
         <div data-part="items" data-bind="foreach: itemsOnCurrentPage">
             <form class="row" data-part="item">
                 <div class="col-md-3">
-                    <div class="form-group" data-bind="css: { 'has-warning has-feedback': result().length == 0 }">
+                    <div class="form-group" data-bind="css: { 'has-warning has-feedback': selectedResult() == '' }">
                         <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>
                         <input class="form-control" data-bind="value: ScientificName, attr: { id: 'input_' + $index() }" />
-                        <!-- ko if: result().length == 0 -->
+                        <!-- ko if: selectedResult() == '' -->
                         <span style="position:absolute; line-height:2" class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
                         <!-- /ko -->
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }, visible: result().length > 1">
+                    <!-- ko if: result().length == 1 -->
+                    <div class="form-group">
+                        <input class="form-control" data-bind="value: $root.scientificNameLabel(selectedResult())" readonly="readonly" />
+                    </div>
+                    <!-- /ko -->
+                    <!-- ko if: result().length > 1 -->
+                    <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }">
                         <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
                     </div>
+                    <!-- /ko -->
                     <div class="list-group" data-bind="visible: html, html:html"></div>
                     <div class="form-group" data-bind="visible: suggest().length > 0">
                         <span>Mente du: </span>
