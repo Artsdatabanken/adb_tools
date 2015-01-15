@@ -1,10 +1,4 @@
-﻿define(function (require) {
-    var system = require('durandal/system');
-    var app = require('durandal/app');
-    var ko = require('knockout');
-    var _ = require('underscore');
-    var http = require('plugins/http');
-    var serializer = require('plugins/serializer');
+﻿define(['durandal/system', 'durandal/app', 'knockout', 'underscore', 'plugins/http'], function (system, app, ko, _, http) {
 
     var input = ko.observable("");
     var output = ko.observable("");
