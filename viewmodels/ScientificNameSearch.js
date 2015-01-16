@@ -42,7 +42,7 @@
                     return item;
                 }
             ).map(
-                function (item) {
+                function (item, index) {
 
                     item.ScientificName.subscribe(function (newValue) {
                         http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
@@ -90,9 +90,14 @@
                             item.html('');
                         }
                         else {
-                            http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
-                                item.html(response);
-                            });
+                            item.processed(false);
+
+                            _.delay(function (item) {
+                                http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                    item.html(response);
+                                    item.processed(true);
+                                });
+                            }, index * 50, item);
                         }
                     });
 
@@ -125,6 +130,8 @@
         };
     });
 
+    progress.extend({ rateLimit: 500 });
+
     var filteredItems = ko.computed(function () {
         pagerViewModelSettings.currentPageIndex(0);
 
@@ -144,6 +151,8 @@
 
         currentItems(foundItems);
     });
+
+    filteredItems.extend({ rateLimit: 500 });
 
     var generateOutput = function()
     {
