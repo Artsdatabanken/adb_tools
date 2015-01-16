@@ -37,6 +37,8 @@
                     item.suggest = ko.observableArray();
                     item.html = ko.observable();
 
+                    item.processed = ko.observable(false);
+
                     return item;
                 }
             ).map(
@@ -47,10 +49,7 @@
                             item.result(response);
                             item.selectedResult("");
 
-                            if (item.result().length == 1) {
-                                item.selectedResult(item.result()[0]);
-                            }
-                            else if (item.result().length == 0)
+                            if (item.result().length == 0)
                             {
                                 http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
                                     if (_.contains(response, item.ScientificName() ))
@@ -60,8 +59,17 @@
                                     }
                                     else {
                                         item.suggest(response);
-                                    } 
+                                    }
+
+                                    item.processed(true);
                                 });
+                            }
+                            else {
+                                if (item.result().length == 1) {
+                                    item.selectedResult(item.result()[0]);
+                                }
+
+                                item.processed(true);
                             }
                         });
                     });
@@ -91,8 +99,8 @@
                     return item;
                 }
             ).map(
-                function (item) {
-                    item.ScientificName(item.inputRow);
+                function (item, index) {
+                    _.delay(function (item) { item.ScientificName(item.inputRow); }, index * 50, item);
 
                     return item;
                 }
@@ -100,6 +108,22 @@
 
         items(readItems);
     }
+
+    var progress = ko.computed(function () {
+
+        var processedItems =
+            _.filter(items(),
+                function (item) {
+                    return item.processed();
+                }
+            );
+
+        return {
+            processedItems: processedItems.length,
+            totalItems: items().length,
+            progress: Math.ceil((processedItems.length * 100) / items().length)
+        };
+    });
 
     var filteredItems = ko.computed(function () {
         pagerViewModelSettings.currentPageIndex(0);
@@ -161,6 +185,7 @@
         output: output,
         items: items,
         currentItems: currentItems,
+        progress: progress,
         higherClassification: higherClassification,
         parseInputItems: parseInputItems,
         scientificNameLabel: scientificNameLabel,

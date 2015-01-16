@@ -69,6 +69,11 @@
             </div>
             <span class="help-block">Start oppslag med navnene i listen. Bruk filtrene for å undersøke resultatet nærmere. Trykk "Eksport" for å generere en Excel-vennlig utgave av resultatet.</span>
         </form>
+        <div class="progress" data-bind="visible: (progress().progress < 99 && progress().progress > 1)">
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" data-bind="style: { width: progress().progress + '%' }, attr: {'aria-valuenow': progress().progress }">
+                <span data-bind="text: progress().processedItems + ' av ' + progress().totalItems"></span>
+            </div>
+        </div>
         <form class="clearfix" data-bind="visible: output">
             <textarea class="form-control" data-bind="value: output, attr: { 'rows': Math.min(items().length + 1, 10) }"></textarea>
             <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { output('') }">
