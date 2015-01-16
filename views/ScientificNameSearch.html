@@ -86,7 +86,7 @@
 
     <div data-bind='pager: { configuration: pagerViewModelSettings }'>
         <div data-part="items" data-bind="foreach: itemsOnCurrentPage">
-            <form class="row" data-part="item">
+            <form class="row">
                 <div class="col-md-3">
                     <div class="form-group" data-bind="css: { 'has-warning has-feedback': selectedResult() == '' }">
                         <label class="sr-only" data-bind="attr: { for: 'input_' + $index() }">Navn</label>

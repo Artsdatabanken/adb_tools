@@ -22,6 +22,15 @@
     var parseInputItems = function () {
         var rows = input().split("\n");
         
+        // Dispose all current subscriptions
+        _.filter(items(), function (item) {
+            return item.subsciptions;
+        }).forEach(function (item) {
+            _.each(item.subsciptions, function (sub) { sub.dispose(); })
+        });
+
+        items.removeAll();
+
         var readItems = 
             _.filter(rows, function (row) {
                 return row;
@@ -44,67 +53,77 @@
             ).map(
                 function (item, index) {
 
-                    item.ScientificName.subscribe(function (newValue) {
-                        http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
-                            item.result(response);
-                            item.selectedResult("");
+                    item.subsciptions = [
 
-                            if (item.result().length == 0)
-                            {
-                                http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
-                                    if (_.contains(response, item.ScientificName() ))
-                                    {
-                                        item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
-                                        item.suggest("");
-                                    }
-                                    else {
-                                        item.suggest(response);
+                        // Changes on ScientificName triggers a call to API
+                        item.ScientificName.subscribe(function (newValue) {
+                            http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
+                                item.result(response);
+                                item.selectedResult("");
+
+                                // Call API for suggestions if no result.
+                                if (item.result().length == 0)
+                                {
+                                    http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
+                                        // If suggestions contain the given name, other criteria excludes it and the suggestion should not be shown
+                                        if (_.contains(response, item.ScientificName() ))
+                                        {
+                                            item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
+                                            item.suggest("");
+                                        }
+                                        else {
+                                            item.suggest(response);
+                                        }
+
+                                        item.processed(true);
+                                    });
+                                }
+                                else {
+                                    // If single result, set selectedResult
+                                    if (item.result().length == 1) {
+                                        item.selectedResult(item.result()[0]);
                                     }
 
                                     item.processed(true);
-                                });
+                                }
+                            });
+                        }),
+
+                        // Changes on selectedResult triggers reading of corresponding HTML for selected name when template() is set
+                        item.selectedResult.subscribe(function (newValue) {
+                            if (newValue == "" || !template()) {
+                                item.html('');
                             }
                             else {
-                                if (item.result().length == 1) {
-                                    item.selectedResult(item.result()[0]);
-                                }
-
-                                item.processed(true);
-                            }
-                        });
-                    });
-
-                    item.selectedResult.subscribe(function (newValue) {
-                        if (newValue == "" || !template()) {
-                            item.html('');
-                        }
-                        else {
-                            http.get("/Databank/ScientificName/" + newValue.scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
-                                item.html(response);
-                            });
-                        }
-                    });
-
-                    template.subscribe(function (newValue) {
-                        if (item.selectedResult() == "" || newValue == "") {
-                            item.html('');
-                        }
-                        else {
-                            item.processed(false);
-
-                            _.delay(function (item) {
-                                http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                http.get("/Databank/ScientificName/" + newValue.scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
                                     item.html(response);
-                                    item.processed(true);
                                 });
-                            }, index * 50, item);
-                        }
-                    });
+                            }
+                        }),
+
+                        // Changes on template() triggers reading of HTML for all items where selectedResult is set
+                        template.subscribe(function (newValue) {
+                            if (item.selectedResult() == "" || newValue == "") {
+                                item.html('');
+                            }
+                            else {
+                                item.processed(false);
+
+                                _.delay(function (item) {
+                                    http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                        item.html(response);
+                                        item.processed(true);
+                                    });
+                                }, index * 50, item);
+                            }
+                        })
+                    ]
 
                     return item;
                 }
             ).map(
                 function (item, index) {
+                    // Set each ScientificName with a delay, to limit the number of concurrent requests to the server
                     _.delay(function (item) { item.ScientificName(item.inputRow); }, index * 50, item);
 
                     return item;
@@ -114,6 +133,7 @@
         items(readItems);
     }
 
+    // Calculate values for progress bar
     var progress = ko.computed(function () {
 
         var processedItems =
