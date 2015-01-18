@@ -15,7 +15,7 @@
 
     var pagerViewModelSettings = {
         data: currentItems,
-        pageSize: 25,
+        pageSize: ko.observable(25),
         currentPageIndex: ko.observable(0)
     };
 

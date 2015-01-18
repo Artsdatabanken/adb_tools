@@ -1,6 +1,6 @@
 ﻿<div data-part="items"></div>
 
-<ul class="pagination pagination-sm" data-bind="visible: maxPageIndex() > 1">
+<ul class="pagination pagination-sm" data-bind="visible: maxPageIndex() > 0">
     <li>
         <a href="#" data-bind="click: function () { currentPageIndex(0); }">&laquo;</a>
     </li>
@@ -9,8 +9,29 @@
         <a href="#" data-bind="text: $data + 1, click: function () { $parent.currentPageIndex($data); }"></a>
     </li>
     <!-- /ko -->
+
     <li>
         <a href="#" data-bind="click: function () { currentPageIndex(maxPageIndex()); }">&raquo;</a>
+    </li>
+
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#">
+            <span>Antall per side:</span>
+            <span data-bind="text: pageSize"></span>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <!-- ko foreach: [10, 20, 50, 100 ] -->
+            <!-- ko if: $data < $parent.data().length -->
+            <li>
+                <a href="#" data-bind="text: $data, click: function(data, event) { $parent.pageSize($data) }"></a>
+            </li>
+            <!-- /ko -->
+            <!-- /ko -->
+            <li>
+                <a href="#" data-bind="click: function(_data, event) { pageSize(data().length) }">Alle (<!-- ko text: data().length --><!--/ko-->)</a>
+            </li>
+        </ul>
     </li>
 </ul>
 
