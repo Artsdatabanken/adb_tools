@@ -1,4 +1,17 @@
-﻿<div data-part="items"></div>
+﻿<ul class="pager" data-bind="visible: maxPageIndex() > 0">
+    <li class="previous" data-bind="css: { 'disabled': currentPageIndex() == 0 }">
+        <a href="#" data-bind="click: function () { currentPageIndex(currentPageIndex() - 1); }">
+            <span aria-hidden="true">&larr;</span> Older
+        </a>
+    </li>
+    <li class="next" data-bind="css: { 'disabled': currentPageIndex() == maxPageIndex() }">
+        <a href="#" data-bind="click: function () { currentPageIndex(currentPageIndex() + 1); }">
+            Newer <span aria-hidden="true">&rarr;</span>
+        </a>
+    </li>
+</ul>
+
+<div data-part="items"></div>
 
 <ul class="pagination pagination-sm" data-bind="visible: maxPageIndex() > 0">
     <li>
