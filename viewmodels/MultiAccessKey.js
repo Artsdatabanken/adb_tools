@@ -37,7 +37,7 @@
             var foundItems =
                 _.filter(items(),
                     function (item) {
-                        var inter = _.intersection(_.pluck(item.Content, "Id"), selectedItems);
+                        var inter = _.intersection(_.union([item.Id], _.pluck(item.Content, "Id")), selectedItems);
                         return inter.length > 0;
                     })
 

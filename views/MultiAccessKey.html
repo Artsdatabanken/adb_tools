@@ -21,8 +21,8 @@
 <script type="text/html" id="item-template">
     <h4 data-bind="text: Title"></h4>
     <div data-bind="foreach: $data.Content">
-        <!-- ko if: Type == 'property' -->
-        <div data-bind="template: {name : 'item-template'}"></div>
+        <!-- ko if: Type == 'property'-->
+        <h5 data-bind="text: Title"></h5>
         <!-- /ko -->
     </div>
 </script>
