@@ -91,7 +91,7 @@
 
                         // Changes on selectedResult triggers reading of corresponding HTML for selected name when template() is set
                         item.selectedResult.subscribe(function (newValue) {
-                            if (newValue == "" || !template()) {
+                            if (!newValue || !template()) {
                                 item.html('');
                             }
                             else {
@@ -103,7 +103,7 @@
 
                         // Changes on template() triggers reading of HTML for all items where selectedResult is set
                         template.subscribe(function (newValue) {
-                            if (item.selectedResult() == "" || newValue == "") {
+                            if (!item.selectedResult() || !newValue) {
                                 item.html('');
                             }
                             else {
