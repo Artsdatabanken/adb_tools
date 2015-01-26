@@ -178,15 +178,16 @@
     {
         var outputContent = "";
 
-        ["taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "higherClassification"].forEach(function (value) {
-            outputContent += value;
-            outputContent += "\t";
+        ["Input", "", "taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "phylum", "class", "order", "family", "genus", "subgenus", "specificEpithet", "infraspecificEpithet", "higherClassification"].forEach(function (value) {
+            outputContent += value + "\t";
         });
 
         items().forEach(function (item, index) {
             outputContent += "\n";
+            outputContent += item.inputRow + "\t";
+            outputContent += ((item.inputRow != item.ScientificName()) ? item.ScientificName() : ("")) + "\t";
 
-            if (item.selectedResult() != undefined)
+            if (item.selectedResult())
             {
                 var s = item.selectedResult();
                 [   s.taxonID,
@@ -196,6 +197,14 @@
                     (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificNameID,
                     (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificName,
                     (_.find(s.higherClassification, { "taxonRank": "kingdom" })) ? _.find(s.higherClassification, { "taxonRank": "kingdom" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "phylum" })) ? _.find(s.higherClassification, { "taxonRank": "phylum" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "class" })) ? _.find(s.higherClassification, { "taxonRank": "class" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "order" })) ? _.find(s.higherClassification, { "taxonRank": "order" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "family" })) ? _.find(s.higherClassification, { "taxonRank": "family" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "genus" })) ? _.find(s.higherClassification, { "taxonRank": "genus" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "subgenus" })) ? _.find(s.higherClassification, { "taxonRank": "subgenus" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "specificEpithet" })) ? _.find(s.higherClassification, { "taxonRank": "specificEpithet" }).scientificName : "",
+                    (_.find(s.higherClassification, { "taxonRank": "infraspecificEpithet" })) ? _.find(s.higherClassification, { "taxonRank": "infraspecificEpithet" }).scientificName : "",
                     _.map(s.higherClassification, function (hi) { return hi.scientificName }).join(" ")
 
                 ].forEach(function (value) {
