@@ -97,14 +97,41 @@
                     </div>
                 </div>
                 <div class="col-md-9">
-                    <!-- ko if: result().length == 1 -->
+                    <!-- ko if: result().length > 0 -->
                     <div class="form-group">
-                        <input class="form-control" data-bind="value: $root.scientificNameLabel(selectedResult())" readonly="readonly" />
-                    </div>
-                    <!-- /ko -->
-                    <!-- ko if: result().length > 1 -->
-                    <div class="form-group" data-bind="css: { 'has-warning': selectedResult() == '' }">
-                        <select class="form-control" data-bind="options: result, optionsCaption: 'Flere treff, klikk for å velge et navn fra listen...', value: selectedResult, optionsText: function(item) {  return $root.scientificNameLabel(item) }, valueAllowUnset: true"></select>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Velg navn fra listen..." readonly="readonly" data-bind="value: (selectedResult()) ? (selectedResult().scientificName + ' ' + selectedResult().scientificNameAuthorship + ((selectedResult().acceptedNameUsage) ? (' >>> '+ selectedResult().acceptedNameUsage.scientificName + ' ' + selectedResult().acceptedNameUsage.scientificNameAuthorship) : '')) : ''">
+                            <div class="input-group-btn">
+                                <!-- ko if: selectedResult() -->
+                                <button type="button" class="btn btn-default" data-bind="click: function(data, event) { selectedResult('') }">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                                <!-- /ko -->
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <!-- ko foreach: result-->
+                                    <li>
+                                        <a data-bind="click: function(data, event) { $parent.selectedResult($data) }">
+                                            <span data-bind="text: scientificName"></span>
+                                            <span class="text-muted" data-bind="text: scientificNameAuthorship"></span>
+                                            <!-- ko if: acceptedNameUsage -->
+                                            <span> >>> </span>
+                                            <span data-bind="text: acceptedNameUsage.scientificName"></span>
+                                            <span class="text-muted" data-bind="text: acceptedNameUsage.scientificNameAuthorship"></span>
+                                            <!-- /ko -->
+                                            <br />
+                                            <span class="label label-taxonrank" data-bind="text: taxonRank"></span>
+                                            <span class="small text-muted" data-bind="foreach: higherClassification">
+                                                <!--ko if: $index() != 0--> / <!--/ko-->
+                                                <!-- ko text: scientificName -->
+                                                <!-- /ko -->
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!-- /ko -->
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <!-- /ko -->
                     <div class="list-group" data-bind="visible: html, html:html"></div>

@@ -9,10 +9,6 @@
 
     var template = ko.observableArray([""]);
 
-    var scientificNameLabel = function (sciName) {
-        return sciName.scientificName + " " + sciName.scientificNameAuthorship + ((sciName.acceptedNameUsage) ? (" >>> " + sciName.acceptedNameUsage.scientificName + " " + sciName.acceptedNameUsage.scientificNameAuthorship) : "");
-    }
-
     var pagerViewModelSettings = {
         data: currentItems,
         pageSize: ko.observable(25),
@@ -226,7 +222,6 @@
         progress: progress,
         higherClassification: higherClassification,
         parseInputItems: parseInputItems,
-        scientificNameLabel: scientificNameLabel,
         resultFilter: resultFilter,
         template: template,
         generateOutput: generateOutput,
