@@ -73,8 +73,16 @@
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
+                    <li role="presentation" class="dropdown-header">Inkluder</li>
                     <li>
-                        <a href="/Tools#ScientificNameSearch/@Model.scientificNameID">Avansert søk</a>
+                        <a data-bind="click: function(data, event) { generateOutput( { dynamicProperties: ['FinnesINorge'] }) }">Finnes i Norge</a>
+                    </li>
+                    <li>
+                        <a data-bind="click: function(data, event) { generateOutput( { dynamicProperties: ['Kategori'] }) }">Kategori</a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li>
+                        <a data-bind="click: function(data, event) { generateOutput( { dynamicProperties: true }) }">Alle dynamiske egenskaper</a>
                     </li>
                 </ul>
             </div>
