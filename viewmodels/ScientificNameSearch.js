@@ -54,36 +54,52 @@
 
                         // Changes on ScientificName triggers a call to API
                         item.ScientificName.subscribe(function (newValue) {
-                            http.get("/Api/Taxon/ScientificName", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
-                                item.result(response);
-                                item.selectedResult("");
 
-                                // Call API for suggestions if no result.
-                                if (item.result().length == 0)
-                                {
-                                    http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
-                                        // If suggestions contain the given name, other criteria excludes it and the suggestion should not be shown
-                                        if (_.contains(response, item.ScientificName() ))
-                                        {
-                                            item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
-                                            item.suggest("");
-                                        }
-                                        else {
-                                            item.suggest(response);
+                            if (isNaN(item.ScientificName())) {
+
+                                http.get("/Api/Taxon/ScientificName/", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
+                                    item.result(response);
+                                    item.selectedResult("");
+
+                                    // Call API for suggestions if no result.
+                                    if (item.result().length == 0) {
+                                        http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
+                                            // If suggestions contain the given name, other criteria excludes it and the suggestion should not be shown
+                                            if (_.contains(response, item.ScientificName())) {
+                                                item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
+                                                item.suggest("");
+                                            }
+                                            else {
+                                                item.suggest(response);
+                                            }
+
+                                            item.processed(true);
+                                        });
+                                    }
+                                    else {
+                                        // If single result, set selectedResult
+                                        if (item.result().length == 1) {
+                                            item.selectedResult(item.result()[0]);
                                         }
 
                                         item.processed(true);
-                                    });
-                                }
-                                else {
-                                    // If single result, set selectedResult
-                                    if (item.result().length == 1) {
+                                    }
+                                });
+
+                            }
+
+                            else {
+                                // Input is numeric, try to access name directly with scientificNameID from API
+                                http.get("/Api/Taxon/ScientificName/" + item.ScientificName()).then(function (response) {
+                                    if (_.isPlainObject(response)) {
+                                        item.result([response]);
                                         item.selectedResult(item.result()[0]);
                                     }
 
                                     item.processed(true);
-                                }
-                            });
+                                });
+
+                            }
                         }),
 
                         // Changes on selectedResult triggers reading of corresponding Taxon
