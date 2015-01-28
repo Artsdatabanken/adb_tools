@@ -2,7 +2,18 @@
     <div class="well well-sm">
         <form role="form">
             <!-- ko if: higherClassification() -->
-            <input class="form-control" type="text" data-bind="value: higherClassification().scientificName" readonly />
+            <div class="form-group">
+                <label>Søk innenfor</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" readonly="readonly" data-bind="value: higherClassification().scientificName">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default" data-bind="click: function(data, event) { higherClassification('') }">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </div>
+                </div>
+                <span class="help-block">Søker nå kun etter navn innenfor oppgitt navn. Trykk <span class="small text-muted glyphicon glyphicon-remove"></span> for å fjerne kriteriet.</span>
+            </div>
             <!-- /ko -->
             <div class="form-group">
                 <label for="from">Navneliste</label>
