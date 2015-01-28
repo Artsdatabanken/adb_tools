@@ -6,6 +6,7 @@
     var serializer = require('plugins/serializer');
 
     var input = ko.observable("");
+    var output = ko.observable("");
 
     var headers = ko.computed(function () {
         return input().split("\n")[0].split("\t");
@@ -43,7 +44,7 @@
         return result2;
     });
 
-    var getSeleniumScript = function () {
+    var generateSeleniumScript = function () {
         var seleniumscript = [];
 
         var prescript = '<html>\n<body>';
@@ -53,15 +54,16 @@
             seleniumscript.push($(this).html());
         });
 
-        $("#seleniumscripttext").val(prescript + seleniumscript.join("\n") + postscript);
+        output(prescript + seleniumscript.join("\n") + postscript);
     }
 
 
     return {
         input: input,
+        output: output,
         headers: headers,
         result: result,
-        getSeleniumScript: getSeleniumScript,
+        generateSeleniumScript: generateSeleniumScript,
 
         activate: function () {
         }

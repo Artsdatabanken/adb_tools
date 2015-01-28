@@ -1,22 +1,25 @@
 ﻿<div>
-    <div class="page-header">
-        <h1>Import og oppdateringer<small> til Artsnavnebasen</small></h1>
+    <div class="well well-sm">
+        <form role="form">
+            <div class="form-group">
+                <label for="from">Importliste</label>
+                <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-default" data-bind="click: generateSeleniumScript">Generate script for Selenium IDE</button>
+            </div>
+            <div class="form-group" data-bind="visible: output">
+                <label for="seleniumscripttext">Resulting script for Selenium IDE</label>
+                <textarea class="form-control" data-bind="value: output"></textarea>
+                <button type="button" class="btn btn-link btn-xs pull-right" data-bind="click: function(data, event) { output('') }">
+                    <span class="glyphicon glyphicon-remove text-danger"></span>
+                    Tøm
+                </button>
+                <span class="help-block">Kopierer innholdet fra boksen over, og bruk det som kilde for Selenium IDE</span>
+            </div>
+        </form>
     </div>
-
-    <form role="form">
-        <div class="form-group">
-            <label for="from">Input</label>
-            <textarea class="form-control" id="Input" placeholder="Input" data-bind="value: input"></textarea>
-        </div>
-
-        <div class="form-group">
-            <button class="btn btn-default" data-bind="click: getSeleniumScript">Generate script for Selenium IDE</button>
-        </div>
-        <div class="form-group">
-            <label for="seleniumscripttext">Resulting script for Selenium IDE</label>
-            <textarea class="form-control" id="seleniumscripttext"></textarea>
-        </div>
-    </form>
 
     <table class="table table-striped">
         <thead>
@@ -32,7 +35,7 @@
             <!-- ko if: Operasjon == 'Nytt navn' -->
             <tr>
                 <td colspan="13">
-                    Oppretter nytt navn <span data-bind="text: VitenskapeligNavn"></span> (<span data-bind="text: Kategori"></span>) under <span data-bind="text: OverordnaNavn"></span>
+                    Oppretter nytt navn <strong data-bind="text: VitenskapeligNavn, style: {'font-style': (['Art','Underart','Form','Varietet'].indexOf(Kategori) > -1) ? 'italic' : 'normal'}"></strong> (<span data-bind="text: Kategori"></span>) under <span data-bind="text: OverordnaNavn"></span><!-- ko if: OverordnaNavnID --> (<!-- ko text: OverordnaNavnID--><!-- /ko -->)<!-- /ko -->
                     <table class="seleniumscript" style="display:none;">
                         <tbody>
                             <tr>
@@ -400,4 +403,4 @@
 
         </tbody>
     </table>
-</div>
+    </div>
