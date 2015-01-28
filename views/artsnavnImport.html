@@ -21,7 +21,7 @@
         </form>
     </div>
 
-    <table class="table table-striped">
+    <table class="table table-striped" data-bind="visible: result()">
         <thead>
             <tr data-bind="foreach: headers">
                 <th data-bind="text: $data"></th>
@@ -166,7 +166,7 @@
             <!-- ko if: Operasjon == 'Endret data' -->
             <tr>
                 <td colspan="13">
-                    Endrer <span data-bind="text: VitenskapeligNavn"></span>
+                    Endrer <strong data-bind="text: VitenskapeligNavn"></strong>
                     <table class="seleniumscript" style="display:none;">
                         <tbody>
                             <tr>

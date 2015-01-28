@@ -1,25 +1,24 @@
-﻿define(function (require) {
-    var system = require('durandal/system');
-    var app = require('durandal/app');
-    var ko = require('knockout');
-    var http = require('plugins/http');
-    var serializer = require('plugins/serializer');
+﻿define(['durandal/system', 'durandal/app', 'knockout', 'underscore', 'plugins/http'], function (system, app, ko, _, http) {
+    //var serializer = require('plugins/serializer');
 
     var input = ko.observable("");
     var output = ko.observable("");
+    var result = ko.observableArray();
 
     var headers = ko.computed(function () {
         return input().split("\n")[0].split("\t");
     });
 
-    var result = ko.computed(function () {
+    var resultCompute = ko.computed(function () {
         var rows = input().split("\n").slice(1);
 
         var hs = headers();
 
         var result2 =
-            rows.filter(function (element) { return element.trim() != ''; }).map(function (element) {
-                var cols = element.split("\t").map(function (colval) { return colval.trim(); });
+            _.filter(rows, function (row) {
+                return row.trim();
+            }).map(function (row) {
+                var cols = _.map(row.split("\t"), function (colval) { return colval.trim(); });
                 return {
                     Cols: cols,
                     Operasjon: cols[hs.indexOf("Operasjon")],
@@ -41,7 +40,7 @@
                 };
             });
 
-        return result2;
+        result(result2);
     });
 
     var generateSeleniumScript = function () {
