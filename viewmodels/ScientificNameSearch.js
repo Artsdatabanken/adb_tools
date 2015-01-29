@@ -20,9 +20,9 @@
         
         // Dispose all current subscriptions
         _.filter(items(), function (item) {
-            return item.subsciptions;
+            return item.subscriptions;
         }).forEach(function (item) {
-            _.each(item.subsciptions, function (sub) { sub.dispose(); })
+            _.each(item.subscriptions, function (sub) { sub.dispose(); })
         });
 
         items.removeAll();
@@ -50,7 +50,7 @@
             ).map(
                 function (item, index) {
 
-                    item.subsciptions = [
+                    item.subscriptions = [
 
                         // Changes on ScientificName triggers a call to API
                         item.ScientificName.subscribe(function (newValue) {
