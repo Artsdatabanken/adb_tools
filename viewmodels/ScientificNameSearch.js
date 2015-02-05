@@ -203,7 +203,7 @@
     {
         var outputContent = "";
 
-        ["Input", "", "taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "phylum", "class", "order", "family", "genus", "subgenus", "specificEpithet", "infraspecificEpithet", "higherClassification", "dynamicProperty"].forEach(function (value) {
+        ["Input", "", "taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "taxonRank", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "phylum", "class", "order", "family", "genus", "subgenus", "specificEpithet", "infraspecificEpithet", "higherClassification", "dynamicProperty"].forEach(function (value) {
             outputContent += value + "\t";
         });
 
@@ -220,6 +220,7 @@
                         s.scientificNameID,
                         s.scientificName,
                         s.scientificNameAuthorship,
+                        s.taxonRank,
                         (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificNameID,
                         (s.acceptedNameUsage == undefined) ? "" : s.acceptedNameUsage.scientificName,
                         (_.find(s.higherClassification, { "taxonRank": "kingdom" })) ? _.find(s.higherClassification, { "taxonRank": "kingdom" }).scientificName : "",
