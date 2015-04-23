@@ -401,6 +401,99 @@
             </tr>
             <!-- /ko -->
 
+            <!-- ko if: Operasjon == 'Slett' -->
+            <tr>
+                <td colspan="13">
+                    Sletter <strong data-bind="text: VitenskapeligNavn"></strong>
+                    <table class="seleniumscript" style="display:none;">
+                        <tbody>
+                            <tr>
+                                <td>open</td>
+                                <td>https://database.artsdatabanken.no/Artsnavnebase/ContentPages/Startside.aspx</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_btnFinnNavn</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>type</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtNavn</td>
+                                <td data-bind="text: (VitenskapeligNavnID) ? VitenskapeligNavnID : VitenskapeligNavn">VitenskapeligNavn</td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnSøk</td>
+                                <td></td>
+                            </tr>
+                            <tr data-bind="if: VitenskapeligNavnID">
+                                <td>clickAndWait</td>
+                                <td>//table[&#64;id='ctl00_cphInnholdscontainer_grdNavn']//tr[1]</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_cphInnholdscontainer_txtValgtNavn</td>
+                                <td data-bind="text: VitenskapeligNavn">VitenskapeligNavn</td>
+                            </tr>
+                            <tr>
+                                <td>pause</td>
+                                <td>300</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_btnRedigerOpplysninger</td>
+                                <td></td>
+                            </tr>
+
+                            <tr data-bind="if: VitenskapeligNavnID">
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_ctlNavn_btnTrekkTilbake</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>waitForVisible</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td>Godkjenning av navnet er trukket tilbake</td>
+                            </tr>
+
+                            <tr>
+                                <td>runScript</td>
+                                <td>document.getElementById('ctl00_cphInnholdscontainer_ctlNavn_btnSlett').setAttribute('onclick', undefined);</td>
+                                <td></td>
+                            </tr>
+
+                            <tr data-bind="if: VitenskapeligNavnID">
+                                <td>clickAndWait</td>
+                                <td>id=ctl00_cphInnholdscontainer_ctlNavn_btnSlett</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>waitForVisible</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>waitForValue</td>
+                                <td>id=ctl00_txtStatus</td>
+                                <td>Sletting er fullført.</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- /ko -->
+
         </tbody>
     </table>
     </div>
