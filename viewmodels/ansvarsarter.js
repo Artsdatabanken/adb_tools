@@ -40,6 +40,7 @@
             }
         }
     };
+
     var filteredItems = ko.computed(function() {
         gridViewModelSettings.currentPageIndex(0);
         var foundItems;
@@ -47,19 +48,19 @@
             foundItems = items();
         } else {
             foundItems = ko.utils.arrayFilter(items(), function(item) {
-                            var kategoriSelected = true;
-                            if(selectedKategorier().length !== 0){
-                                kategoriSelected = selectedKategorier().indexOf(item.kategori.substring(0,2)) !== -1;
-                            }
-                            var artsgruppeSelected = true;
-                            if(selectedArtsgrupper().length !== 0){
-                                artsgruppeSelected = selectedArtsgrupper().indexOf(item.ekspertgruppe) !== -1;
-                            }
-                            var hovedhabitatSelected = true;
-                            if(selectedHovedhabitater().length !== 0){
-                                hovedhabitatSelected = !_.isEmpty(_.intersection(item.hovedhabitat, selectedHovedhabitater()));
-                            }
-                            return artsgruppeSelected && kategoriSelected && hovedhabitatSelected;
+                var kategoriSelected = true;
+                if(selectedKategorier().length !== 0){
+                    kategoriSelected = selectedKategorier().indexOf(item.kategori.substring(0,2)) !== -1;
+                }
+                var artsgruppeSelected = true;
+                if(selectedArtsgrupper().length !== 0){
+                    artsgruppeSelected = selectedArtsgrupper().indexOf(item.ekspertgruppe) !== -1;
+                }
+                var hovedhabitatSelected = true;
+                if(selectedHovedhabitater().length !== 0){
+                    hovedhabitatSelected = !_.isEmpty(_.intersection(item.hovedhabitat, selectedHovedhabitater()));
+                }
+                return artsgruppeSelected && kategoriSelected && hovedhabitatSelected;
             });
         }
 
@@ -120,7 +121,8 @@
                 var grupper = _(response).map("ekspertgruppe").unique().sort().value();
                 that.artsgrupper(grupper);
 
-                var habitater = _(response).flatten("hovedhabitat").unique().sort().value();
+                var habitater = _(response).map("hovedhabitat").flatten().unique().sort().value();
+                console.log(habitater);
                 that.hovedhabitater(habitater);
             });
         },
