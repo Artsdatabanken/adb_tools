@@ -203,7 +203,7 @@
     {
         var outputContent = "";
 
-        ["Input", "", "taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "taxonRank", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "phylum", "class", "order", "family", "genus", "subgenus", "specificEpithet", "infraspecificEpithet", "higherClassification", "dynamicProperty"].forEach(function (value) {
+        ["Input", "", "taxonID", "scientificNameID", "scientificName", "scientificNameAuthorship", "taxonRank", "acceptedNameUsageID", "acceptedNameUsage", "kingdom", "phylum", "class", "order", "family", "genus", "subgenus", "specificEpithet", "infraspecificEpithet", "higherClassification", "vernacularName (nb)", "vernacularName (nn)", "dynamicProperty"].forEach(function (value) {
             outputContent += value + "\t";
         });
 
@@ -232,7 +232,9 @@
                         (_.find(s.higherClassification, { "taxonRank": "subgenus" })) ? _.find(s.higherClassification, { "taxonRank": "subgenus" }).scientificName : "",
                         (_.find(s.higherClassification, { "taxonRank": "specificEpithet" })) ? _.find(s.higherClassification, { "taxonRank": "specificEpithet" }).scientificName : "",
                         (_.find(s.higherClassification, { "taxonRank": "infraspecificEpithet" })) ? _.find(s.higherClassification, { "taxonRank": "infraspecificEpithet" }).scientificName : "",
-                        _.map(s.higherClassification, function (hi) { return hi.scientificName }).join(" ")
+                        _.map(s.higherClassification, function (hi) { return hi.scientificName }).join(" "),
+                        (_.find(item.Taxon().vernacularNames, { "nomenclaturalStatus": "preferred", "language": "nb-NO" })) ? _.find(item.Taxon().vernacularNames, { "nomenclaturalStatus": "preferred", "language": "nb-NO" }).vernacularName : "",
+                        (_.find(item.Taxon().vernacularNames, { "nomenclaturalStatus": "preferred", "language": "nn-NO" })) ? _.find(item.Taxon().vernacularNames, { "nomenclaturalStatus": "preferred", "language": "nn-NO" }).vernacularName : ""
                 ];
 
                 _.each(exportValues, function (value) {
