@@ -175,7 +175,7 @@ define(function(require){
         activate: function () {
             var that = this;
 
-            return http.get("/App/viewmodels/glansvinger.json").then(function (response) {
+            return http.get("./viewmodels/glansvinger.json").then(function (response) {
                 var pairs = response.pairs.pair;
                 var taxa = response.taxa.taxon;
                 var dependencies = response.dependencies.dependency;

@@ -110,18 +110,17 @@
         activate: function () {
             var that = this;
 
-            return http.get("/App/viewmodels/ansvarsarter-data.json").then(function (response) {
+            return http.get("./viewmodels/ansvarsarter-data.json").then(function (response) {
                 items(response);
                 currentItems(response);
-
-                var unsortedKategorier = _(response).map(function (d) {return d.kategori.substring(0,2);}).unique();//EN0 skal bli EN
+                var unsortedKategorier = _(response).map(function (d) {return d.kategori.substring(0,2);}).uniq();//EN0 skal bli EN
                 var sortedKategorier = unsortedKategorier.sortBy(function(item){return kategoriRekkefølge.indexOf(item);}).value();
                 that.kategorier(sortedKategorier);
 
-                var grupper = _(response).map("ekspertgruppe").unique().sort().value();
+                var grupper = _(response).map("ekspertgruppe").uniq().sort().value();
                 that.artsgrupper(grupper);
 
-                var habitater = _(response).map("hovedhabitat").flatten().unique().sort().value();
+                var habitater = _(response).map("hovedhabitat").flatten().uniq().sort().value();
                 console.log(habitater);
                 that.hovedhabitater(habitater);
             });

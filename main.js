@@ -1,10 +1,12 @@
-﻿requirejs.config({
+﻿var path = './bower_components';
+
+requirejs.config({
     paths: {
-        'text': '../Scripts/text',
-        'durandal': '../Scripts/durandal',
-        'plugins': '../Scripts/durandal/plugins',
-        'transitions': '../Scripts/durandal/transitions',
-        'underscore' : '../Scripts/lodash'
+        'text': path + '/requirejs-text/text',
+        'durandal': path + '/durandal/js',
+        'plugins': path + '/durandal/js/plugins',
+        'transitions': path + '/durandal/js/transitions',
+        'underscore' : path + '/lodash/lodash'
     }
 });
 
