@@ -1,0 +1,23 @@
+{
+  "name": "data.artsdatabanken.no",
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://data.artsdatabanken.no/Tools",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Durandal": "durandal#2.1.0",
+    "knockout": "3.3.0",
+    "jquery": "2.1.4",
+    "requirejs": "2.1.18",
+    "lodash": "^4.2.1"
+  }
+}
