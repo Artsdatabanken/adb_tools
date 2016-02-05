@@ -5,7 +5,9 @@ requirejs.config({
         'text': path + '/requirejs-text/text',
         'durandal': path + '/durandal/js',
         'plugins': path + '/durandal/js/plugins',
+        'selectpicker': path + '/bootstrap-select/dist/js',
         'transitions': path + '/durandal/js/transitions',
+        'typeahead': path + '/bootstrap3-typeahead',
         'underscore' : path + '/lodash/lodash'
     }
 });
