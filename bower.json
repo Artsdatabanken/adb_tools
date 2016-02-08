@@ -14,8 +14,7 @@
     "lodash": "^4.2.1",
     "bootstrap": "3.3.6",
     "bootstrap3-typeahead": "^4.0.0",
-    "bootstrap-select": "^1.9.4",
-    "bootstrap-accessibility-plugin": "bootstrapaccessibilityplugin#^1.0.4"
+    "bootstrap-select": "^1.9.4"
   },
   "resolutions": {
     "requirejs": "2.1.18",
