@@ -1,7 +1,8 @@
 ﻿define(function(require) {
     var ko = require('knockout');
     var _ = require('underscore');
-    var http = require('plugins/http')
+    var http = require('plugins/http');
+    var typeahead = require('typeahead/bootstrap3-typeahead.min');
 
     var headerNames = ["scientificname", "vitenskapelignavn"];
     var headers = ko.observableArray([]);
@@ -71,7 +72,7 @@
         headers.push("Forslag");
         createColumnHeaders();
 
-        parsedItems = _.map(_.rest(lines), function(line){
+        parsedItems = _.map(_.tail(lines), function(line){
             var item = {};
             var splitLine = line.split(/\t/)
             _.each(headers(), function(header, index){

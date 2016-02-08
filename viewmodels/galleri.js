@@ -3,6 +3,7 @@
     var ko = require('knockout');
     var _ = require('underscore');
 
+    var API = "http://data.artsdatabanken.no/Api";
 
     var urls = ko.observableArray([]);
 
@@ -11,7 +12,7 @@
 
     	activate: function(id) {
     		var that = this;
-            return http.get("/Api/Content/"+ id).then(function (response) {
+            return http.get(API + "/Content/"+ id).then(function (response) {
             	var files = _.flatten(_.pluck(response.Content, "Files"), true);
             	that.urls(_.pluck(files, "Url"));
             });

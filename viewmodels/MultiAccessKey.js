@@ -6,6 +6,8 @@
     var scoring = ko.observableArray();
     var currentItems = ko.observableArray();
 
+    var API = "http://data.artsdatabanken.no/Api";
+
     var pagerViewModelSettings = {
         data: currentItems,
         pageSize: ko.observable(25),
@@ -62,7 +64,7 @@
         activate: function (contentID) {
             if (contentID)
             {
-                http.get("/Api/Content/" + contentID).then(function (response) {
+                http.get(API + "/Content/" + contentID).then(function (response) {
 
                     items(
                         _.flatten(
