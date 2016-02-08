@@ -1,0 +1,4 @@
+/*!* WCAG-2.0 §1.4.1 compliance fix *!*/
+a {
+    text-decoration: underline;
+}

@@ -22,9 +22,7 @@ define(function (require) {
     var selectBindings = require('koSelectBinding');
     var typeaheadBinding = require('typeaheadBinding');
 
-    //>>excludeStart("build", true);
     system.debug(true);
-    //>>excludeEnd("build");
 
     app.title = 'Artsdatabanken Data API';
 
@@ -42,6 +40,6 @@ define(function (require) {
         viewLocator.useConvention();
 
         //Show the app by setting the root view model for our application with a transition.
-        app.setRoot('shell', 'entrance');
+        app.setRoot('shell');
     });
 });

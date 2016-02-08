@@ -1,18 +1,11 @@
 {
-  "name": "data.artsdatabanken.no",
-  "description": "",
+  "name": "data.artsdatabanken.no/tools",
+  "description": "Some tools for use against the ADB/NBIC API.",
   "main": "index.html",
   "moduleType": [],
   "license": "MIT",
   "homepage": "http://data.artsdatabanken.no/Tools",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "Durandal": "durandal#2.1.0",
     "knockout": "3.3.0",
@@ -21,6 +14,11 @@
     "lodash": "^4.2.1",
     "bootstrap": "3.3.6",
     "bootstrap3-typeahead": "^4.0.0",
-    "bootstrap-select": "^1.9.4"
+    "bootstrap-select": "^1.9.4",
+    "bootstrap-accessibility-plugin": "bootstrapaccessibilityplugin#^1.0.4"
+  },
+  "resolutions": {
+    "requirejs": "2.1.18",
+    "jquery": "2.1.4"
   }
 }
