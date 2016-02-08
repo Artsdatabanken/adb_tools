@@ -7,6 +7,9 @@
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
 
+    var BASEURL = "http://data.artsdatabanken.no/";
+    var API = BASEURL + "Api/Taxon";
+
     var template = ko.observableArray([""]);
 
     var pagerViewModelSettings = {
@@ -57,15 +60,15 @@
 
                             if (isNaN(item.ScientificName())) {
 
-                                http.get("/Api/Taxon/ScientificName/", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
+                                http.get(API + "/ScientificName/", { scientificName: item.ScientificName(), higherClassificationID: (higherClassification()) ? higherClassification().scientificNameID : "" }).then(function (response) {
                                     item.result(response);
                                     item.selectedResult("");
 
                                     // Call API for suggestions if no result.
                                     if (item.result().length == 0) {
-                                        http.get("/Api/Taxon/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
+                                        http.get(API + "/ScientificName/Suggest", { scientificName: item.ScientificName() }).then(function (response) {
                                             // If suggestions contain the given name, other criteria excludes it and the suggestion should not be shown
-                                            if (_.contains(response, item.ScientificName())) {
+                                            if (_.includes(response, item.ScientificName())) {
                                                 item.message("Navnet finnes, men ikke innenfor valgte søkekriterier");
                                                 item.suggest("");
                                             }
@@ -90,7 +93,7 @@
 
                             else {
                                 // Input is numeric, try to access name directly with scientificNameID from API
-                                http.get("/Api/Taxon/ScientificName/" + item.ScientificName()).then(function (response) {
+                                http.get(API + "/ScientificName/" + item.ScientificName()).then(function (response) {
                                     if (_.isPlainObject(response)) {
                                         item.result([response]);
                                         item.selectedResult(item.result()[0]);
@@ -108,7 +111,7 @@
                                 item.Taxon('');
                             }
                             else {
-                                http.get("/api/Taxon/" + newValue.taxonID).then(function (response) {
+                                http.get(API + "/" + newValue.taxonID).then(function (response) {
                                     item.Taxon(response);
                                 });
                             }
@@ -120,7 +123,7 @@
                                 item.html('');
                             }
                             else {
-                                http.get("/Databank/ScientificName/" + newValue.scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                http.get(BASEURL + "/Databank/ScientificName/" + newValue.scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
                                     item.html(response);
                                 });
                             }
@@ -135,7 +138,7 @@
                                 item.processed(false);
 
                                 _.delay(function (item) {
-                                    http.get("/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
+                                    http.get(BASEURL + "/Databank/ScientificName/" + item.selectedResult().scientificNameID + (template() ? ("?Template=" + template()) : "")).then(function (response) {
                                         item.html(response);
                                         item.processed(true);
                                     });
@@ -183,11 +186,11 @@
         var foundItems =
             _.filter(items(),
                 function (item) {
-                    if (_.contains(resultFilter(), "exact") && item.result().length == 1)
+                    if (_.includes(resultFilter(), "exact") && item.result().length == 1)
                         return true;
-                    if (_.contains(resultFilter(), "multiple") && item.result().length > 1)
+                    if (_.includes(resultFilter(), "multiple") && item.result().length > 1)
                         return true;
-                    if (_.contains(resultFilter(), "none") && item.result().length == 0)
+                    if (_.includes(resultFilter(), "none") && item.result().length == 0)
                         return true;
                     else 
                         return false;
@@ -244,7 +247,7 @@
                 if (params != undefined && params.dynamicProperties) {
                     var dynamicProperties = _.union(item.Taxon().dynamicProperties, item.selectedResult().dynamicProperties)
                     if (_.isArray(params.dynamicProperties)) {
-                        dynamicProperties = _.filter(dynamicProperties, function (prop) { return _.contains(params.dynamicProperties, prop.Name) });
+                        dynamicProperties = _.filter(dynamicProperties, function (prop) { return _.includes(params.dynamicProperties, prop.Name) });
                     }
                     _.each(dynamicProperties, function (property, index) {
                         if (index > 0)
@@ -287,7 +290,7 @@
 
             if (scientificNameID)
             {
-                http.get("/Api/Taxon/ScientificName/" + scientificNameID).then(function (response) {
+                http.get(API + "/ScientificName/" + scientificNameID).then(function (response) {
                     higherClassification(response);
                 });
             }

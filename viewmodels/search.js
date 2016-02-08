@@ -3,6 +3,11 @@
     var _ = require("underscore");
     var http = require('plugins/http');
 
+    require('selectpicker/bootstrap-select.min');
+
+    var BASEURL = "http://data.artsdatabanken.no/";
+    var API = BASEURL + "Api/Taxon/ScientificName";
+
     var search = ko.observable("");
     var items = ko.observableArray([]);
     var selectedRanks = ko.observableArray([]);
@@ -54,7 +59,7 @@
             {
                 headerText: "Rank",
                 isSortable: true,
-                rowText: function(item) {return _.where(rankMapping(), {value: item.taxonRank})[0].text},
+                rowText: function(item) {return _.filter(rankMapping(), {value: item.taxonRank})[0].text},
                 classList: "break-line"
             },
             {
@@ -82,12 +87,12 @@
     ko.computed(function(){
         if(currentSearch) { currentSearch.abort(); }
         if(currentSuggest) { currentSuggest.abort(); }
-        currentSearch = http.get("/Api/Taxon/ScientificName", {scientificName: search(), taxonRank: selectedRanks()});
+        currentSearch = http.get(API, {scientificName: search(), taxonRank: selectedRanks()});
         currentSearch.then(function (response) {
             items(response);
         });
 
-        currentSuggest = http.get("Api/Taxon/ScientificName/Suggest", {scientificName: search()});
+        currentSuggest = http.get(API + "/Suggest", {scientificName: search()});
         currentSuggest.then(function (response) {
             suggestions(_.filter(response, function(x) { return x != search(); }));
         });
@@ -112,9 +117,9 @@
         resetFilters: resetFilters,
 
         activate : function() {
-            return http.get("/Api/Taxon/ScientificName").then(function (response) {
+            return http.get(API).then(function (response) {
                 items(response);
             });
         }
     }
-})
+});

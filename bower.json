@@ -18,6 +18,9 @@
     "knockout": "3.3.0",
     "jquery": "2.1.4",
     "requirejs": "2.1.18",
-    "lodash": "^4.2.1"
+    "lodash": "^4.2.1",
+    "bootstrap": "3.3.6",
+    "bootstrap3-typeahead": "^4.0.0",
+    "bootstrap-select": "^1.9.4"
   }
 }
