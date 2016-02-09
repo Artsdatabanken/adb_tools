@@ -1,7 +1,7 @@
 define(function (require) {
     var http = require('plugins/http')
     var ko = require('knockout');
-    var _ = require('underscore');
+    var _ = require('lodash');
 
     var widgetPath = 'http://data.artsdatabanken.no/';
 

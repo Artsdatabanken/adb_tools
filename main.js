@@ -8,7 +8,7 @@ requirejs.config({
         'selectpicker': bc + 'bootstrap-select/dist/js/bootstrap-select.min',
         'transitions': bc + 'durandal/js/transitions',
         'typeahead': bc + 'bootstrap3-typeahead',
-        'underscore': bc + 'lodash/lodash',
+        'lodash': bc + 'lodash/lodash',
         'knockout': bc + 'knockout.js/knockout'
     }
 });

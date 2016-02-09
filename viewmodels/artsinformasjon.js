@@ -1,6 +1,6 @@
 ﻿define(function(require) {
     var ko = require('knockout');
-    var _ = require('underscore');
+    var _ = require('lodash');
     var http = require('plugins/http');
     var typeahead = require('typeahead/bootstrap3-typeahead.min');
 

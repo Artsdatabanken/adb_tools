@@ -1,4 +1,4 @@
-﻿define(['knockout', 'underscore', 'plugins/http', 'selectpicker'], function(ko, _, http){
+﻿define(['knockout', 'lodash', 'plugins/http', 'selectpicker'], function(ko, _, http){
     var BASEURL = "http://data.artsdatabanken.no/";
     var API = BASEURL + "Api/Taxon/ScientificName";
 

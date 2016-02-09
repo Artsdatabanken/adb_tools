@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'durandal/app', 'knockout', 'underscore', 'plugins/http'], function (system, app, ko, _, http) {
+﻿define(['durandal/system', 'durandal/app', 'knockout', 'lodash', 'plugins/http'], function (system, app, ko, _, http) {
 
     var keyContent = ko.observable();
     var items = ko.observableArray();

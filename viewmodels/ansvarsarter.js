@@ -1,4 +1,4 @@
-﻿define(['durandal/system', 'durandal/app', 'knockout', 'plugins/http', 'plugins/serializer', 'jquery', 'underscore', 'selectpicker'],
+﻿define(['durandal/system', 'durandal/app', 'knockout', 'plugins/http', 'plugins/serializer', 'jquery', 'lodash', 'selectpicker'],
     function (system, app, ko, http, serializer, $, _) {
 
     var kategoriRekkefølge = ["RE", "CR", "EN", "VU", "NT", "DD", "LC", "NA", "NE"];
