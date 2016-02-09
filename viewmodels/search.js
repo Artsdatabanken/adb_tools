@@ -1,10 +1,4 @@
-﻿define(function(require){
-    var ko = require("knockout");
-    var _ = require("underscore");
-    var http = require('plugins/http');
-
-    require('selectpicker/bootstrap-select.min');
-
+﻿define(['knockout', 'underscore', 'plugins/http', 'selectpicker'], function(ko, _, http){
     var BASEURL = "http://data.artsdatabanken.no/";
     var API = BASEURL + "Api/Taxon/ScientificName";
 
