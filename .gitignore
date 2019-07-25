@@ -2,3 +2,4 @@ bower_components/
 .idea/
 *.swp
 
+node_modules

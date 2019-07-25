@@ -1,10 +1,10 @@
 {
-  "name": "data.artsdatabanken.no/tools",
+  "name": "www.artsdatabanken.no/tools",
   "description": "Some tools for use against the ADB/NBIC API.",
   "main": "index.html",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "http://data.artsdatabanken.no/Tools",
+  "homepage": "http://www.artsdatabanken.no/Tools",
   "private": true,
   "dependencies": {
     "Durandal": "durandal#2.1.0",

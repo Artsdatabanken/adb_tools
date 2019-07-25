@@ -3,7 +3,7 @@ define(function (require) {
     var ko = require('knockout');
     var _ = require('lodash');
 
-    var widgetPath = 'http://data.artsdatabanken.no/';
+    var widgetPath = 'http://www.artsdatabanken.no/';
 
     var characters = ko.observableArray();
     var parents = ko.observableArray();

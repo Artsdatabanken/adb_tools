@@ -7,7 +7,7 @@
     var items = ko.observableArray();
     var currentItems = ko.observableArray();
 
-    var BASEURL = "http://data.artsdatabanken.no/";
+    var BASEURL = "http://www.artsdatabanken.no/";
     var API = BASEURL + "Api/Taxon";
 
     var template = ko.observableArray([""]);

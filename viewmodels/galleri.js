@@ -3,7 +3,7 @@
     var ko = require('knockout');
     var _ = require('lodash');
 
-    var API = "http://data.artsdatabanken.no/Api";
+    var API = "http://www.artsdatabanken.no/Api";
 
     var urls = ko.observableArray([]);
 

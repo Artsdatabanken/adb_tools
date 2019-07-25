@@ -6,7 +6,7 @@
     var scoring = ko.observableArray();
     var currentItems = ko.observableArray();
 
-    var API = "http://data.artsdatabanken.no/Api";
+    var API = "http://www.artsdatabanken.no/Api";
 
     var pagerViewModelSettings = {
         data: currentItems,

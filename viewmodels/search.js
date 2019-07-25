@@ -1,5 +1,5 @@
 ﻿define(['knockout', 'lodash', 'plugins/http', 'selectpicker'], function(ko, _, http){
-    var BASEURL = "http://data.artsdatabanken.no/";
+    var BASEURL = "http://www.artsdatabanken.no/";
     var API = BASEURL + "Api/Taxon/ScientificName";
 
     var search = ko.observable("");
